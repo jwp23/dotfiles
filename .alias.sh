@@ -34,6 +34,9 @@ alias gpou='git push -u origin $(git symbolic-ref -q --short HEAD)'
 alias gr='cd $(git rev-parse --show-toplevel)' # takes you to root of git repo
 alias gri='git rebase -i HEAD~"$(gcount)"' # interactive rebase entire branch
 alias gs='git status'
+alias gsc='git stash clear'
+alias gsl='git stash list'
+alias gst='git stash'
 
 alias ll='exa -al --color=always --git'
 

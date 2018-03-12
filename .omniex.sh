@@ -1,13 +1,28 @@
 #!/bin/bash
 
 # Adds to profile specific to Omniex
+
+## ALIASES
 alias build_ems='docker-compose exec omniex ./build.sh -j 2'
 alias build_clean='sudo rm -rf debug_build'
 alias build_clean_cmake='find . -name "*.cmake" -exec rm {} \;'
+
 alias ems='~/workspace/omniex/ems'
 alias e='ems'
+
+alias o='omniex'
+alias ol1='omniex lab01'
+alias ol2='omniex lab02'
+alias ol3='omniex lab03'
+alias ol4='omniex lab04'
+alias ol1a='omniex lab01 app'
+alias ol2a='omniex lab02 app'
+alias ol3a='omniex lab03 app'
+alias ol4a='omniex lab04 app'
+
 alias rebuild_ems='build_clean;build_ems'
 
+## ENVIRONMENT VARIABLES
 export EMS_SRC="$HOME/workspace/omniex/ems"
 export LBM_LICENSE_FILENAME="${EMS_SRC}/29west.lic"
 export LBM_DEFAULT_CONFIG_FILE="$EMS_SRC}/etc/lbtrm.cfg"
