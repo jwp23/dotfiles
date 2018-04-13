@@ -19,6 +19,8 @@ alias dcu='docker-compose up -d'
 alias di='docker images'
 alias dps='docker ps'
 
+alias fe='firefox-esr -p esr -no-remote'
+
 alias g-='git checkout -'
 alias ga='git add -A'
 alias gb='git branch -a'

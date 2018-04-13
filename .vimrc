@@ -1,14 +1,66 @@
 set nu
 set nohlsearch
-set cc=80
-highlight ColorColumn ctermbg=0
 
+" tab indentation
 set shiftwidth=2
 set tabstop=2
 set softtabstop=0
 set expandtab
 set smarttab
 set ai
+
+" set cursor line when on active window
+function EnterWindow()
+  set cursorline
+  set cc=80
+endfunction
+
+function LeaveWindow()
+  set nocursorline
+  set nocursorcolumn
+  set cc=
+endfunction
+
+call EnterWindow()
+
+augroup BgHighlight
+  autocmd!
+  autocmd WinEnter * call EnterWindow()
+  autocmd WinLeave * call LeaveWindow()
+augroup END
+
+" Color schemes
+hi ColorColumn ctermbg=8
+hi CursorLine cterm=NONE ctermbg=8
+hi VertSplit ctermfg=8
+" AirlineTheme settings
+let g:airline_theme='jellybeans'
+
+if !exists('g:airline_symbols')
+  let g:airline_symbols = {}
+endif
+
+" unicode symbols for AirlineTheme.
+" needed since Powerline fonts are not set
+let g:airline_left_sep = '»'
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '«'
+let g:airline_right_sep = '◀'
+let g:airline_symbols.crypt = '🔒'
+let g:airline_symbols.linenr = '☰'
+let g:airline_symbols.linenr = '␊'
+let g:airline_symbols.linenr = '␤'
+let g:airline_symbols.linenr = '¶'
+let g:airline_symbols.maxlinenr = ''
+let g:airline_symbols.maxlinenr = '㏑'
+let g:airline_symbols.branch = '⎇'
+let g:airline_symbols.paste = 'ρ'
+let g:airline_symbols.paste = 'Þ'
+let g:airline_symbols.paste = '∥'
+let g:airline_symbols.spell = 'Ꞩ'
+let g:airline_symbols.notexists = '∄'
+let g:airline_symbols.whitespace = 'Ξ'
+
 
 " Plugin management
 
@@ -28,14 +80,12 @@ if has('nvim')
 endif
 call plug#begin('~/.vim/plugged')
 
-Plug 'JamshedVesuna/vim-markdown-preview'
-Plug 'vimlab/split-term.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
-Plug 'dracula/vim',{'as':'dracular'}
-
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'nanotech/jellybeans.vim'
+Plug 'edkolev/tmuxline.vim'
 call plug#end()
-
-" Markdown preview options
-let vim_markdown_preview_github=1
 
