@@ -20,6 +20,7 @@ alias di='docker images'
 alias dps='docker ps'
 
 alias fe='firefox-esr -p esr -no-remote'
+alias google='googler'
 
 alias g-='git checkout -'
 alias ga='git add -A'
@@ -55,6 +56,9 @@ alias gup='gm && gu && g- && grm && gpof' # git update branch && gpof
 alias ll='exa -al --color=always --git'
 
 alias src='cd ~/src'
+
+alias travis-trigger='git commit --allow-empty -m "Trigger travis build" && gpo'
+alias tt='travis-trigger'
 
 alias update='exec $SHELL'
 alias u='update'

@@ -19,6 +19,7 @@ function LeaveWindow()
   set nocursorline
   set nocursorcolumn
   set cc=
+  " hi VertSplit ctermfg=8
 endfunction
 
 call EnterWindow()
@@ -33,6 +34,8 @@ augroup END
 hi ColorColumn ctermbg=8
 hi CursorLine cterm=NONE ctermbg=8
 hi VertSplit ctermfg=8
+
+" Plugin settings
 " AirlineTheme settings
 let g:airline_theme='jellybeans'
 
