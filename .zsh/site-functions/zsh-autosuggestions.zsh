@@ -1,1 +1,0 @@
-/home/jpresley/.local/src/zsh-autosuggestions/zsh-autosuggestions.zsh

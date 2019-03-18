@@ -81,7 +81,7 @@ if has('nvim')
   endif
   
 endif
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
