@@ -15,6 +15,9 @@ compinit
 autoload -U promptinit; promptinit
 prompt pure
 
+# zsh autosuggestions
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
 # source shell agnostic profile
 source ~/.profile
 

@@ -1,5 +1,6 @@
 set nu
 set nohlsearch
+set termguicolors
 
 " tab indentation
 set shiftwidth=2
@@ -90,5 +91,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'nanotech/jellybeans.vim'
 Plug 'edkolev/tmuxline.vim'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
