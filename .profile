@@ -6,3 +6,5 @@ source ~/.alias.sh
 export GPG_TTY=$(tty)
 export EDITOR=nvim
 
+source ~/.homebrew
+
