@@ -20,7 +20,7 @@ alias di='docker images'
 alias dps='docker ps'
 
 alias fe='firefox-esr -p esr -no-remote'
-alias google='googler'
+alias google='googler -n 5'
 
 alias g-='git checkout -'
 alias ga='git add -A'
@@ -43,10 +43,10 @@ alias gpo='git push origin $(git symbolic-ref -q --short HEAD)'
 alias gpof='git push -f origin $(git symbolic-ref -q --short HEAD)'
 alias gpou='git push -u origin $(git symbolic-ref -q --short HEAD)'
 alias gr='cd $(git rev-parse --show-toplevel)' # takes you to root of git repo
+alias grd='git rebase develop'
 alias grh='git reset --hard'
 alias gri='git rebase -i HEAD~"$(gcount)"' # interactive rebase entire branch based on 'master' branch
 alias grid='git rebase -i HEAD~"$(gcountd)"' #interactive rebase entire branch based on 'develop' branch
-alias grd='git rebase develop'
 alias grm='git rebase master'
 alias gs='git status'
 alias gsc='git stash clear'
@@ -55,7 +55,8 @@ alias gsp='git stash pop'
 alias gst='git stash'
 alias gu='git pull' # git update
 alias gum='gm && gu' # git update master
-alias gub='gm && gu && g- && grm' # git update branch
+alias gub='gm && gu && g- && grm' # git update branch from master
+alias gubd='gcd && gu && g- && grd' # git update branch from develop
 alias gup='gm && gu && g- && grm && gpof' # git update branch && gpof
 
 alias ll='exa -al --color=always --git'
@@ -76,4 +77,3 @@ alias vim='nvim'
 
 alias w='cd ~/workspace'
 alias workspace='cd ~/workspace'
-
