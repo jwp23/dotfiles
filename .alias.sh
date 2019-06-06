@@ -62,6 +62,7 @@ alias gup='gm && gu && g- && grm && gpof' # git update branch && gpof
 alias ll='exa -al --color=always --git'
 
 alias src='cd ~/src'
+alias ss='cd ~/workspace/sadasys'
 
 alias travis-trigger='git commit --allow-empty -m "Trigger travis build" && gpo'
 alias tt='travis-trigger'
