@@ -8,3 +8,6 @@ export EDITOR=nvim
 
 source ~/.homebrew
 
+# initialize rbenv
+eval "$(rbenv init -)"
+

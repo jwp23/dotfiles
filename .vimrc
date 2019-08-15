@@ -74,6 +74,7 @@ Plug 'Shougo/neosnippet-snippets'
 Plug 'majutsushi/tagbar'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 " Plugin settings
