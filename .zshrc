@@ -18,6 +18,13 @@ prompt pure
 # zsh autosuggestions
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# fix for navigation keys in Intellij terminal
+if [[ "$TERMINAL_EMULATOR" == "JetBrains-JediTerm" ]]; then
+  bindkey "∫" backward-word # Option-b
+  bindkey "ƒ" forward-word  # Option-f
+  bindkey "∂" delete-word   # Option-d
+fi
+
 # source shell agnostic profile
 source ~/.profile
 

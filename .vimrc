@@ -68,7 +68,7 @@ Plug 'hashivim/vim-terraform'
 Plug 'vim-syntastic/syntastic'
 Plug 'juliosueiras/vim-terraform-completion'
 Plug 'neomake/neomake'
-Plug 'Shougo/deoplete.nvim'
+" Plug 'Shougo/deoplete.nvim'
 Plug 'Shougo/neosnippet.vim'
 Plug 'Shougo/neosnippet-snippets'
 Plug 'majutsushi/tagbar'
@@ -133,15 +133,15 @@ let g:terraform_completion_keys = 1
 let g:terraform_registry_module_completion = 0
 
 " Deoplete config
-let g:deoplete#omni_patterns = {}
-let g:deoplete#omni_patterns.terraform = '[^ *\t"{=$]\w*'
-let g:deoplete#enable_at_startup = 1
-" call deoplete#custom#option('omni_patterns', {
-" \ 'complete_method': 'omnifunc',
-" \ 'terraform': '[^ *\t"{=$]\w*',
-" \})
-call deoplete#initialize()
-" Deoplete tab-complete
+" let g:deoplete#omni_patterns = {}
+" let g:deoplete#omni_patterns.terraform = '[^ *\t"{=$]\w*'
+" let g:deoplete#enable_at_startup = 1
+" " call deoplete#custom#option('omni_patterns', {
+" " \ 'complete_method': 'omnifunc',
+" " \ 'terraform': '[^ *\t"{=$]\w*',
+" " \})
+" call deoplete#initialize()
+" " Deoplete tab-complete
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Tagbar Toggle

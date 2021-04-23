@@ -3,4 +3,8 @@
 .vscode
 node_modules
 .tfcompleterc
-
+**/ignore.tfvars
+**/terraform.plan
+**/.terragrunt-cache
+**/ignore*.json
+venv

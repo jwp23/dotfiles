@@ -61,9 +61,16 @@ alias gup='gm && gu && g- && grm && gpof' # git update branch && gpof
 
 alias ll='exa -al --color=always --git'
 
-alias src='cd ~/src'
 alias s='cd ~/workspace/sadasys'
+alias scratch='code -n ~/Documents/scratch.txt'
+alias src='cd ~/src'
 
+alias ta='terraform apply'
+alias tf='terraform'
+alias tfmt='terraform fmt'
+alias tinit='terraform init'
+
+alias tp='terraform plan'
 alias travis-trigger='git commit --allow-empty -m "Trigger travis build" && gpo'
 alias tt='travis-trigger'
 
