@@ -9,7 +9,8 @@ source ~/.alias.sh
 export GPG_TTY=$(tty)
 export EDITOR=nvim
 
-source ~/.homebrew
+# startup ssh-agent
+eval "$(ssh-agent -s)"
 
 # initialize rbenv
 eval "$(rbenv init -)"
