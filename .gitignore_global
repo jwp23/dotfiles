@@ -1,11 +1,17 @@
 .env
 .idea
+.vscode
 *.iml
 .vscode
 node_modules
+.secrets
+.secret
+secret
+secrets
 .tfcompleterc
 **/ignore.tfvars
 **/terraform.plan
 **/.terragrunt-cache
 **/ignore*.json
 venv
+Scratch
