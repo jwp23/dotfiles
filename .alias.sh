@@ -1,6 +1,10 @@
 #! /bin/bash
 alias a='alias | grep'
 
+# aws profile switcher
+# https://github.com/johnnyopao/awsp
+alias awsp='source _awsp'
+
 alias bc='bc -l'
 
 alias c='cd ~/.cfg'
@@ -11,6 +15,8 @@ alias cm='config commit -m'
 alias cpo='config push origin'
 alias cs='config status'
 
+alias de='cd ~/Dekstop'
+alias do='cd ~/Downloads'
 alias dc='docker-compose'
 alias dcd='docker-compose down'
 alias dce='docker-compose exec'
@@ -30,6 +36,7 @@ alias g-='git checkout -'
 alias ga='git add -A'
 alias gap='git add -p'
 alias gb='git branch -a'
+alias gbd='git branch -D'
 alias gbl='git branch'
 alias gbc='gm && gu && gp && gpl' # git branch clean
 alias gc='git commit -m'
@@ -58,7 +65,7 @@ alias gr='cd $(git rev-parse --show-toplevel)' # takes you to root of git repo
 alias grd='git rebase develop'
 alias grh='git reset --hard'
 alias gri='git rebase -i HEAD~"$(gcount)"' # interactive rebase entire branch based on 'main' branch
-alias grid='git rebase -i HEAD~"$(gcountd)"' #interactive rebase entire branch based on 'develop' branch
+alias grid='git rebase -i HEAD~ "$(gcountd)"' #interactive rebase entire branch based on 'develop' branch
 alias grm='git rebase main'
 alias gs='git status'
 alias gsc='git stash clear'
@@ -71,11 +78,11 @@ alias gub='gm && gu && g- && grm' # git update branch from main
 alias gubd='gcd && gu && g- && grd' # git update branch from develop
 alias gup='gm && gu && g- && grm && gpof' # git update branch && gpof
 
-alias kc='kubectl'
+alias k='kubectl'
 
-alias ll='exa -al --color=always --git'
+alias ll='eza -alh --color=always --git'
 
-alias s='cd ~/workspace/sadasys'
+
 alias scratch='code -n ~/Documents/scratch.txt'
 alias src='cd ~/src'
 
@@ -85,15 +92,12 @@ alias tfmt='terraform fmt'
 alias tinit='terraform init'
 
 alias tp='terraform plan'
-alias travis-trigger='git commit --allow-empty -m "Trigger travis build" && gpo'
-alias tt='travis-trigger'
 
 alias update='exec $SHELL'
 alias u='update'
 
 alias v='nvim'
 alias va='v ~/.alias.sh'
-alias valias='v ~/.alias.sh'
 alias vi='nvim'
 alias vim='nvim'
 
