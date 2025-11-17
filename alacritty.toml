@@ -1,0 +1,8 @@
+live_config_reload = true
+
+[colors.primary]
+background = "#000000"
+
+[bell]
+command = { program = "paplay", args = ["/usr/share/sounds/gnome/default/alerts/string.ogg"]}
+
