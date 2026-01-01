@@ -1,0 +1,67 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run `zed: open default settings` from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+{
+  "colorize_brackets": true,
+  "gutter": {
+    "line_numbers": true
+  },
+  "helix_mode": true,
+  "agent": {
+    "default_model": {
+      "provider": "anthropic",
+      "model": "claude-sonnet-4-5-latest"
+    },
+    "model_parameters": []
+  },
+  "languages": {
+    "Markdown": {
+      "soft_wrap": "preferred_line_length"
+    }
+  },
+  "autosave": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "telemetry": {
+    "metrics": false
+  },
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)"
+  },
+  "lsp": {
+      "yaml-language-server": {
+        "yaml.schemas": {
+          "https://raw.githubusercontent.com/yannh/kubernetes-json-schema/master/v1.27.9-standalone-strict/all.json": "/*.yaml"
+        }
+      },
+      "helm-ls": {
+        "yamlls": "yaml-language-server"
+      }
+    },
+    "file_types": {
+      "Helm": [
+        "**/templates/**/*.tpl",
+        "**/templates/**/*.yaml",
+        "**/templates/**/*.yml",
+        "**/helmfile.d/**/*.yaml",
+        "**/helmfile.d/**/*.yml"
+      ]
+    },
+  "vim_mode": false,
+  "ui_font_size": 16,
+  "buffer_font_size": 15,
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "macOS Classic Dark"
+  }
+}

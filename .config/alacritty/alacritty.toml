@@ -1,0 +1,18 @@
+[general]
+live_config_reload = true
+
+[colors.primary]
+background = "#000000"
+foreground = "#e5e5e5"
+
+[bell]
+command = { program = "afplay", args = ["/Users/jpresley/.claude/sounds/Blow.aiff"]}
+
+[font]
+normal = { family = "Monaco", style = "Regular"}
+offset = { x = 1, y = 2 }
+size = 13
+
+[window]
+option_as_alt = "Both"
+
