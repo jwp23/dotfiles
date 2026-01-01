@@ -1,0 +1,38 @@
+{
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "READ": [
+      "./.env"
+    ]
+  },
+  "model": "opus",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "AskUserQuestion",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay \"/Users/jpresley/.claude/sounds/Blow.aiff\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay \"/Users/jpresley/.claude/sounds/Blow.aiff\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "node /Users/jpresley/.claude/statusline/ctx_monitor.js"
+  }
+}
