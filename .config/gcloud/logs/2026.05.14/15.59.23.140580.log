@@ -1,0 +1,28 @@
+2026-05-14 15:59:23,142 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-14 15:59:23,164 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2026-05-14 15:59:23,165 DEBUG    root            Running [gcloud.config.list] with arguments: []
+2026-05-14 15:59:23,166 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:23,166 DEBUG    root            Chosen display Format:config
+2026-05-14 15:59:23,167 INFO     root            Display format: "config"
+2026-05-14 15:59:23,202 INFO     ___FILE_ONLY___ [core]
+account = jpresley@synthesis.health
+disable_usage_reporting = False
+project = env-integration-fenway
+
+2026-05-14 15:59:23,202 INFO     ___FILE_ONLY___ 
+Your active configuration is: [default]
+
+2026-05-14 15:59:23,210 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:23,220 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:23,220 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:23,221 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-14 15:59:23,227 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-14 15:59:23,404 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-14 15:59:23,411 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-05-14 15:59:23,774 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/env-integration-fenway?alt=json HTTP/1.1" 200 None
+2026-05-14 15:59:23,783 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:23,787 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-05-14 15:59:24,273 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v3/effectiveTags?alt=json&pageSize=100&parent=%2F%2Fcloudresourcemanager.googleapis.com%2Fprojects%2Fenv-integration-fenway HTTP/1.1" 200 None
+2026-05-14 15:59:24,274 INFO     ___FILE_ONLY___ [environment: Development]
+
+2026-05-14 15:59:24,290 DEBUG    root            Metrics reporting process started...

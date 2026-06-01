@@ -1,0 +1,451 @@
+2026-05-28 16:32:37,029 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 16:32:37,032 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'accelerator_types']
+2026-05-28 16:32:37,033 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'accelerator-types', 'list']
+2026-05-28 16:32:37,034 DEBUG    root            Running [gcloud.compute.accelerator-types.list] with arguments: [--filter: "zone:us-central1", --project: "env-integration-fenway"]
+2026-05-28 16:32:37,038 DEBUG    root            On GCE from memory cache: False
+2026-05-28 16:32:37,095 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-28 16:32:37,095 DEBUG    root            On GCE from server: False
+2026-05-28 16:32:37,105 DEBUG    root            On GCE from memory cache: False
+2026-05-28 16:32:37,105 DEBUG    root            On GCE from memory cache: False
+2026-05-28 16:32:37,105 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-28 16:32:37,110 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-28 16:32:37,294 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-28 16:32:37,383 INFO     root            client_filter=None server_filter='zone eq ".*\\bus\\-central1\\b.*"'
+2026-05-28 16:32:37,383 DEBUG    root            Chosen display Format:
+        table(
+          name,
+          zone.basename(),
+          description
+        )
+    
+2026-05-28 16:32:37,384 INFO     root            Display format: "
+        table(
+          name,
+          zone.basename(),
+          description
+        )
+    "
+2026-05-28 16:32:37,385 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 16:32:37,937 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/acceleratorTypes?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 16:32:38,605 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/acceleratorTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxH4CQAAAAAAABIVChNudmlkaWEtcnR4LXByby02MDAw&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 16:32:38,609 INFO     ___FILE_ONLY___ NAME
+2026-05-28 16:32:38,609 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,609 INFO     ___FILE_ONLY___ ZONE
+2026-05-28 16:32:38,609 INFO     ___FILE_ONLY___            
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ DESCRIPTION
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct3
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___                       
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct3
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct3p
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct3p
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct5l
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct5l
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct5lp
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___                     
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct5lp
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,610 INFO     ___FILE_ONLY___ ct5p
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ ct5p
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ ct6e
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ ct6e
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ nvidia-a100-80gb
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___          
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ NVIDIA A100 80GB
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ nvidia-gb200
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___              
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ NVIDIA GB200 192GB
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ nvidia-h100-80gb
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___          
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,611 INFO     ___FILE_ONLY___ NVIDIA H100 80GB
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ nvidia-h100-mega-80gb
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ NVIDIA H100 80GB MEGA
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ nvidia-l4
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___                 
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ NVIDIA L4
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ nvidia-l4-vws
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___             
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ NVIDIA L4 Virtual Workstation
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ nvidia-tesla-a100
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ NVIDIA A100 40GB
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___ nvidia-tesla-p4
+2026-05-28 16:32:38,612 INFO     ___FILE_ONLY___           
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ NVIDIA Tesla P4
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ nvidia-tesla-p4-vws
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___       
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ NVIDIA Tesla P4 Virtual Workstation
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ nvidia-tesla-t4
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___           
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ NVIDIA T4
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ nvidia-tesla-t4-vws
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___       
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ NVIDIA Tesla T4 Virtual Workstation
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ nvidia-tesla-v100
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ NVIDIA V100
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ ct3
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___                       
+2026-05-28 16:32:38,613 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ ct3
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ ct3p
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ ct3p
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ ct6e
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ ct6e
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ nvidia-b200
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___               
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ NVIDIA B200 180GB
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ nvidia-gb200
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___              
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ NVIDIA GB200 192GB
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ nvidia-h100-80gb
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___          
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ NVIDIA H100 80GB
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ nvidia-h100-mega-80gb
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,614 INFO     ___FILE_ONLY___ NVIDIA H100 80GB MEGA
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ nvidia-h200-141gb
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ NVIDIA H200 141GB
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ nvidia-l4
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___                 
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ NVIDIA L4
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ nvidia-l4-vws
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___             
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ NVIDIA L4 Virtual Workstation
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___       
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ NVIDIA RTX PRO 6000
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000-vws
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ NVIDIA_RTX_PRO_6000
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ nvidia-tesla-a100
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ NVIDIA A100 40GB
+2026-05-28 16:32:38,615 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ nvidia-tesla-t4
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___           
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ NVIDIA T4
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ nvidia-tesla-t4-vws
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___       
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ NVIDIA Tesla T4 Virtual Workstation
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ nvidia-tesla-v100
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ NVIDIA V100
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ ct6e
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ ct6e
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ nvidia-a100-80gb
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___          
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ NVIDIA A100 80GB
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ nvidia-h100-80gb
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___          
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,616 INFO     ___FILE_ONLY___ NVIDIA H100 80GB
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ nvidia-h100-mega-80gb
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ NVIDIA H100 80GB MEGA
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ nvidia-l4
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___                 
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ NVIDIA L4
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ nvidia-l4-vws
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___             
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ NVIDIA L4 Virtual Workstation
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ nvidia-tesla-a100
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ NVIDIA A100 40GB
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ nvidia-tesla-p100
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ NVIDIA Tesla P100
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ nvidia-tesla-p100-vws
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ NVIDIA Tesla P100 Virtual Workstation
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ nvidia-tesla-p4
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___           
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ NVIDIA Tesla P4
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ nvidia-tesla-p4-vws
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___       
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ NVIDIA Tesla P4 Virtual Workstation
+2026-05-28 16:32:38,617 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ nvidia-tesla-t4
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___           
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ NVIDIA T4
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ nvidia-tesla-t4-vws
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___       
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ NVIDIA Tesla T4 Virtual Workstation
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ nvidia-tesla-v100
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ NVIDIA V100
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ tpu7x
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___                     
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ tpu7x
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ ct3
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___                       
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ ct3
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ ct3p
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___                      
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ ct3p
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___       
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ NVIDIA RTX PRO 6000
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000-vws
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ NVIDIA_RTX_PRO_6000
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ nvidia-tesla-a100
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ NVIDIA A100 40GB
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ nvidia-tesla-p100
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ NVIDIA Tesla P100
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___ nvidia-tesla-p100-vws
+2026-05-28 16:32:38,618 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ NVIDIA Tesla P100 Virtual Workstation
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ nvidia-tesla-t4
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___           
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ NVIDIA T4
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ nvidia-tesla-t4-vws
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___       
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ NVIDIA Tesla T4 Virtual Workstation
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ nvidia-tesla-v100
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___         
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ NVIDIA V100
+2026-05-28 16:32:38,619 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:38,632 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,15 @@
+2026-05-14 18:41:03,496 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 18:41:03,498 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-14 18:41:03,500 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-14 18:41:03,507 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'describe']
+2026-05-14 18:41:03,508 DEBUG    root            Running [gcloud.compute.instance-groups.managed.describe] with arguments: [--format: "value(targetSize)", --project: "env-integration-fenway", --region: "us-central1", NAME: "artillery-loadgen-mig-prod"]
+2026-05-14 18:41:03,510 DEBUG    root            On GCE from memory cache: False
+2026-05-14 18:41:03,512 DEBUG    root            On GCE from memory cache: False
+2026-05-14 18:41:03,607 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 18:41:03,915 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig-prod?alt=json HTTP/1.1" 200 None
+2026-05-14 18:41:04,266 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-14 18:41:04,267 DEBUG    root            Chosen display Format:default value(targetSize)
+2026-05-14 18:41:04,267 INFO     root            Display format: "default value(targetSize)"
+2026-05-14 18:41:04,279 INFO     ___FILE_ONLY___ 1
+
+2026-05-14 18:41:04,291 DEBUG    root            Metrics reporting process started...

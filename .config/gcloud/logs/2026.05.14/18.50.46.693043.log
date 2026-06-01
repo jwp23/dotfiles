@@ -1,0 +1,73 @@
+2026-05-14 18:50:46,736 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 18:50:46,738 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-14 18:50:46,740 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-14 18:50:46,741 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-", --format: "table(name,zone,status,creationTimestamp)", --project: "env-integration-fenway"]
+2026-05-14 18:50:46,743 DEBUG    root            On GCE from memory cache: False
+2026-05-14 18:50:46,744 DEBUG    root            On GCE from memory cache: False
+2026-05-14 18:50:46,832 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-14 18:50:46,832 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,zone,status,creationTimestamp)
+2026-05-14 18:50:46,833 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,zone,status,creationTimestamp)"
+2026-05-14 18:50:46,838 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 18:50:47,661 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___ NAME
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___           
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___ ZONE
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___            
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___ STATUS
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___    
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___ CREATION_TIMESTAMP
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___ 
+
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___ loadgen-l2d1
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,189 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ STAGING
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ 2026-05-14T18:50:40.526-07:00
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ 
+
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ loadgen-wjzq
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ STAGING
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ 2026-05-14T18:50:39.782-07:00
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ 
+
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ loadgen-70fm
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ STAGING
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ 2026-05-14T18:50:40.395-07:00
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ 
+
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ loadgen-88cd
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ STAGING
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___   
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ 2026-05-14T18:50:40.056-07:00
+2026-05-14 18:50:48,190 INFO     ___FILE_ONLY___ 
+
+2026-05-14 18:50:48,200 DEBUG    root            Metrics reporting process started...

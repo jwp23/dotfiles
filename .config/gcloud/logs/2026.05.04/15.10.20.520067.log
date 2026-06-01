@@ -1,0 +1,32 @@
+2026-05-04 15:10:20,520 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2026-05-04 15:10:20,521 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'update_macos_python']
+2026-05-04 15:10:20,522 DEBUG    root            Running [gcloud.components.update-macos-python] with arguments: []
+2026-05-04 15:10:20,523 DEBUG    root            Loaded Command Group: ['gcloud']
+2026-05-04 15:10:20,526 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha']
+2026-05-04 15:10:20,527 DEBUG    root            Loaded Command Group: ['gcloud', 'beta']
+2026-05-04 15:10:20,528 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-04 15:10:20,529 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv']
+2026-05-04 15:10:20,540 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv', 'update']
+2026-05-04 15:10:20,542 DEBUG    root            Running [gcloud.config.virtualenv.update] with arguments: []
+2026-05-04 15:10:20,542 INFO     ___FILE_ONLY___ Updating modules...
+
+2026-05-04 15:10:20,542 DEBUG    root            Executing command: ['/Users/jpresley/.config/gcloud/virtenv/bin/pip3', 'install', '--log', '/Users/jpresley/.config/gcloud/virtenv/update_module.log', '--disable-pip-version-check', 'crcmod', 'grpcio==1.80.0', 'pyopenssl==24.2.1', 'google_crc32c', 'certifi', 'https://github.com/googleapis/enterprise-certificate-proxy/releases/download/v0.3.6/cryptography-42.0.7-cp39-abi3-macosx_10_12_universal2.whl', 'setuptools']
+2026-05-04 15:10:23,697 INFO     ___FILE_ONLY___ Modules updated.
+
+2026-05-04 15:10:23,698 DEBUG    root            Chosen display Format:default
+2026-05-04 15:10:23,699 INFO     root            Display format: "default"
+2026-05-04 15:10:23,864 INFO     ___FILE_ONLY___ 
+
+To take a quick anonymous survey, run:
+  $ gcloud survey
+
+
+2026-05-04 15:10:23,867 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'virtualenv', 'enable']
+2026-05-04 15:10:23,868 DEBUG    root            Running [gcloud.config.virtualenv.enable] with arguments: []
+2026-05-04 15:10:23,868 INFO     ___FILE_ONLY___ Virtual env enabled.
+
+2026-05-04 15:10:23,868 DEBUG    root            Chosen display Format:default
+2026-05-04 15:10:23,868 INFO     root            Display format: "default"
+2026-05-04 15:10:23,869 DEBUG    root            Chosen display Format:default
+2026-05-04 15:10:23,869 INFO     root            Display format: "default"
+2026-05-04 15:10:23,874 DEBUG    root            Metrics reporting process started...

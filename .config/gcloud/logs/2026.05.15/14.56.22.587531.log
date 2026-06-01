@@ -1,0 +1,24 @@
+2026-05-15 14:56:22,663 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-15 14:56:22,666 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-15 14:56:22,668 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-15 14:56:22,669 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "value(properties.machineType,properties.guestAccelerators[].acceleratorType,properties.guestAccelerators[].acceleratorCount,properties.disks[0].initializeParams.diskSizeGb,properties.disks[0].initializeParams.diskType)", --project: "env-integration-fenway", NAME: "artillery-loadgen-tpl-prod"]
+2026-05-15 14:56:22,671 DEBUG    root            On GCE from memory cache: False
+2026-05-15 14:56:22,704 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-15 14:56:22,704 DEBUG    root            On GCE from server: False
+2026-05-15 14:56:22,713 DEBUG    root            On GCE from memory cache: False
+2026-05-15 14:56:22,714 DEBUG    root            On GCE from memory cache: False
+2026-05-15 14:56:22,714 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-15 14:56:22,719 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-15 14:56:22,878 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-15 14:56:22,969 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-15 14:56:23,299 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod?alt=json HTTP/1.1" 200 None
+2026-05-15 14:56:23,301 DEBUG    root            Chosen display Format:default value(properties.machineType,properties.guestAccelerators[].acceleratorType,properties.guestAccelerators[].acceleratorCount,properties.disks[0].initializeParams.diskSizeGb,properties.disks[0].initializeParams.diskType)
+2026-05-15 14:56:23,302 INFO     root            Display format: "default value(properties.machineType,properties.guestAccelerators[].acceleratorType,properties.guestAccelerators[].acceleratorCount,properties.disks[0].initializeParams.diskSizeGb,properties.disks[0].initializeParams.diskType)"
+2026-05-15 14:56:23,317 INFO     ___FILE_ONLY___ custom-24-65536	nvidia-tesla-t4	1	2000	pd-ssd
+
+2026-05-15 14:56:23,322 DEBUG    root            Checking for updates...
+2026-05-15 14:56:23,323 DEBUG    root            On GCE from memory cache: False
+2026-05-15 14:56:23,324 DEBUG    root            On GCE from memory cache: False
+2026-05-15 14:56:23,324 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-05-15 14:56:23,471 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 25078
+2026-05-15 14:56:23,518 DEBUG    root            Metrics reporting process started...

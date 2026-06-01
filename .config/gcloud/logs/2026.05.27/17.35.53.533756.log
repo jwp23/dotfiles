@@ -1,0 +1,39 @@
+2026-05-27 17:35:53,580 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 17:35:53,584 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-27 17:35:53,587 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'delete']
+2026-05-27 17:35:53,589 DEBUG    root            Running [gcloud.compute.instance-templates.delete] with arguments: [--project: "env-integration-fenway", --quiet: "True", NAME:1: "['artillery-loadgen-tpl']"]
+2026-05-27 17:35:53,591 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:35:53,594 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:35:53,780 DEBUG    root            Chosen display Format:list[title="The following instance templates will be deleted:",always-display-title]
+2026-05-27 17:35:53,794 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 17:35:54,103 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "DELETE /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl?alt=json HTTP/1.1" 404 None
+2026-05-27 17:35:54,106 DEBUG    root            Chosen display Format:list[title="Could not fetch resource:",always-display-title]
+2026-05-27 17:35:54,106 DEBUG    root            (gcloud.compute.instance-templates.delete) Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_templates/delete.py", line 76, in Run
+    return client.MakeRequests(requests)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 156, in MakeRequests
+    utils.RaiseToolException(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        errors, error_message='Could not fetch resource:')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 136, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 145, in RaiseException
+    raise exception(
+        ConstructList(error_message or 'Some requests did not succeed:',
+                      ParseErrors(errors)))
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+
+2026-05-27 17:35:54,109 ERROR    root            (gcloud.compute.instance-templates.delete) Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+
+2026-05-27 17:35:54,121 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,59 @@
+2026-05-26 20:01:36,748 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-26 20:01:36,753 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-26 20:01:39,377 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'create']
+2026-05-26 20:01:40,240 DEBUG    root            Running [gcloud.compute.instance-templates.create] with arguments: [--accelerator: "OrderedDict({'count': 1, 'type': 'nvidia-tesla-t4'})", --boot-disk-auto-delete: "True", --boot-disk-size: "2147483648000", --boot-disk-type: "pd-ssd", --image-family: "artillery-loadgen-gpu", --image-project: "env-integration-fenway", --machine-type: "n1-custom-24-65536", --maintenance-policy: "TERMINATE", --metadata: "OrderedDict({'scenario-bucket': 'artillery-loadgen-scenarios-env-integration-fenway', 'results-bucket': 'artillery-loadgen-results-env-integration-fenway', 'run-id': '20260527T030134Z', 'env': 'integration'})", --metadata-from-file: "OrderedDict({'startup-script': 'infra/startup.sh'})", --network: "default", --no-preemptible: "False", --no-restart-on-failure: "False", --project: "env-integration-fenway", --scopes: "['cloud-platform']", --service-account: "loadgen-mig@env-integration-fenway.iam.gserviceaccount.com", --subnet: "default", NAME: "artillery-loadgen-tpl"]
+2026-05-26 20:01:40,246 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:01:40,600 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-26 20:01:40,600 DEBUG    root            On GCE from server: False
+2026-05-26 20:01:40,611 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:01:40,612 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:01:40,612 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-26 20:01:40,633 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-26 20:01:40,826 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-26 20:01:40,841 DEBUG    root            (gcloud.compute.instance-templates.create) Underspecified resource [default]. Specify the [--region] flag.
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_templates/create.py", line 1281, in Run
+    return _RunCreate(
+        base_classes.ComputeApiHolder(base.ReleaseTrack.GA),
+    ...<29 lines>...
+        support_alias_ipv6_ranges=self._support_alias_ipv6_ranges,
+    )
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_templates/create.py", line 744, in _RunCreate
+    instance_template_utils.CreateNetworkInterfaceMessage(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        resources=compute_api.resources,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<19 lines>...
+        internal_ipv6_prefix_length=internal_ipv6_prefix_length,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/instance_template_utils.py", line 122, in CreateNetworkInterfaceMessage
+    subnet_ref = subnet_flags.SubnetworkResolver().ResolveResources(
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        [subnet],
+        ^^^^^^^^^
+    ...<2 lines>...
+        resources,
+        ^^^^^^^^^^
+        scope_lister=scope_lister)[0]
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/compute/flags.py", line 616, in ResolveResources
+    self._ResolveUnderspecifiedNames(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        underspecified_names,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        api_resource_registry,
+        ^^^^^^^^^^^^^^^^^^^^^^
+        with_project=with_project)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/command_lib/compute/flags.py", line 493, in _ResolveUnderspecifiedNames
+    raise UnderSpecifiedResourceError(names, [s.flag for s in self.scopes])
+googlecloudsdk.command_lib.compute.flags.UnderSpecifiedResourceError: Underspecified resource [default]. Specify the [--region] flag.
+2026-05-26 20:01:40,847 ERROR    root            (gcloud.compute.instance-templates.create) Underspecified resource [default]. Specify the [--region] flag.
+2026-05-26 20:01:40,869 DEBUG    root            Metrics reporting process started...

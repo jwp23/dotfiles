@@ -1,0 +1,51 @@
+2026-05-27 19:41:14,719 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 19:41:14,731 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-27 19:41:14,734 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-27 19:41:14,735 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "json(properties.metadata.items)", NAME: "artillery-loadgen-tpl"]
+2026-05-27 19:41:14,737 DEBUG    root            On GCE from memory cache: False
+2026-05-27 19:41:14,739 DEBUG    root            On GCE from memory cache: False
+2026-05-27 19:41:14,745 DEBUG    root            On GCE from memory cache: False
+2026-05-27 19:41:14,745 DEBUG    root            On GCE from memory cache: False
+2026-05-27 19:41:14,746 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-27 19:41:14,750 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-27 19:41:14,893 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-27 19:41:14,985 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 19:41:15,279 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl?alt=json HTTP/1.1" 404 None
+2026-05-27 19:41:15,280 DEBUG    root            Chosen display Format:list[title="Could not fetch resource:",always-display-title]
+2026-05-27 19:41:15,280 DEBUG    root            (gcloud.compute.instance-templates.describe) Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_templates/describe.py", line 103, in Run
+    return client.MakeRequests([(
+           ~~~~~~~~~~~~~~~~~~~^^^
+        service_client,
+        ^^^^^^^^^^^^^^^
+        'Get',
+        ^^^^^^
+        request_message(**instance_template_ref.AsDict()),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )])[0]
+    ^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 156, in MakeRequests
+    utils.RaiseToolException(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        errors, error_message='Could not fetch resource:')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 136, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 145, in RaiseException
+    raise exception(
+        ConstructList(error_message or 'Some requests did not succeed:',
+                      ParseErrors(errors)))
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+
+2026-05-27 19:41:15,284 ERROR    root            (gcloud.compute.instance-templates.describe) Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+
+2026-05-27 19:41:15,295 DEBUG    root            Metrics reporting process started...

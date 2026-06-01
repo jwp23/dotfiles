@@ -1,0 +1,204 @@
+2026-05-29 15:18:43,095 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-29 15:18:43,098 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'machine_types']
+2026-05-29 15:18:43,099 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'machine-types', 'list']
+2026-05-29 15:18:43,100 DEBUG    root            Running [gcloud.compute.machine-types.list] with arguments: [--filter: "name~^g4- AND zone~us-south1", --project: "env-integration-fenway", --sort-by: "['cpus']"]
+2026-05-29 15:18:43,102 DEBUG    root            On GCE from memory cache: False
+2026-05-29 15:18:43,103 DEBUG    root            On GCE from memory cache: False
+2026-05-29 15:18:43,203 INFO     root            client_filter=None server_filter='(name eq ".*(^g4-).*")(zone eq ".*(us-south1).*")'
+2026-05-29 15:18:43,203 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      guestCpus:label=CPUS,
+      memoryMb.size(units_in=MiB, units_out=GiB, precision=2):label=MEMORY_GB,
+      deprecated.state:label=DEPRECATED
+    )
+:(cpus:sort=1)
+2026-05-29 15:18:43,210 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-29 15:18:43,653 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:44,052 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHQBwAAAAAAABISChB4NC05NjAtMTZ0LW1ldGFs&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:44,453 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHRBwAAAAAAABIRCg90MmQtc3RhbmRhcmQtNjA%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:45,333 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHSBwAAAAAAABISChB4NC05NjAtMTJ0LW1ldGFs&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:45,735 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxE1CAAAAAAAABIRCg9jMy1zdGFuZGFyZC0xNzY%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:46,169 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxE3CAAAAAAAABIQCg5jM2QtaGlnaG1lbS0xNg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:46,587 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxE4CAAAAAAAABIRCg9jNC1zdGFuZGFyZC0xNDQ%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:47,005 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGiCAAAAAAAABIOCgxlMi1oaWdobWVtLTg%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:47,403 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGjCAAAAAAAABIQCg5uMmQtaGlnaGNwdS0zMg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:47,736 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGkCAAAAAAAABIRCg9uNGQtc3RhbmRhcmQtNDg%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:48,116 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGtCAAAAAAAABIQCg5tMy11bHRyYW1lbS0zMg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:48,571 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxG3CAAAAAAAABIWChRjM2QtaGlnaG1lbS0zNjAtbHNzZA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:48,884 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxG5CAAAAAAAABIPCg1jNC1oaWdobWVtLTE2&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:49,211 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxG6CAAAAAAAABIPCg1jNGEtaGlnaGNwdS0x&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:49,614 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHLCAAAAAAAABIPCg1jMmQtaGlnaGNwdS00&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:50,011 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHMCAAAAAAAABIQCg5jNGQtaGlnaGNwdS00OA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:50,428 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHUCAAAAAAAABIOCgxuMS1oaWdobWVtLTg%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:50,709 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHVCAAAAAAAABIOCgxuMi1oaWdoY3B1LTQ%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:51,035 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHWCAAAAAAAABIPCg1uMmQtaGlnaGNwdS04&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:51,375 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHeCAAAAAAAABIRCg9uMmQtc3RhbmRhcmQtOTY%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:51,809 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHfCAAAAAAAABIPCg1uNC1zdGFuZGFyZC0y&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:52,133 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHgCAAAAAAAABIRCg9uNGEtc3RhbmRhcmQtMzI%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:52,455 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHpCAAAAAAAABIQCg5uMmQtc3RhbmRhcmQtNA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:52,958 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHyCAAAAAAAABIPCg1uMi1oaWdobWVtLTgw&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:53,279 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHzCAAAAAAAABIQCg50MmQtc3RhbmRhcmQtMg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:53,735 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxH8CAAAAAAAABITChFjNC1oaWdobWVtLTgtbHNzZA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:54,212 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxH9CAAAAAAAABIQCg5lMi1zdGFuZGFyZC0zMg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:54,503 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxH-CAAAAAAAABIQCg5uMS1zdGFuZGFyZC0xNg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:54,839 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEHCQAAAAAAABIPCg1uMS1oaWdobWVtLTk2&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:55,256 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEQCQAAAAAAABIVChNjNGEtc3RhbmRhcmQtOC1sc3Nk&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:55,786 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxERCQAAAAAAABIPCg1uNC1oaWdoY3B1LTE2&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:56,146 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEaCQAAAAAAABIQCg5jMmQtaGlnaG1lbS0zMg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:56,614 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEbCQAAAAAAABIRCg9uMmQtc3RhbmRhcmQtNDg%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:57,024 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEkCQAAAAAAABIQCg5uMS1zdGFuZGFyZC05Ng%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:57,344 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxElCQAAAAAAABIPCg1uMS1oaWdobWVtLTk2&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:57,658 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEmCQAAAAAAABIOCgxuMS1oaWdobWVtLTQ%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:58,049 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEvCQAAAAAAABIOCgxlMi1oaWdobWVtLTg%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:58,584 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxE4CQAAAAAAABIPCg1lMi1oaWdoY3B1LTE2&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:59,017 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxE6CQAAAAAAABIOCgxlMi1oaWdobWVtLTQ%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:59,381 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxFECQAAAAAAABIUChJjNC1oaWdobWVtLTQ4LWxzc2Q%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:18:59,747 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxFNCQAAAAAAABIKCghmMS1taWNybw%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:00,216 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxFWCQAAAAAAABIQCg5uNC1zdGFuZGFyZC04MA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:00,688 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxFqCQAAAAAAABIVChNjNC1zdGFuZGFyZC05Ni1sc3Nk&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:01,083 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxFsCQAAAAAAABIOCgxuMS1oaWdobWVtLTg%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:01,534 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxF1CQAAAAAAABIQCg5uMmQtaGlnaG1lbS0zMg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:01,981 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxF-CQAAAAAAABIPCg1uNC1zdGFuZGFyZC00&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:02,356 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGACQAAAAAAABIOCgxjNC1oaWdoY3B1LTg%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:02,636 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGICQAAAAAAABIPCg1uNC1oaWdobWVtLTgw&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:02,977 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGSCQAAAAAAABIQCg5lMi1zdGFuZGFyZC0xNg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:03,298 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGUCQAAAAAAABIQCg5uNC1zdGFuZGFyZC0xNg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:03,675 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGeCQAAAAAAABIQCg5jMmQtaGlnaG1lbS01Ng%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:04,122 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGnCQAAAAAAABIVChNjNC1oaWdobWVtLTE5Mi1sc3Nk&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:04,552 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGwCQAAAAAAABIPCg1jNGEtaGlnaG1lbS04&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:04,836 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxGyCQAAAAAAABIOCgxuMS1oaWdobWVtLTg%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:05,177 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxG7CQAAAAAAABIPCg1uMmQtaGlnaG1lbS00&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:05,597 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHPCQAAAAAAABIPCg1uMmQtaGlnaG1lbS04&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:05,994 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHZCQAAAAAAABIPCg1uMi1oaWdoY3B1LTY0&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:06,425 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHiCQAAAAAAABIPCg1uMmQtaGlnaGNwdS00&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:06,747 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHkCQAAAAAAABIQCg5jM2Qtc3RhbmRhcmQtNA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:07,164 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxHsCQAAAAAAABIQCg5uMmQtaGlnaG1lbS02NA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:07,476 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxH2CQAAAAAAABIQCg50MmQtc3RhbmRhcmQtMQ%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:07,790 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxH4CQAAAAAAABIRCg90MmQtc3RhbmRhcmQtMzI%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:08,129 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxECCgAAAAAAABIPCg1uMmQtaGlnaG1lbS00&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:08,440 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEVCgAAAAAAABIPCg1uMmQtaGlnaGNwdS04&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:08,941 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEgCgAAAAAAABIQCg5uMi1zdGFuZGFyZC00OA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:09,301 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEqCgAAAAAAABIPCg1jMmQtaGlnaGNwdS00&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:09,727 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxEzCgAAAAAAABIQCg5uNC1zdGFuZGFyZC0xNg%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:10,172 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxFRCgAAAAAAABIQCg5jNGEtc3RhbmRhcmQtNA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:10,610 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/machineTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxFcCgAAAAAAABIQCg5jNC1oaWdobWVtLTE0NA%3D%3D&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:10,622 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      guestCpus:label=CPUS,
+      memoryMb.size(units_in=MiB, units_out=GiB, precision=2):label=MEMORY_GB,
+      deprecated.state:label=DEPRECATED
+    )
+:(cpus:sort=1)"
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ NAME
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___              
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ ZONE
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___          
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ CPUS
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ MEMORY_GB
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ g4-standard-192
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ 192
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ 720.00
+2026-05-29 15:19:10,624 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ g4-standard-384
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 384
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 1440.00
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ g4-standard-48
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 48
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___     
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 180.00
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ g4-standard-96
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 96
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___     
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 360.00
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ g4-standard-12
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 12
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___     
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 45.00
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ g4-standard-192
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 192
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 720.00
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___ g4-standard-24
+2026-05-29 15:19:10,625 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 24
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___     
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 90.00
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ g4-standard-384
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 384
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 1440.00
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ g4-standard-48
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 48
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___     
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 180.00
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ g4-standard-6
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___     
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 6
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___      
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 22.00
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___ g4-standard-96
+2026-05-29 15:19:10,626 INFO     ___FILE_ONLY___    
+2026-05-29 15:19:10,627 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:10,627 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:10,627 INFO     ___FILE_ONLY___ 96
+2026-05-29 15:19:10,627 INFO     ___FILE_ONLY___     
+2026-05-29 15:19:10,627 INFO     ___FILE_ONLY___ 360.00
+2026-05-29 15:19:10,627 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:10,641 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,79 @@
+2026-05-07 16:16:05,053 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-05-07 16:16:05,105 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:16:05,404 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'cp']
+2026-05-07 16:16:05,407 DEBUG    root            Running [gcloud.storage.cp] with arguments: [-R: "True", DESTINATION: "gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/", SOURCE:1: "['/var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/.']"]
+2026-05-07 16:16:05,418 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:16:05,434 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-05-07 16:16:05,695 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/storageLayout?alt=json HTTP/1.1" 200 161
+2026-05-07 16:16:05,800 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o/integration%2F20260507T222135Z%2F?alt=json&fields=bucket%2Cname%2Csize%2Cgeneration&projection=noAcl HTTP/1.1" 404 367
+2026-05-07 16:16:05,905 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o?alt=json&fields=prefixes%2Citems%2Fname%2Citems%2Fsize%2Citems%2Fgeneration%2CnextPageToken&delimiter=%2F&includeFoldersAsPrefixes=True&maxResults=1000&prefix=integration%2F20260507T222135Z&projection=noAcl HTTP/1.1" 200 60
+2026-05-07 16:16:06,007 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o/integration%2F20260507T222135Z%2F?alt=json&fields=bucket%2Cname%2Csize%2Cgeneration&projection=noAcl HTTP/1.1" 404 367
+2026-05-07 16:16:06,124 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o?alt=json&fields=prefixes%2Citems%2Fname%2Citems%2Fsize%2Citems%2Fgeneration%2CnextPageToken&delimiter=%2F&maxResults=1000&prefix=integration%2F20260507T222135Z&projection=noAcl HTTP/1.1" 200 60
+2026-05-07 16:16:06,126 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/cold-launch.yml to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/cold-launch.yml
+
+2026-05-07 16:16:06,127 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/base.yml to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/base.yml
+
+2026-05-07 16:16:06,128 INFO     root            Using high CPU count, multi-file workload config.
+2026-05-07 16:16:06,145 INFO     ___FILE_ONLY___   Completed files 0 | 0B
+2026-05-07 16:16:06,147 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/exams.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/exams.test.ts
+
+2026-05-07 16:16:06,148 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/image-load-counter.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/image-load-counter.ts
+
+2026-05-07 16:16:06,148 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/canvas-pixel-polling.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/canvas-pixel-polling.ts
+
+2026-05-07 16:16:06,148 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/auth.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/auth.test.ts
+
+2026-05-07 16:16:06,148 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/screenshot.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/screenshot.ts
+
+2026-05-07 16:16:06,148 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/scenario-teardown.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/scenario-teardown.ts
+
+2026-05-07 16:16:06,148 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/viewer-context.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/viewer-context.ts
+
+2026-05-07 16:16:06,149 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/perf-timing.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/perf-timing.test.ts
+
+2026-05-07 16:16:06,149 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/draw-fps-sampler.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/draw-fps-sampler.ts
+
+2026-05-07 16:16:06,149 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/cold-launch.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/cold-launch.ts
+
+2026-05-07 16:16:06,149 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/console-capture.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/console-capture.ts
+
+2026-05-07 16:16:06,149 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/launch-args.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/launch-args.test.ts
+
+2026-05-07 16:16:06,150 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/exams.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/exams.ts
+
+2026-05-07 16:16:06,150 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/warm-launch.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/warm-launch.ts
+
+2026-05-07 16:16:06,150 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/healthcheck.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/healthcheck.ts
+
+2026-05-07 16:16:06,150 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/vertex-verifier.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/vertex-verifier.test.ts
+
+2026-05-07 16:16:06,150 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/scenario-teardown.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/scenario-teardown.test.ts
+
+2026-05-07 16:16:06,151 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/screenshot.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/screenshot.test.ts
+
+2026-05-07 16:16:06,151 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/fill-screen.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/fill-screen.ts
+
+2026-05-07 16:16:06,151 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/launch-args.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/launch-args.ts
+
+2026-05-07 16:16:06,151 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/image-load-counter.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/image-load-counter.test.ts
+
+2026-05-07 16:16:06,151 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/perf-timing.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/perf-timing.ts
+
+2026-05-07 16:16:06,151 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/canvas-pixel-polling.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/canvas-pixel-polling.test.ts
+
+2026-05-07 16:16:06,151 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/first-image-strategy.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/first-image-strategy.ts
+
+2026-05-07 16:16:06,152 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/vertex-verifier.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/vertex-verifier.ts
+
+2026-05-07 16:16:06,152 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/auth.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/auth.ts
+
+2026-05-07 16:16:06,152 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/draw-fps-sampler.test.ts to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/draw-fps-sampler.test.ts
+
+2026-05-07 16:16:06,152 INFO     ___FILE_ONLY___ Copying file:///var/folders/70/wktf1dwn5p9fbrp6j5ggl1nm0000gn/T/tmp.vJ26YLWzDU/processors/dist/package.json to gs://artillery-loadgen-scenarios-env-integration-fenway/integration/20260507T222135Z/tmp.vJ26YLWzDU/processors/dist/package.json
+
+2026-05-07 16:16:08,594 INFO     ___FILE_ONLY___ 
+Average throughput: 366.3kiB/s
+
+2026-05-07 16:16:08,595 DEBUG    root            Chosen display Format:default
+2026-05-07 16:16:08,596 INFO     root            Display format: "default"
+2026-05-07 16:16:08,602 DEBUG    root            Metrics reporting process started...

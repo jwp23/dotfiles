@@ -1,0 +1,12 @@
+2026-05-05 18:00:57,852 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2026-05-05 18:00:57,872 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'create']
+2026-05-05 18:00:57,879 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:57,881 DEBUG    root            Running [gcloud.secrets.create] with arguments: [--project: "env-integration-fenway", --replication-policy: "automatic", SECRET: "grafana-otlp-endpoint"]
+2026-05-05 18:00:57,883 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:57,897 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2026-05-05 18:00:58,658 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "POST /v1/projects/env-integration-fenway/secrets?alt=json&secretId=grafana-otlp-endpoint HTTP/1.1" 200 None
+2026-05-05 18:00:58,659 INFO     ___FILE_ONLY___ Created secret [grafana-otlp-endpoint].
+
+2026-05-05 18:00:58,659 DEBUG    root            Chosen display Format:none
+2026-05-05 18:00:58,659 INFO     root            Display format: "none"
+2026-05-05 18:00:58,695 DEBUG    root            Metrics reporting process started...

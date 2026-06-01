@@ -1,0 +1,18 @@
+2026-05-14 13:49:22,860 DEBUG    root            Loaded Command Group: ['gcloud', 'monitoring']
+2026-05-14 13:49:22,862 DEBUG    root            Loaded Command Group: ['gcloud', 'monitoring', 'dashboards']
+2026-05-14 13:49:22,884 DEBUG    root            Loaded Command Group: ['gcloud', 'monitoring', 'dashboards', 'list']
+2026-05-14 13:49:22,890 DEBUG    root            Running [gcloud.monitoring.dashboards.list] with arguments: [--filter: "displayName="Viewer - Customer Experience"", --format: "value(name,displayName)", --project: "idg-platform"]
+2026-05-14 13:49:22,892 DEBUG    root            On GCE from memory cache: False
+2026-05-14 13:49:22,896 DEBUG    root            On GCE from memory cache: False
+2026-05-14 13:49:22,906 DEBUG    root            On GCE from memory cache: False
+2026-05-14 13:49:22,906 DEBUG    root            On GCE from memory cache: False
+2026-05-14 13:49:22,907 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-14 13:49:22,911 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-14 13:49:23,054 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-14 13:49:23,056 DEBUG    root            Chosen display Format:default value(name,displayName)
+2026-05-14 13:49:23,056 INFO     root            Display format: "default value(name,displayName)"
+2026-05-14 13:49:23,057 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): monitoring.googleapis.com:443
+2026-05-14 13:49:23,357 DEBUG    urllib3.connectionpool https://monitoring.googleapis.com:443 "GET /v1/projects/idg-platform/dashboards?alt=json HTTP/1.1" 200 None
+2026-05-14 13:49:23,534 INFO     ___FILE_ONLY___ projects/581743198617/dashboards/ad232e07-7fb3-4e67-ba9e-eb2cf6e04d24	Viewer - Customer Experience
+
+2026-05-14 13:49:23,570 DEBUG    root            Metrics reporting process started...

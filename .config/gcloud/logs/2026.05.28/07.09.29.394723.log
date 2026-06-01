@@ -1,0 +1,24 @@
+2026-05-28 07:09:29,502 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:09:29,505 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-28 07:09:29,508 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'list']
+2026-05-28 07:09:29,510 DEBUG    root            Running [gcloud.compute.instance-templates.list] with arguments: [--filter: "name~artillery OR name~loadgen", --format: "value(name,creationTimestamp)"]
+2026-05-28 07:09:29,512 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:29,514 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:29,702 INFO     root            client_filter='name~artillery OR name~loadgen' server_filter=None
+2026-05-28 07:09:29,703 DEBUG    root            Chosen display Format:    table(
+      name,
+      properties.machineType.machine_type(),
+      properties.scheduling.preemptible.yesno(yes=true, no=''),
+      creationTimestamp
+    ) value(name,creationTimestamp)
+2026-05-28 07:09:29,704 INFO     root            Display format: "    table(
+      name,
+      properties.machineType.machine_type(),
+      properties.scheduling.preemptible.yesno(yes=true, no=''),
+      creationTimestamp
+    ) value(name,creationTimestamp)"
+2026-05-28 07:09:29,713 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:09:30,285 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instanceTemplates?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 07:09:30,723 INFO     ___FILE_ONLY___ artillery-loadgen-tpl-fenway	2026-05-27T22:26:35.285-07:00
+
+2026-05-28 07:09:30,740 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,41 @@
+2026-05-07 17:26:38,923 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2026-05-07 17:26:38,934 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'describe']
+2026-05-07 17:26:38,940 DEBUG    root            Running [gcloud.secrets.describe] with arguments: [--project: "env-integration-fenway", SECRET: "google-vertex-api-key"]
+2026-05-07 17:26:38,940 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:26:38,941 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:26:38,951 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2026-05-07 17:26:39,158 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "GET /v1/projects/env-integration-fenway/secrets/google-vertex-api-key?alt=json HTTP/1.1" 200 None
+2026-05-07 17:26:39,161 DEBUG    root            Chosen display Format:default
+2026-05-07 17:26:39,162 INFO     root            Display format: "default"
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___ createTime
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___  '
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___ 2026-05-06T01:01:04.812932Z
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___ '
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___ etag
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___  '
+2026-05-07 17:26:39,189 INFO     ___FILE_ONLY___ "16511bb2c2e416"
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ '
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ name
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ projects/386659319067/secrets/google-vertex-api-key
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ replication
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___   
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ automatic
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___  {
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ }
+2026-05-07 17:26:39,190 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:39,198 DEBUG    root            Metrics reporting process started...

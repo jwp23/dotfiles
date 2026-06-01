@@ -1,0 +1,46 @@
+2026-05-26 19:36:32,117 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-26 19:36:32,120 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-26 19:36:32,123 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-26 19:36:32,125 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--project: "env-integration-fenway", NAME: "artillery-loadgen-tpl"]
+2026-05-26 19:36:32,127 DEBUG    root            On GCE from memory cache: False
+2026-05-26 19:36:32,129 DEBUG    root            On GCE from memory cache: False
+2026-05-26 19:36:32,274 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-26 19:36:32,625 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl?alt=json HTTP/1.1" 404 None
+2026-05-26 19:36:32,630 DEBUG    root            Chosen display Format:list[title="Could not fetch resource:",always-display-title]
+2026-05-26 19:36:32,630 DEBUG    root            (gcloud.compute.instance-templates.describe) Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_templates/describe.py", line 103, in Run
+    return client.MakeRequests([(
+           ~~~~~~~~~~~~~~~~~~~^^^
+        service_client,
+        ^^^^^^^^^^^^^^^
+        'Get',
+        ^^^^^^
+        request_message(**instance_template_ref.AsDict()),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )])[0]
+    ^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 156, in MakeRequests
+    utils.RaiseToolException(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        errors, error_message='Could not fetch resource:')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 136, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 145, in RaiseException
+    raise exception(
+        ConstructList(error_message or 'Some requests did not succeed:',
+                      ParseErrors(errors)))
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+
+2026-05-26 19:36:32,640 ERROR    root            (gcloud.compute.instance-templates.describe) Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl' was not found
+
+2026-05-26 19:36:32,654 DEBUG    root            Metrics reporting process started...

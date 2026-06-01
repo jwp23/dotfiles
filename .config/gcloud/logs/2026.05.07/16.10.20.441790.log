@@ -1,0 +1,13 @@
+2026-05-07 16:10:20,505 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-07 16:10:20,508 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-07 16:10:20,510 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-07 16:10:20,511 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "value(properties.metadata.items[].key)", NAME: "artillery-loadgen-tpl"]
+2026-05-07 16:10:20,513 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:10:20,515 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:10:20,608 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-07 16:10:20,922 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl?alt=json HTTP/1.1" 200 None
+2026-05-07 16:10:20,932 DEBUG    root            Chosen display Format:default value(properties.metadata.items[].key)
+2026-05-07 16:10:20,933 INFO     root            Display format: "default value(properties.metadata.items[].key)"
+2026-05-07 16:10:20,949 INFO     ___FILE_ONLY___ env;results-bucket;run-id;scenario-bucket;scenario-version;startup-script;target-url
+
+2026-05-07 16:10:20,963 DEBUG    root            Metrics reporting process started...

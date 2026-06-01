@@ -1,0 +1,96 @@
+2026-05-05 18:00:41,430 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2026-05-05 18:00:41,430 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles']
+2026-05-05 18:00:41,440 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles', 'create']
+2026-05-05 18:00:41,441 DEBUG    root            Running [gcloud.iam.roles.create] with arguments: [--description: "Lets the load-generator MIG SA delete its own GCE instance after a run.", --permissions: "compute.instances.delete,compute.zoneOperations.get", --project: "env-integration-fenway", --stage: "GA", --title: "Load-generator self-delete", ROLE_ID: "loadgenSelfDelete"]
+2026-05-05 18:00:41,443 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:41,444 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:41,459 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2026-05-05 18:00:42,131 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:42,704 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:43,390 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:43,852 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:44,505 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:44,947 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:45,524 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:46,022 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:46,718 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:47,370 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:48,022 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:48,671 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:49,217 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:49,634 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/env-integration-fenway/roles?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:49,635 INFO     ___FILE_ONLY___ Created role [loadgenSelfDelete].
+
+2026-05-05 18:00:49,637 DEBUG    root            Chosen display Format:default
+2026-05-05 18:00:49,638 INFO     root            Display format: "default"
+2026-05-05 18:00:49,669 INFO     ___FILE_ONLY___ description
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ :
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ Lets
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ the
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ load-generator
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ MIG
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ SA
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ delete
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ its
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ own
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ GCE
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ instance
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ after
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ a
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ run.
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ 
+
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ etag
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ :
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ BwZRG7HSVhQ=
+2026-05-05 18:00:49,670 INFO     ___FILE_ONLY___ 
+
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ includedPermissions
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ :
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ 
+
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ -
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ compute.instances.delete
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ 
+
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ -
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ compute.zoneOperations.get
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ 
+
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ name
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ :
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ projects/env-integration-fenway/roles/loadgenSelfDelete
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ 
+
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ stage
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ :
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ GA
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ 
+
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ title
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ :
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ Load-generator
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___  
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ self-delete
+2026-05-05 18:00:49,671 INFO     ___FILE_ONLY___ 
+
+2026-05-05 18:00:49,684 DEBUG    root            Metrics reporting process started...

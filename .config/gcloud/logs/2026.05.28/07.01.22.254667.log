@@ -1,0 +1,13 @@
+2026-05-28 07:01:22,434 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:01:22,450 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-28 07:01:22,453 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'describe']
+2026-05-28 07:01:22,455 DEBUG    root            Running [gcloud.compute.images.describe] with arguments: [--format: "value(creationTimestamp,description,name)", --project: "env-integration-fenway", IMAGE_NAME: "artillery-loadgen-gpu-1778189997"]
+2026-05-28 07:01:22,457 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:01:22,459 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:01:22,665 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:01:22,928 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/images/artillery-loadgen-gpu-1778189997?alt=json HTTP/1.1" 200 None
+2026-05-28 07:01:22,929 DEBUG    root            Chosen display Format:default value(creationTimestamp,description,name)
+2026-05-28 07:01:22,930 INFO     root            Display format: "default value(creationTimestamp,description,name)"
+2026-05-28 07:01:23,212 INFO     ___FILE_ONLY___ 2026-05-07T14:49:26.832-07:00	Artillery + Playwright + Chromium with T4 GPU support (vfps-m1zxd.1)	artillery-loadgen-gpu-1778189997
+
+2026-05-28 07:01:23,421 DEBUG    root            Metrics reporting process started...

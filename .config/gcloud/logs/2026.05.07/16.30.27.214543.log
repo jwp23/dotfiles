@@ -1,0 +1,47 @@
+2026-05-07 16:30:27,272 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-07 16:30:27,275 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-07 16:30:27,277 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'delete']
+2026-05-07 16:30:27,278 DEBUG    root            Running [gcloud.compute.instances.delete] with arguments: [--quiet: "True", --zone: "us-central1-c", INSTANCE_NAMES:1: "['loadgen-sgw6']"]
+2026-05-07 16:30:27,280 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:30:27,282 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:30:27,374 DEBUG    root            Chosen display Format:list[title="The following instances will be deleted. Any attached disks configured to be auto-deleted will be deleted unless they are attached to any other instances or the `--keep-disks` flag is given and specifies them for keeping. Deleting a disk is irreversible and any data on the disk will be lost.",always-display-title]
+2026-05-07 16:30:27,379 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-07 16:30:27,940 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "DELETE /compute/v1/projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-sgw6?alt=json HTTP/1.1" 200 None
+2026-05-07 16:30:27,948 DEBUG    root            Operations to inspect: [(<Operation
+ id: 4644267514561339004
+ insertTime: '2026-05-07T16:30:27.888-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1778196627724-65142aa561a4a-dedb78ae-04694b9f'
+ operationType: 'delete'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-c/operations/operation-1778196627724-65142aa561a4a-dedb78ae-04694b9f'
+ startTime: '2026-05-07T16:30:27.908-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 1108822093452059605
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-sgw6'
+ user: 'jpresley@synthesis.health'
+ warnings: []
+ zone: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-c'>, 3)]
+2026-05-07 16:31:20,197 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/zones/us-central1-c/operations/operation-1778196627724-65142aa561a4a-dedb78ae-04694b9f/wait?alt=json HTTP/1.1" 200 None
+2026-05-07 16:31:20,206 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2026-05-07T16:31:20.125-07:00'
+ id: 4644267514561339004
+ insertTime: '2026-05-07T16:30:27.888-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1778196627724-65142aa561a4a-dedb78ae-04694b9f'
+ operationType: 'delete'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-c/operations/operation-1778196627724-65142aa561a4a-dedb78ae-04694b9f'
+ startTime: '2026-05-07T16:30:27.908-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 1108822093452059605
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-sgw6'
+ user: 'jpresley@synthesis.health'
+ warnings: []
+ zone: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-c'>, 3)]
+2026-05-07 16:31:20,206 INFO     ___FILE_ONLY___ Deleted [https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-sgw6].
+
+2026-05-07 16:31:20,207 DEBUG    root            Chosen display Format:none
+2026-05-07 16:31:20,208 INFO     root            Display format: "none"
+2026-05-07 16:31:20,213 INFO     root            cache collection=compute.instances api_version=v1 params=['project', 'zone', 'instance']
+2026-05-07 16:31:20,254 DEBUG    root            Metrics reporting process started...

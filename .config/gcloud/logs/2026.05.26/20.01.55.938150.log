@@ -1,0 +1,13 @@
+2026-05-26 20:01:56,030 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-26 20:01:56,033 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2026-05-26 20:01:56,037 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'describe']
+2026-05-26 20:01:56,038 DEBUG    root            Running [gcloud.compute.networks.describe] with arguments: [--format: "value(autoCreateSubnetworks,subnetworkRangeIpv4)", --project: "env-integration-fenway", NAME: "default"]
+2026-05-26 20:01:56,041 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:01:56,045 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:01:56,443 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-26 20:01:56,834 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/networks/default?alt=json HTTP/1.1" 200 None
+2026-05-26 20:01:56,868 DEBUG    root            Chosen display Format:default value(autoCreateSubnetworks,subnetworkRangeIpv4)
+2026-05-26 20:01:56,869 INFO     root            Display format: "default value(autoCreateSubnetworks,subnetworkRangeIpv4)"
+2026-05-26 20:01:56,869 INFO     ___FILE_ONLY___ True	
+
+2026-05-26 20:01:56,885 DEBUG    root            Metrics reporting process started...

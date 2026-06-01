@@ -1,0 +1,12 @@
+2026-05-05 18:01:29,029 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2026-05-05 18:01:29,039 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_iam_policy']
+2026-05-05 18:01:29,041 DEBUG    root            Running [gcloud.projects.get-iam-policy] with arguments: [--filter: "bindings.members:serviceAccount:loadgen-mig@env-integration-fenway.iam.gserviceaccount.com", --flatten: "['bindings[].members']", --format: "value(bindings.role)", PROJECT_ID_OR_NUMBER: "env-integration-fenway"]
+2026-05-05 18:01:29,042 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:01:29,044 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:01:29,061 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-05-05 18:01:29,508 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/env-integration-fenway:getIamPolicy?alt=json HTTP/1.1" 200 None
+2026-05-05 18:01:29,517 DEBUG    root            Chosen display Format:default value(bindings.role)
+2026-05-05 18:01:29,518 INFO     root            Display format: "default value(bindings.role)"
+2026-05-05 18:01:29,543 INFO     ___FILE_ONLY___ projects/env-integration-fenway/roles/loadgenSelfDelete
+
+2026-05-05 18:01:29,565 DEBUG    root            Metrics reporting process started...

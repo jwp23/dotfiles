@@ -1,0 +1,135 @@
+2026-05-07 15:49:19,371 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-07 15:49:19,375 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-07 15:49:19,378 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-07 15:49:19,379 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "yaml(properties.metadata)", NAME: "artillery-loadgen-tpl"]
+2026-05-07 15:49:19,381 DEBUG    root            On GCE from memory cache: False
+2026-05-07 15:49:19,383 DEBUG    root            On GCE from memory cache: False
+2026-05-07 15:49:19,477 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-07 15:49:19,891 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl?alt=json HTTP/1.1" 200 None
+2026-05-07 15:49:19,898 DEBUG    root            Chosen display Format:default yaml(properties.metadata)
+2026-05-07 15:49:19,899 INFO     root            Display format: "default yaml(properties.metadata)"
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ properties
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___   
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ metadata
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ fingerprint
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ xvB3_hJr_ZU=
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,915 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ items
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ -
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ key
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ env
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___       
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ value
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ integration
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ -
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ key
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ results-bucket
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___       
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ value
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ artillery-loadgen-results-env-integration-fenway
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ -
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ key
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ run-id
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___       
+2026-05-07 15:49:19,916 INFO     ___FILE_ONLY___ value
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ 20260507T215913Z
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ -
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ key
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ scenario-bucket
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___       
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ value
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ artillery-loadgen-scenarios-env-integration-fenway
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,917 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ -
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ key
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ scenario-version
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___       
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ value
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ v0001-placeholder
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ -
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ key
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ target-url
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___       
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ value
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ https://integration.pacs.stratus.optum.com/
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___     
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ kind
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ :
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___  
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ compute#metadata
+2026-05-07 15:49:19,918 INFO     ___FILE_ONLY___ 
+
+2026-05-07 15:49:19,930 DEBUG    root            Metrics reporting process started...

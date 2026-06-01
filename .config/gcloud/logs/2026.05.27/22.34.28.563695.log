@@ -1,0 +1,42 @@
+2026-05-27 22:34:28,630 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 22:34:28,632 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-27 22:34:28,634 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-27 22:34:28,635 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-", --format: "table(name,status,zone.basename())", --project: "env-integration-fenway"]
+2026-05-27 22:34:28,637 DEBUG    root            On GCE from memory cache: False
+2026-05-27 22:34:28,638 DEBUG    root            On GCE from memory cache: False
+2026-05-27 22:34:28,734 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-27 22:34:28,734 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,status,zone.basename())
+2026-05-27 22:34:28,735 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,status,zone.basename())"
+2026-05-27 22:34:28,740 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 22:34:29,360 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-27 22:34:29,820 INFO     ___FILE_ONLY___ NAME
+2026-05-27 22:34:29,820 INFO     ___FILE_ONLY___           
+2026-05-27 22:34:29,820 INFO     ___FILE_ONLY___ STATUS
+2026-05-27 22:34:29,820 INFO     ___FILE_ONLY___     
+2026-05-27 22:34:29,820 INFO     ___FILE_ONLY___ ZONE
+2026-05-27 22:34:29,820 INFO     ___FILE_ONLY___ 
+
+2026-05-27 22:34:29,821 INFO     ___FILE_ONLY___ loadgen-zg8p
+2026-05-27 22:34:29,821 INFO     ___FILE_ONLY___   
+2026-05-27 22:34:29,821 INFO     ___FILE_ONLY___ STOPPING
+2026-05-27 22:34:29,821 INFO     ___FILE_ONLY___   
+2026-05-27 22:34:29,821 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-27 22:34:29,821 INFO     ___FILE_ONLY___ 
+
+2026-05-27 22:34:29,830 DEBUG    root            Metrics reporting process started...

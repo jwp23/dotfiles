@@ -1,0 +1,79 @@
+2026-05-07 14:55:16,586 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2026-05-07 14:55:16,587 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2026-05-07 14:55:16,595 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'describe']
+2026-05-07 14:55:16,596 DEBUG    root            Running [gcloud.iam.service-accounts.describe] with arguments: [SERVICE_ACCOUNT: "loadgen-mig@env-integration-fenway.iam.gserviceaccount.com"]
+2026-05-07 14:55:16,598 DEBUG    root            On GCE from memory cache: False
+2026-05-07 14:55:16,599 DEBUG    root            On GCE from memory cache: False
+2026-05-07 14:55:16,609 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2026-05-07 14:55:16,823 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/projects/-/serviceAccounts/loadgen-mig@env-integration-fenway.iam.gserviceaccount.com?alt=json HTTP/1.1" 200 None
+2026-05-07 14:55:16,825 DEBUG    root            Chosen display Format:default
+2026-05-07 14:55:16,826 INFO     root            Display format: "default"
+2026-05-07 14:55:16,849 INFO     ___FILE_ONLY___ description
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ Runs
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ Artillery
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ scenarios
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ on
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ the
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ load-generator
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ MIG
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ (Epic
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ 12.4).
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ displayName
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ Load-generator
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ MIG
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ email
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ loadgen-mig@env-integration-fenway.iam.gserviceaccount.com
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ etag
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,850 INFO     ___FILE_ONLY___ MDEwMjE5MjA=
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ name
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ projects/env-integration-fenway/serviceAccounts/loadgen-mig@env-integration-fenway.iam.gserviceaccount.com
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ oauth2ClientId
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___  '
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ 113595250686775509643
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ '
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ projectId
+2026-05-07 14:55:16,851 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___ env-integration-fenway
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___ uniqueId
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___  '
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___ 113595250686775509643
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___ '
+2026-05-07 14:55:16,852 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:16,861 DEBUG    root            Metrics reporting process started...

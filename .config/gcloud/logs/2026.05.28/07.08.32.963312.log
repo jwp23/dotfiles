@@ -1,0 +1,56 @@
+2026-05-28 07:08:33,083 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:08:33,087 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-28 07:08:33,090 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-28 07:08:33,092 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~fenway", --format: "value(name,zone,status,creationTimestamp)"]
+2026-05-28 07:08:33,096 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:08:33,099 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:08:33,647 INFO     root            client_filter=None server_filter='name eq ".*(fenway).*"'
+2026-05-28 07:08:33,647 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,zone,status,creationTimestamp)
+2026-05-28 07:08:33,648 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,zone,status,creationTimestamp)"
+2026-05-28 07:08:33,722 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:08:34,363 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 07:08:34,870 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-09b424e0-w40n	us-central1-a	RUNNING	2026-05-10T22:35:33.621-07:00
+
+2026-05-28 07:08:34,871 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-09b424e0-z7ib	us-central1-a	RUNNING	2026-05-10T22:40:38.564-07:00
+
+2026-05-28 07:08:34,871 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-3b8d18c3-z44p	us-central1-a	RUNNING	2026-05-26T22:48:15.959-07:00
+
+2026-05-28 07:08:34,871 INFO     ___FILE_ONLY___ integration-fenway-cloud-hub	us-central1-a	TERMINATED	2025-11-14T06:56:34.490-08:00
+
+2026-05-28 07:08:34,872 INFO     ___FILE_ONLY___ tailscale-fenway-before-patching-20260331-131458	us-central1-a	TERMINATED	2026-03-31T06:15:13.714-07:00
+
+2026-05-28 07:08:34,874 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-0ecc5615-cyqy	us-central1-b	RUNNING	2026-05-10T22:50:49.619-07:00
+
+2026-05-28 07:08:34,875 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-0ecc5615-ixcz	us-central1-b	RUNNING	2026-05-10T22:45:47.336-07:00
+
+2026-05-28 07:08:34,875 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-a1d6f90a-4so1	us-central1-b	RUNNING	2026-05-26T22:52:06.911-07:00
+
+2026-05-28 07:08:34,877 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-b340f2d4-304b	us-central1-b	RUNNING	2026-05-10T22:06:24.873-07:00
+
+2026-05-28 07:08:34,877 INFO     ___FILE_ONLY___ gke-env-integration-fenway-monitoring-5c5aec31-sae3	us-central1-b	RUNNING	2026-05-27T20:21:24.244-07:00
+
+2026-05-28 07:08:34,880 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-f5a026af-vby7	us-central1-c	RUNNING	2026-05-11T21:08:48.007-07:00
+
+2026-05-28 07:08:34,880 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-4f8989aa-1asr	us-central1-c	RUNNING	2026-05-26T22:55:53.012-07:00
+
+2026-05-28 07:08:34,881 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-3d4634a2-tli1	us-central1-c	RUNNING	2026-05-10T22:09:51.721-07:00
+
+2026-05-28 07:08:34,881 INFO     ___FILE_ONLY___ tailscale-fenway	us-central1-c	RUNNING	2025-12-16T06:32:50.514-08:00
+
+2026-05-28 07:08:34,901 DEBUG    root            Metrics reporting process started...

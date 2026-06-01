@@ -1,0 +1,16 @@
+2026-05-26 20:09:54,500 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-26 20:09:54,505 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-26 20:09:54,507 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'get_serial_port_output']
+2026-05-26 20:09:54,509 DEBUG    root            Running [gcloud.compute.instances.get-serial-port-output] with arguments: [--project: "env-integration-fenway", --start: "496381", --zone: "us-central1-c", INSTANCE_NAME: "loadgen-gx8t"]
+2026-05-26 20:09:54,513 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:09:54,515 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:09:54,658 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-26 20:09:55,077 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-gx8t/serialPort?alt=json&port=1&start=496381 HTTP/1.1" 200 None
+2026-05-26 20:09:55,077 DEBUG    root            Chosen display Format:value[no-quote](contents)
+2026-05-26 20:09:55,078 INFO     root            Display format: "value[no-quote](contents)"
+2026-05-26 20:09:55,097 INFO     ___FILE_ONLY___ 
+
+2026-05-26 20:09:55,097 INFO     ___FILE_ONLY___ 
+Specify --start=496381 in the next get-serial-port-output invocation to get only the new output starting from here.
+
+2026-05-26 20:09:55,109 DEBUG    root            Metrics reporting process started...

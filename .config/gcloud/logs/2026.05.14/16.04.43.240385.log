@@ -1,0 +1,256 @@
+2026-05-14 16:04:43,241 DEBUG    root            Loaded Command Group: ['gcloud', 'logging']
+2026-05-14 16:04:43,250 DEBUG    root            Loaded Command Group: ['gcloud', 'logging', 'read']
+2026-05-14 16:04:43,251 DEBUG    root            Running [gcloud.logging.read] with arguments: [--format: "value(timestamp,textPayload)", --limit: "200", --project: "env-integration-fenway", LOG_FILTER: "resource.type="gce_instance" AND logName=~"serial_port" AND timestamp>="2026-05-08T00:25:00Z" AND timestamp<="2026-05-08T01:00:00Z""]
+2026-05-14 16:04:43,252 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:04:43,254 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:04:43,272 DEBUG    root            Chosen display Format:default value(timestamp,textPayload)
+2026-05-14 16:04:43,272 INFO     root            Display format: "default value(timestamp,textPayload)"
+2026-05-14 16:04:43,277 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): logging.googleapis.com:443
+2026-05-14 16:04:43,726 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:04:43,765 INFO     ___FILE_ONLY___ 2026-05-08T00:59:08.568626348Z	[507398.885353] systemd-networkd[239]: gkeaa7d7ce7944: Lost carrier\r\n
+
+2026-05-14 16:04:43,765 INFO     ___FILE_ONLY___ 2026-05-08T00:59:08.568606632Z	[507398.885086] systemd-networkd[239]: gkeaa7d7ce7944: Link DOWN\r\n
+
+2026-05-14 16:04:43,765 INFO     ___FILE_ONLY___ 2026-05-08T00:57:30.942447601Z	[508160.141127] systemd-networkd[237]: gkeeae872e9f88: Lost carrier\r\n
+
+2026-05-14 16:04:43,766 INFO     ___FILE_ONLY___ 2026-05-08T00:57:30.942428096Z	[508160.140706] systemd-networkd[237]: gkeeae872e9f88: Link DOWN\r\n
+
+2026-05-14 16:04:43,766 INFO     ___FILE_ONLY___ 2026-05-08T00:55:50.714022251Z	[507853.006358] systemd-networkd[236]: gke87e4abcd3e4: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,766 INFO     ___FILE_ONLY___ 2026-05-08T00:55:48.969845261Z	[507851.262467] systemd-networkd[236]: gke87e4abcd3e4: Gained carrier\r\n
+
+2026-05-14 16:04:43,766 INFO     ___FILE_ONLY___ 2026-05-08T00:55:48.969824049Z	[507851.261999] systemd-networkd[236]: gke87e4abcd3e4: Link UP\r\n
+
+2026-05-14 16:04:43,766 INFO     ___FILE_ONLY___ 2026-05-08T00:50:35.581251553Z	[505049.920914] systemd-networkd[251]: gke49c9aecbdf1: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,767 INFO     ___FILE_ONLY___ 2026-05-08T00:50:35.264225638Z	[506885.580786] systemd-networkd[239]: gkeaa7d7ce7944: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,767 INFO     ___FILE_ONLY___ 2026-05-08T00:50:34.099751592Z	[505048.442747] systemd-networkd[251]: gke49c9aecbdf1: Gained carrier\r\n
+
+2026-05-14 16:04:43,767 INFO     ___FILE_ONLY___ 2026-05-08T00:50:34.099720149Z	[505048.439482] systemd-networkd[251]: gke49c9aecbdf1: Link UP\r\n
+
+2026-05-14 16:04:43,767 INFO     ___FILE_ONLY___ 2026-05-08T00:50:34.037445684Z	[506884.354300] systemd-networkd[239]: gkeaa7d7ce7944: Gained carrier\r\n
+
+2026-05-14 16:04:43,768 INFO     ___FILE_ONLY___ 2026-05-08T00:50:34.037429742Z	[506884.353894] systemd-networkd[239]: gkeaa7d7ce7944: Link UP\r\n
+
+2026-05-14 16:04:43,768 INFO     ___FILE_ONLY___ 2026-05-08T00:49:02.015652446Z	[507651.214036] systemd-networkd[237]: gkeeae872e9f88: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,768 INFO     ___FILE_ONLY___ 2026-05-08T00:49:00.190405033Z	[507649.388884] systemd-networkd[237]: gkeeae872e9f88: Gained carrier\r\n
+
+2026-05-14 16:04:43,768 INFO     ___FILE_ONLY___ 2026-05-08T00:49:00.190385333Z	[507649.388611] systemd-networkd[237]: gkeeae872e9f88: Link UP\r\n
+
+2026-05-14 16:04:43,768 INFO     ___FILE_ONLY___ 2026-05-08T00:48:01.991695967Z	[505992.974831] systemd-networkd[256]: gke457cda56936: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,769 INFO     ___FILE_ONLY___ 2026-05-08T00:48:00.067762654Z	[505991.051815] systemd-networkd[256]: gke457cda56936: Gained carrier\r\n
+
+2026-05-14 16:04:43,769 INFO     ___FILE_ONLY___ 2026-05-08T00:48:00.067736226Z	[505991.050865] systemd-networkd[256]: gke457cda56936: Link UP\r\n
+
+2026-05-14 16:04:43,769 INFO     ___FILE_ONLY___ 2026-05-08T00:45:42.350374337Z	[507451.548921] systemd-networkd[237]: gke2078035dd08: Lost carrier\r\n
+
+2026-05-14 16:04:43,769 INFO     ___FILE_ONLY___ 2026-05-08T00:45:42.350355921Z	[507451.548503] systemd-networkd[237]: gke2078035dd08: Link DOWN\r\n
+
+2026-05-14 16:04:43,769 INFO     ___FILE_ONLY___ 2026-05-08T00:44:44.665234141Z	[506534.982161] systemd-networkd[239]: gke16333ad2123: Lost carrier\r\n
+
+2026-05-14 16:04:43,770 INFO     ___FILE_ONLY___ 2026-05-08T00:44:44.665216026Z	[506534.981656] systemd-networkd[239]: gke16333ad2123: Link DOWN\r\n
+
+2026-05-14 16:04:43,770 INFO     ___FILE_ONLY___ 2026-05-08T00:44:07.921440126Z	[504902.720691] systemd-networkd[231]: gke50498908e92: Lost carrier\r\n
+
+2026-05-14 16:04:43,770 INFO     ___FILE_ONLY___ 2026-05-08T00:44:07.921415434Z	[504902.720259] systemd-networkd[231]: gke50498908e92: Link DOWN\r\n
+
+2026-05-14 16:04:43,770 INFO     ___FILE_ONLY___ 2026-05-08T00:42:08.483306083Z	[326352.568088] systemd-networkd[219]: gke21de0a4303b: Lost carrier\r\n
+
+2026-05-14 16:04:43,770 INFO     ___FILE_ONLY___ 2026-05-08T00:42:08.483286176Z	[326352.567060] systemd-networkd[219]: gke21de0a4303b: Link DOWN\r\n
+
+2026-05-14 16:04:43,771 INFO     ___FILE_ONLY___ 2026-05-08T00:41:53.255539763Z	[246833.186355] systemd-networkd[204]: gked18d8f49b2c: Lost carrier\r\n
+
+2026-05-14 16:04:43,771 INFO     ___FILE_ONLY___ 2026-05-08T00:41:53.255514121Z	[246833.184688] systemd-networkd[204]: gked18d8f49b2c: Link DOWN\r\n
+
+2026-05-14 16:04:43,771 INFO     ___FILE_ONLY___ 2026-05-08T00:41:37.673841935Z	[247030.886097] systemd-networkd[228]: gkea240ff27a50: Lost carrier\r\n
+
+2026-05-14 16:04:43,771 INFO     ___FILE_ONLY___ 2026-05-08T00:41:37.673807443Z	[247030.885361] systemd-networkd[228]: gkea240ff27a50: Link DOWN\r\n
+
+2026-05-14 16:04:43,771 INFO     ___FILE_ONLY___ 2026-05-08T00:41:30.293226835Z	[326314.377584] systemd-networkd[219]: gke21de0a4303b: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,772 INFO     ___FILE_ONLY___ 2026-05-08T00:41:28.717484990Z	[326312.802308] systemd-networkd[219]: gke21de0a4303b: Gained carrier\r\n
+
+2026-05-14 16:04:43,772 INFO     ___FILE_ONLY___ 2026-05-08T00:41:28.717427801Z	[326312.801575] systemd-networkd[219]: gke21de0a4303b: Link UP\r\n
+
+2026-05-14 16:04:43,772 INFO     ___FILE_ONLY___ 2026-05-08T00:41:19.068524045Z	[246798.997788] systemd-networkd[204]: gked18d8f49b2c: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,772 INFO     ___FILE_ONLY___ 2026-05-08T00:41:17.729511679Z	[246797.666315] systemd-networkd[204]: gked18d8f49b2c: Gained carrier\r\n
+
+2026-05-14 16:04:43,772 INFO     ___FILE_ONLY___ 2026-05-08T00:41:17.729476013Z	[246797.658360] systemd-networkd[204]: gked18d8f49b2c: Link UP\r\n
+
+2026-05-14 16:04:43,773 INFO     ___FILE_ONLY___ 2026-05-08T00:41:04.873859644Z	[246998.085694] systemd-networkd[228]: gkea240ff27a50: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,773 INFO     ___FILE_ONLY___ 2026-05-08T00:41:03.727068185Z	[246996.942390] systemd-networkd[228]: gkea240ff27a50: Gained carrier\r\n
+
+2026-05-14 16:04:43,773 INFO     ___FILE_ONLY___ 2026-05-08T00:41:03.727030782Z	[246996.938637] systemd-networkd[228]: gkea240ff27a50: Link UP\r\n
+
+2026-05-14 16:04:43,773 INFO     ___FILE_ONLY___ 2026-05-08T00:40:42.261089573Z	[505553.244701] systemd-networkd[256]: gke77c8cbdd8e3: Lost carrier\r\n
+
+2026-05-14 16:04:43,773 INFO     ___FILE_ONLY___ 2026-05-08T00:40:42.261067576Z	[505553.244315] systemd-networkd[256]: gke77c8cbdd8e3: Link DOWN\r\n
+
+2026-05-14 16:04:43,774 INFO     ___FILE_ONLY___ 2026-05-08T00:40:25.486129813Z	[504439.826562] systemd-networkd[251]: gke7a5278ca2f3: Lost carrier\r\n
+
+2026-05-14 16:04:43,774 INFO     ___FILE_ONLY___ 2026-05-08T00:40:25.486092287Z	[504439.825901] systemd-networkd[251]: gke7a5278ca2f3: Link DOWN\r\n
+
+2026-05-14 16:04:43,774 INFO     ___FILE_ONLY___ 2026-05-08T00:40:13.632256008Z	[507122.830431] systemd-networkd[237]: gkef4ee8d0edb7: Lost carrier\r\n
+
+2026-05-14 16:04:43,774 INFO     ___FILE_ONLY___ 2026-05-08T00:40:13.632182259Z	[507122.829926] systemd-networkd[237]: gkef4ee8d0edb7: Link DOWN\r\n
+
+2026-05-14 16:04:43,774 INFO     ___FILE_ONLY___ 2026-05-08T00:38:50.469845053Z	[504585.268721] systemd-networkd[231]: gke50498908e92: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,775 INFO     ___FILE_ONLY___ 2026-05-08T00:38:49.054866989Z	[504583.854717] systemd-networkd[231]: gke50498908e92: Gained carrier\r\n
+
+2026-05-14 16:04:43,775 INFO     ___FILE_ONLY___ 2026-05-08T00:38:49.054845062Z	[504583.853671] systemd-networkd[231]: gke50498908e92: Link UP\r\n
+
+2026-05-14 16:04:43,775 INFO     ___FILE_ONLY___ 2026-05-08T00:36:52.991696642Z	[71874.593905] systemd-networkd[313]: gke489fad3d7e7: Lost carrier\r\n
+
+2026-05-14 16:04:43,775 INFO     ___FILE_ONLY___ 2026-05-08T00:36:52.991675601Z	[71874.593710] systemd-networkd[313]: gke489fad3d7e7: Link DOWN\r\n
+
+2026-05-14 16:04:43,776 INFO     ___FILE_ONLY___ 2026-05-08T00:36:52.741528634Z	[71874.343849] systemd-networkd[313]: gked5f0d8077b8: Lost carrier\r\n
+
+2026-05-14 16:04:43,776 INFO     ___FILE_ONLY___ 2026-05-08T00:36:52.741503365Z	[71874.343647] systemd-networkd[313]: gked5f0d8077b8: Link DOWN\r\n
+
+2026-05-14 16:04:43,776 INFO     ___FILE_ONLY___ 2026-05-08T00:36:38.264928160Z	[72660.928262] systemd-networkd[293]: gke7ce142815ce: Lost carrier\r\n
+
+2026-05-14 16:04:43,776 INFO     ___FILE_ONLY___ 2026-05-08T00:36:38.264899960Z	[72660.928082] systemd-networkd[293]: gke7ce142815ce: Link DOWN\r\n
+
+2026-05-14 16:04:43,776 INFO     ___FILE_ONLY___ 2026-05-08T00:36:38.015568869Z	[72660.678851] systemd-networkd[293]: gke9402bb3a8be: Lost carrier\r\n
+
+2026-05-14 16:04:43,777 INFO     ___FILE_ONLY___ 2026-05-08T00:36:38.015546349Z	[72660.677934] systemd-networkd[293]: gke9402bb3a8be: Link DOWN\r\n
+
+2026-05-14 16:04:43,777 INFO     ___FILE_ONLY___ 2026-05-08T00:36:37.781193902Z	[504874.095353] systemd-networkd[223]: gke9b9894c3e4a: Lost carrier\r\n
+
+2026-05-14 16:04:43,777 INFO     ___FILE_ONLY___ 2026-05-08T00:36:37.781167797Z	[504874.095032] systemd-networkd[223]: gke9b9894c3e4a: Link DOWN\r\n
+
+2026-05-14 16:04:43,777 INFO     ___FILE_ONLY___ 2026-05-08T00:36:37.769713945Z	[506700.062369] systemd-networkd[236]: gkeafb385ab6cc: Lost carrier\r\n
+
+2026-05-14 16:04:43,777 INFO     ___FILE_ONLY___ 2026-05-08T00:36:37.769694919Z	[506700.062109] systemd-networkd[236]: gkeafb385ab6cc: Link DOWN\r\n
+
+2026-05-14 16:04:43,778 INFO     ___FILE_ONLY___ 2026-05-08T00:36:37.764427487Z	[72660.427778] systemd-networkd[293]: gke88f5be232b5: Lost carrier\r\n
+
+2026-05-14 16:04:43,778 INFO     ___FILE_ONLY___ 2026-05-08T00:36:37.764401047Z	[72660.427566] systemd-networkd[293]: gke88f5be232b5: Link DOWN\r\n
+
+2026-05-14 16:04:43,778 INFO     ___FILE_ONLY___ 2026-05-08T00:36:37.671327937Z	[43398.147313] systemd-networkd[275]: gkeeca74970fc2: Lost carrier\r\n
+
+2026-05-14 16:04:43,778 INFO     ___FILE_ONLY___ 2026-05-08T00:36:37.671306143Z	[43398.147123] systemd-networkd[275]: gkeeca74970fc2: Link DOWN\r\n
+
+2026-05-14 16:04:43,778 INFO     ___FILE_ONLY___ 2026-05-08T00:34:51.004850918Z	[504105.344899] systemd-networkd[251]: gke7a5278ca2f3: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,779 INFO     ___FILE_ONLY___ 2026-05-08T00:34:49.072184046Z	[504103.413897] systemd-networkd[251]: gke7a5278ca2f3: Gained carrier\r\n
+
+2026-05-14 16:04:43,779 INFO     ___FILE_ONLY___ 2026-05-08T00:34:49.071881448Z	[504103.411689] systemd-networkd[251]: gke7a5278ca2f3: Link UP\r\n
+
+2026-05-14 16:04:43,779 INFO     ___FILE_ONLY___ 2026-05-08T00:33:13.213855099Z	[506702.412273] systemd-networkd[237]: gkef4ee8d0edb7: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,779 INFO     ___FILE_ONLY___ 2026-05-08T00:33:12.123483184Z	[506701.324598] systemd-networkd[237]: gkef4ee8d0edb7: Gained carrier\r\n
+
+2026-05-14 16:04:43,779 INFO     ___FILE_ONLY___ 2026-05-08T00:33:12.123462470Z	[506701.321762] systemd-networkd[237]: gkef4ee8d0edb7: Link UP\r\n
+
+2026-05-14 16:04:43,780 INFO     ___FILE_ONLY___ 2026-05-08T00:32:24.893289474Z	[506654.091740] systemd-networkd[237]: gke2078035dd08: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,780 INFO     ___FILE_ONLY___ 2026-05-08T00:32:24.582477168Z	[505055.565749] systemd-networkd[256]: gke77c8cbdd8e3: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,780 INFO     ___FILE_ONLY___ 2026-05-08T00:32:23.332553965Z	[506652.533436] systemd-networkd[237]: gke2078035dd08: Gained carrier\r\n
+
+2026-05-14 16:04:43,780 INFO     ___FILE_ONLY___ 2026-05-08T00:32:23.332535192Z	[506652.530933] systemd-networkd[237]: gke2078035dd08: Link UP\r\n
+
+2026-05-14 16:04:43,780 INFO     ___FILE_ONLY___ 2026-05-08T00:32:23.307531467Z	[505054.291600] systemd-networkd[256]: gke77c8cbdd8e3: Gained carrier\r\n
+
+2026-05-14 16:04:43,781 INFO     ___FILE_ONLY___ 2026-05-08T00:32:23.307510087Z	[505054.290640] systemd-networkd[256]: gke77c8cbdd8e3: Link UP\r\n
+
+2026-05-14 16:04:43,781 INFO     ___FILE_ONLY___ 2026-05-08T00:31:43.808130139Z	[505754.124662] systemd-networkd[239]: gke16333ad2123: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,781 INFO     ___FILE_ONLY___ 2026-05-08T00:31:41.947241427Z	[505752.266277] systemd-networkd[239]: gke16333ad2123: Gained carrier\r\n
+
+2026-05-14 16:04:43,781 INFO     ___FILE_ONLY___ 2026-05-08T00:31:41.947222863Z	[505752.263631] systemd-networkd[239]: gke16333ad2123: Link UP\r\n
+
+2026-05-14 16:04:43,781 INFO     ___FILE_ONLY___ 2026-05-08T00:31:09.241472779Z	[72331.904767] systemd-networkd[293]: gke9402bb3a8be: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,782 INFO     ___FILE_ONLY___ 2026-05-08T00:31:09.175620177Z	[43069.651555] systemd-networkd[275]: gkeeca74970fc2: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,782 INFO     ___FILE_ONLY___ 2026-05-08T00:31:08.981509815Z	[71530.583544] systemd-networkd[313]: gke489fad3d7e7: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,782 INFO     ___FILE_ONLY___ 2026-05-08T00:31:07.717305983Z	[72330.381374] systemd-networkd[293]: gke9402bb3a8be: Gained carrier\r\n
+
+2026-05-14 16:04:43,782 INFO     ___FILE_ONLY___ 2026-05-08T00:31:07.717284913Z	[72330.380527] systemd-networkd[293]: gke9402bb3a8be: Link UP\r\n
+
+2026-05-14 16:04:43,782 INFO     ___FILE_ONLY___ 2026-05-08T00:31:07.709179779Z	[71529.311541] systemd-networkd[313]: gke489fad3d7e7: Gained carrier\r\n
+
+2026-05-14 16:04:43,783 INFO     ___FILE_ONLY___ 2026-05-08T00:31:07.709155016Z	[71529.311069] systemd-networkd[313]: gke489fad3d7e7: Link UP\r\n
+
+2026-05-14 16:04:43,783 INFO     ___FILE_ONLY___ 2026-05-08T00:31:07.671870106Z	[43068.147829] systemd-networkd[275]: gkeeca74970fc2: Gained carrier\r\n
+
+2026-05-14 16:04:43,783 INFO     ___FILE_ONLY___ 2026-05-08T00:31:07.671846315Z	[43068.147219] systemd-networkd[275]: gkeeca74970fc2: Link UP\r\n
+
+2026-05-14 16:04:43,783 INFO     ___FILE_ONLY___ 2026-05-08T00:31:05.597260082Z	[506367.889696] systemd-networkd[236]: gkeafb385ab6cc: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,783 INFO     ___FILE_ONLY___ 2026-05-08T00:31:05.115388623Z	[504541.428895] systemd-networkd[223]: gke9b9894c3e4a: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,784 INFO     ___FILE_ONLY___ 2026-05-08T00:31:04.068199998Z	[506366.363095] systemd-networkd[236]: gkeafb385ab6cc: Gained carrier\r\n
+
+2026-05-14 16:04:43,784 INFO     ___FILE_ONLY___ 2026-05-08T00:31:04.068168523Z	[506366.360135] systemd-networkd[236]: gkeafb385ab6cc: Link UP\r\n
+
+2026-05-14 16:04:43,784 INFO     ___FILE_ONLY___ 2026-05-08T00:31:04.011978955Z	[504540.327197] systemd-networkd[223]: gke9b9894c3e4a: Gained carrier\r\n
+
+2026-05-14 16:04:43,784 INFO     ___FILE_ONLY___ 2026-05-08T00:31:04.011949092Z	[504540.325456] systemd-networkd[223]: gke9b9894c3e4a: Link UP\r\n
+
+2026-05-14 16:04:43,784 INFO     ___FILE_ONLY___ 2026-05-08T00:31:02.264298613Z	[72324.927290] systemd-networkd[293]: gke7ce142815ce: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,785 INFO     ___FILE_ONLY___ 2026-05-08T00:31:01.689507576Z	[72324.352592] systemd-networkd[293]: gke88f5be232b5: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,785 INFO     ___FILE_ONLY___ 2026-05-08T00:31:01.623946835Z	[43062.099676] systemd-networkd[275]: gkea240c38e29b: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,785 INFO     ___FILE_ONLY___ 2026-05-08T00:31:00.337567256Z	[72323.002653] systemd-networkd[293]: gke88f5be232b5: Gained carrier\r\n
+
+2026-05-14 16:04:43,785 INFO     ___FILE_ONLY___ 2026-05-08T00:31:00.337540536Z	[72323.000660] systemd-networkd[293]: gke88f5be232b5: Link UP\r\n
+
+2026-05-14 16:04:43,785 INFO     ___FILE_ONLY___ 2026-05-08T00:31:00.327633747Z	[43060.803661] systemd-networkd[275]: gkea240c38e29b: Gained carrier\r\n
+
+2026-05-14 16:04:43,786 INFO     ___FILE_ONLY___ 2026-05-08T00:31:00.327615928Z	[43060.803391] systemd-networkd[275]: gkea240c38e29b: Link UP\r\n
+
+2026-05-14 16:04:43,786 INFO     ___FILE_ONLY___ 2026-05-08T00:31:00.277419394Z	[72322.960353] systemd-networkd[293]: gke7ce142815ce: Gained carrier\r\n
+
+2026-05-14 16:04:43,786 INFO     ___FILE_ONLY___ 2026-05-08T00:31:00.277395364Z	[72322.959672] systemd-networkd[293]: gke7ce142815ce: Link UP\r\n
+
+2026-05-14 16:04:43,786 INFO     ___FILE_ONLY___ 2026-05-08T00:30:41.678963779Z	[506550.877484] systemd-networkd[237]: gkecc12073071e: Lost carrier\r\n
+
+2026-05-14 16:04:43,786 INFO     ___FILE_ONLY___ 2026-05-08T00:30:41.678944629Z	[506550.875436] systemd-networkd[237]: gkecc12073071e: Link DOWN\r\n
+
+2026-05-14 16:04:43,787 INFO     ___FILE_ONLY___ 2026-05-08T00:29:11.217658606Z	[506460.417858] systemd-networkd[237]: gke002910047ad: Lost carrier\r\n
+
+2026-05-14 16:04:43,787 INFO     ___FILE_ONLY___ 2026-05-08T00:29:11.217638912Z	[506460.416114] systemd-networkd[237]: gke002910047ad: Link DOWN\r\n
+
+2026-05-14 16:04:43,787 INFO     ___FILE_ONLY___ 2026-05-08T00:29:06.301196671Z	[503723.797897] virtio_balloon virtio2: Out of puff! Can\'t get 1 pages\r\n
+
+2026-05-14 16:04:43,787 INFO     ___FILE_ONLY___ 2026-05-08T00:29:05.876628652Z	[503723.373542] virtio_balloon virtio2: Out of puff! Can\'t get 1 pages\r\n
+
+2026-05-14 16:04:43,787 INFO     ___FILE_ONLY___ 2026-05-08T00:29:05.389226021Z	[503722.886126] virtio_balloon virtio2: Out of puff! Can\'t get 1 pages\r\n
+
+2026-05-14 16:04:43,788 INFO     ___FILE_ONLY___ 2026-05-08T00:29:04.995443581Z	[503722.492274] virtio_balloon virtio2: Out of puff! Can\'t get 1 pages\r\n
+
+2026-05-14 16:04:43,788 INFO     ___FILE_ONLY___ 2026-05-08T00:28:43.553657111Z	[248391.642974] systemd-networkd[326]: gkee87e6ed1b3b: Lost carrier\r\n
+
+2026-05-14 16:04:43,788 INFO     ___FILE_ONLY___ 2026-05-08T00:28:43.553636951Z	[248391.642741] systemd-networkd[326]: gkee87e6ed1b3b: Link DOWN\r\n
+
+2026-05-14 16:04:43,788 INFO     ___FILE_ONLY___ 2026-05-08T00:28:16.708648973Z	[248364.797562] systemd-networkd[326]: gkee87e6ed1b3b: Gained IPv6LL\r\n
+
+2026-05-14 16:04:43,788 INFO     ___FILE_ONLY___ 2026-05-08T00:28:14.842185424Z	[248362.931773] systemd-networkd[326]: gkee87e6ed1b3b: Gained carrier\r\n
+
+2026-05-14 16:04:43,789 INFO     ___FILE_ONLY___ 2026-05-08T00:28:14.842160933Z	[248362.931124] systemd-networkd[326]: gkee87e6ed1b3b: Link UP\r\n
+
+2026-05-14 16:04:43,789 INFO     ___FILE_ONLY___ 2026-05-08T00:27:43.931213923Z	[506166.223790] systemd-networkd[236]: gke711824f767f: Lost carrier\r\n
+
+2026-05-14 16:04:43,789 INFO     ___FILE_ONLY___ 2026-05-08T00:27:43.931193245Z	[506166.223423] systemd-networkd[236]: gke711824f767f: Link DOWN\r\n
+
+2026-05-14 16:04:43,789 INFO     ___FILE_ONLY___ 2026-05-08T00:26:24.862076657Z	[503599.203176] systemd-networkd[251]: gkeb2aeae0da2a: Lost carrier\r\n
+
+2026-05-14 16:04:43,789 INFO     ___FILE_ONLY___ 2026-05-08T00:26:24.861861047Z	[503599.201875] systemd-networkd[251]: gkeb2aeae0da2a: Link DOWN\r\n
+
+2026-05-14 16:04:43,790 INFO     ___FILE_ONLY___ 2026-05-08T00:25:41.293043861Z	[505391.609759] systemd-networkd[239]: gke88a299eade3: Lost carrier\r\n
+
+2026-05-14 16:04:43,790 INFO     ___FILE_ONLY___ 2026-05-08T00:25:41.293024618Z	[505391.609540] systemd-networkd[239]: gke88a299eade3: Link DOWN\r\n
+
+2026-05-14 16:04:43,799 DEBUG    root            Metrics reporting process started...

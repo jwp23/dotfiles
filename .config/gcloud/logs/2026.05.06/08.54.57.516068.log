@@ -1,0 +1,27 @@
+2026-05-06 08:54:57,562 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-06 08:54:57,565 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-06 08:54:57,567 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'list']
+2026-05-06 08:54:57,568 DEBUG    root            Running [gcloud.compute.images.list] with arguments: [--filter: "family ~ common-cu.*-ubuntu-2204", --format: "value(family)", --project: "deeplearning-platform-release"]
+2026-05-06 08:54:57,570 DEBUG    root            On GCE from memory cache: False
+2026-05-06 08:54:57,571 DEBUG    root            On GCE from memory cache: False
+2026-05-06 08:54:57,660 INFO     root            client_filter=None server_filter='family eq ".*(common-cu.*-ubuntu-2204).*"'
+2026-05-06 08:54:57,660 INFO     root            client_filter=None server_filter='family eq ".*(common-cu.*-ubuntu-2204).*"'
+2026-05-06 08:54:57,661 DEBUG    root            Chosen display Format:    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(family)
+2026-05-06 08:54:57,662 INFO     root            Display format: "    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(family)"
+2026-05-06 08:54:57,670 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-06 08:55:03,642 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-06 08:55:03,674 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2204-nvidia-580
+
+2026-05-06 08:55:03,686 DEBUG    root            Metrics reporting process started...

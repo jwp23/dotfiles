@@ -1,0 +1,13 @@
+2026-05-27 10:04:11,094 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 10:04:11,096 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-27 10:04:11,099 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-27 10:04:11,100 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "value(properties.networkInterfaces[0].subnetwork)", --project: "env-integration-fenway", NAME: "artillery-loadgen-tpl"]
+2026-05-27 10:04:11,102 DEBUG    root            On GCE from memory cache: False
+2026-05-27 10:04:11,104 DEBUG    root            On GCE from memory cache: False
+2026-05-27 10:04:11,231 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 10:04:11,503 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl?alt=json HTTP/1.1" 200 None
+2026-05-27 10:04:11,505 DEBUG    root            Chosen display Format:default value(properties.networkInterfaces[0].subnetwork)
+2026-05-27 10:04:11,506 INFO     root            Display format: "default value(properties.networkInterfaces[0].subnetwork)"
+2026-05-27 10:04:11,533 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/subnetworks/default
+
+2026-05-27 10:04:11,552 DEBUG    root            Metrics reporting process started...

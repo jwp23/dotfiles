@@ -1,0 +1,52 @@
+2026-05-28 07:00:45,555 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:00:45,559 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-28 07:00:45,568 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'list']
+2026-05-28 07:00:45,571 DEBUG    root            Running [gcloud.compute.images.list] with arguments: [--filter: "family=artillery-loadgen-gpu", --format: "table(name,family,creationTimestamp,status)", --project: "env-integration-fenway"]
+2026-05-28 07:00:45,573 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:00:45,575 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:00:45,778 INFO     root            client_filter=None server_filter='family eq ".*\\bartillery\\-loadgen\\-gpu\\b.*"'
+2026-05-28 07:00:45,782 INFO     root            client_filter=None server_filter='family eq ".*\\bartillery\\-loadgen\\-gpu\\b.*"'
+2026-05-28 07:00:45,783 DEBUG    root            Chosen display Format:    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) table(name,family,creationTimestamp,status)
+2026-05-28 07:00:45,784 INFO     root            Display format: "    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) table(name,family,creationTimestamp,status)"
+2026-05-28 07:00:45,807 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:00:47,412 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:00:47,428 INFO     ___FILE_ONLY___ NAME
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___                               
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___ FAMILY
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___                  
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___ CREATION_TIMESTAMP
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___              
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___ STATUS
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___ 
+
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___ artillery-loadgen-gpu-1778189997
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___   
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___ artillery-loadgen-gpu
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___   
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___ 2026-05-07T14:49:26.832-07:00
+2026-05-28 07:00:47,429 INFO     ___FILE_ONLY___   
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___ READY
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___ 
+
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___ artillery-loadgen-gpu-1778811478
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___   
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___ artillery-loadgen-gpu
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___   
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___ 2026-05-14T19:25:48.585-07:00
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___   
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___ READY
+2026-05-28 07:00:47,430 INFO     ___FILE_ONLY___ 
+
+2026-05-28 07:00:47,445 DEBUG    root            Metrics reporting process started...

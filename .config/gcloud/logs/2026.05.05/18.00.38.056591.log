@@ -1,0 +1,51 @@
+2026-05-05 18:00:38,058 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2026-05-05 18:00:38,061 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2026-05-05 18:00:38,073 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'describe']
+2026-05-05 18:00:38,074 DEBUG    root            Running [gcloud.iam.service-accounts.describe] with arguments: [--project: "env-integration-fenway", SERVICE_ACCOUNT: "loadgen-mig@env-integration-fenway.iam.gserviceaccount.com"]
+2026-05-05 18:00:38,079 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:38,116 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-05 18:00:38,117 DEBUG    root            On GCE from server: False
+2026-05-05 18:00:38,127 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:38,127 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:38,128 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-05 18:00:38,134 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-05 18:00:38,302 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-05 18:00:38,307 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2026-05-05 18:00:38,682 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "GET /v1/projects/-/serviceAccounts/loadgen-mig@env-integration-fenway.iam.gserviceaccount.com?alt=json HTTP/1.1" 404 None
+2026-05-05 18:00:38,685 DEBUG    root            (gcloud.iam.service-accounts.describe) NOT_FOUND: Unknown service account. This command is authenticated as jpresley@synthesis.health which is the active account specified by the [core/account] property
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/iam/service_accounts/describe.py", line 53, in Run
+    return client.projects_serviceAccounts.Get(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        messages.IamProjectsServiceAccountsGetRequest(
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+            name=iam_util.EmailToAccountResourceName(args.service_account)))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/iam/v1/iam_v1_client.py", line 4437, in Get
+    return self._RunMethod(
+           ~~~~~~~~~~~~~~~^
+        config, request, global_params=global_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+        http_response, method_config=method_config, request=request)
+apitools.base.py.exceptions.HttpNotFoundError: HttpError accessing <https://iam.googleapis.com/v1/projects/-/serviceAccounts/loadgen-mig@env-integration-fenway.iam.gserviceaccount.com?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Wed, 06 May 2026 01:00:38 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 404}>, content <{
+  "error": {
+    "code": 404,
+    "message": "Unknown service account",
+    "status": "NOT_FOUND"
+  }
+}
+>
+2026-05-05 18:00:38,689 ERROR    root            (gcloud.iam.service-accounts.describe) NOT_FOUND: Unknown service account. This command is authenticated as jpresley@synthesis.health which is the active account specified by the [core/account] property
+2026-05-05 18:00:38,702 DEBUG    root            Metrics reporting process started...

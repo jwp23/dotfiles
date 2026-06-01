@@ -1,0 +1,38 @@
+2026-05-28 07:09:26,727 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:09:26,729 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-28 07:09:26,730 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-28 07:09:26,736 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list']
+2026-05-28 07:09:26,738 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list] with arguments: [--filter: "name~artillery OR name~loadgen", --format: "value(name,location,instanceTemplate,size,targetSize)"]
+2026-05-28 07:09:26,739 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:26,741 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:26,834 INFO     root            client_filter='name~artillery OR name~loadgen' server_filter=None
+2026-05-28 07:09:26,840 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:09:27,377 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instanceGroupManagers?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 07:09:27,741 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:09:28,136 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroups?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-28 07:09:28,346 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:09:28,352 DEBUG    root            Chosen display Format:    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+ value(name,location,instanceTemplate,size,targetSize)
+2026-05-28 07:09:28,352 INFO     root            Display format: "    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+ value(name,location,instanceTemplate,size,targetSize)"
+2026-05-28 07:09:28,363 INFO     ___FILE_ONLY___ artillery-loadgen-mig-fenway		artillery-loadgen-tpl-fenway	0	0
+
+2026-05-28 07:09:28,375 DEBUG    root            Metrics reporting process started...

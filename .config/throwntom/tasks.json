@@ -1,0 +1,369 @@
+{
+  "next_id": 63,
+  "tasks": [
+    {
+      "id": 4,
+      "description": "listen to fovia 8 recording",
+      "done": true,
+      "created_at": "2026-03-05T12:59:14.806217-08:00",
+      "completed_at": "2026-03-05T13:24:42.478595-08:00"
+    },
+    {
+      "id": 5,
+      "description": "coordinate fenway monitoring with tommy",
+      "done": true,
+      "created_at": "2026-03-05T13:00:41.23811-08:00",
+      "completed_at": "2026-03-05T13:34:31.131337-08:00"
+    },
+    {
+      "id": 6,
+      "description": "listen to fenway 8 recording",
+      "done": true,
+      "created_at": "2026-03-05T13:34:43.535082-08:00",
+      "completed_at": "2026-03-05T16:59:01.814517-08:00"
+    },
+    {
+      "id": 7,
+      "description": "integration fenway one modality",
+      "done": true,
+      "created_at": "2026-03-05T14:20:20.283313-08:00",
+      "completed_at": "2026-03-05T16:59:17.79439-08:00"
+    },
+    {
+      "id": 8,
+      "description": "fix probe",
+      "done": true,
+      "created_at": "2026-03-05T16:59:30.56675-08:00",
+      "completed_at": "2026-03-06T12:02:45.860007-08:00"
+    },
+    {
+      "id": 11,
+      "description": "review latest FDM documentation",
+      "done": true,
+      "created_at": "2026-03-09T09:01:44.52843-07:00",
+      "completed_at": "2026-03-09T09:46:24.049529-07:00"
+    },
+    {
+      "id": 12,
+      "description": "add nginx image to artifact registry",
+      "done": true,
+      "created_at": "2026-03-09T09:07:33.82692-07:00",
+      "completed_at": "2026-03-09T09:46:48.326547-07:00"
+    },
+    {
+      "id": 13,
+      "description": "create nginx sidecar",
+      "done": true,
+      "created_at": "2026-03-09T09:47:03.047362-07:00",
+      "completed_at": "2026-03-09T12:26:03.461567-07:00"
+    },
+    {
+      "id": 14,
+      "description": "do rippling payroll task",
+      "done": true,
+      "created_at": "2026-03-09T12:18:01.695014-07:00",
+      "completed_at": "2026-03-09T12:26:11.230288-07:00"
+    },
+    {
+      "id": 15,
+      "description": "qms training",
+      "done": true,
+      "created_at": "2026-03-09T12:26:23.424552-07:00",
+      "completed_at": "2026-03-09T15:57:56.450862-07:00"
+    },
+    {
+      "id": 16,
+      "description": "fovia 8 multiple pods",
+      "done": true,
+      "created_at": "2026-03-10T09:53:24.033924-07:00",
+      "completed_at": "2026-03-10T15:42:34.824609-07:00"
+    },
+    {
+      "id": 17,
+      "description": "fix synthetic probes",
+      "done": true,
+      "created_at": "2026-03-10T14:32:09.515131-07:00",
+      "completed_at": "2026-03-10T15:42:48.139731-07:00"
+    },
+    {
+      "id": 19,
+      "description": "fovia 8 service/ingress",
+      "done": true,
+      "created_at": "2026-03-10T15:43:04.545952-07:00",
+      "completed_at": "2026-03-12T05:48:48.211154-07:00"
+    },
+    {
+      "id": 20,
+      "description": "multiple fovia 8 pods",
+      "done": true,
+      "created_at": "2026-03-12T09:30:37.682939-07:00",
+      "completed_at": "2026-03-12T11:53:25.434751-07:00"
+    },
+    {
+      "id": 21,
+      "description": "staffing ideas",
+      "done": true,
+      "created_at": "2026-03-12T11:53:49.315202-07:00",
+      "completed_at": "2026-03-12T12:51:30.396081-07:00"
+    },
+    {
+      "id": 23,
+      "description": "debug cache websockets",
+      "done": true,
+      "created_at": "2026-03-12T12:51:45.754186-07:00",
+      "completed_at": "2026-03-13T13:21:15.194478-07:00"
+    },
+    {
+      "id": 24,
+      "description": "cleanup nginx logs",
+      "done": true,
+      "created_at": "2026-03-13T13:21:23.492511-07:00",
+      "completed_at": "2026-03-13T14:15:09.1451-07:00"
+    },
+    {
+      "id": 25,
+      "description": "separate config files",
+      "done": true,
+      "created_at": "2026-03-13T14:15:22.579385-07:00",
+      "completed_at": "2026-03-16T09:00:58.598809-07:00"
+    },
+    {
+      "id": 26,
+      "description": "review test redesign requirements",
+      "done": true,
+      "created_at": "2026-03-16T09:00:50.454911-07:00",
+      "completed_at": "2026-03-17T09:06:24.922358-07:00"
+    },
+    {
+      "id": 27,
+      "description": "flessh out viewer stories",
+      "done": true,
+      "created_at": "2026-03-17T09:06:46.358959-07:00",
+      "completed_at": "2026-03-18T10:29:30.014031-07:00"
+    },
+    {
+      "id": 28,
+      "description": "test redesign",
+      "done": true,
+      "created_at": "2026-03-17T14:10:54.840103-07:00",
+      "completed_at": "2026-03-18T15:36:48.278513-07:00"
+    },
+    {
+      "id": 29,
+      "description": "update runbook based on video",
+      "done": true,
+      "created_at": "2026-03-18T09:03:02.469805-07:00",
+      "completed_at": "2026-03-18T15:43:54.304409-07:00"
+    },
+    {
+      "id": 30,
+      "description": "update runbook with synthetic monitors",
+      "done": true,
+      "created_at": "2026-03-18T09:33:46.327411-07:00",
+      "completed_at": "2026-03-18T10:29:44.551389-07:00"
+    },
+    {
+      "id": 31,
+      "description": "review and create to do list",
+      "done": true,
+      "created_at": "2026-03-19T10:29:47.320939-07:00",
+      "completed_at": "2026-03-20T15:11:41.328872-07:00"
+    },
+    {
+      "id": 32,
+      "description": "study for interview",
+      "done": true,
+      "created_at": "2026-03-19T13:27:35.633666-07:00",
+      "completed_at": "2026-03-20T15:11:45.775248-07:00"
+    },
+    {
+      "id": 33,
+      "description": "get viewer dashboard in other environments",
+      "done": true,
+      "created_at": "2026-03-20T10:01:14.944093-07:00",
+      "completed_at": "2026-04-01T09:03:10.302427-07:00"
+    },
+    {
+      "id": 34,
+      "description": "review test design",
+      "done": true,
+      "created_at": "2026-04-01T09:02:42.92379-07:00",
+      "completed_at": "2026-04-09T12:35:31.067044-07:00"
+    },
+    {
+      "id": 35,
+      "description": "smart sticky sessions",
+      "done": true,
+      "created_at": "2026-04-06T10:52:36.643802-07:00",
+      "completed_at": "2026-04-09T13:16:18.939131-07:00"
+    },
+    {
+      "id": 36,
+      "description": "terraform apply",
+      "done": true,
+      "created_at": "2026-04-07T09:04:52.390074-07:00",
+      "completed_at": "2026-04-07T09:40:06.756402-07:00"
+    },
+    {
+      "id": 37,
+      "description": "wasm",
+      "done": true,
+      "created_at": "2026-04-07T10:10:24.594493-07:00",
+      "completed_at": "2026-04-09T12:36:50.037806-07:00"
+    },
+    {
+      "id": 38,
+      "description": "setup nginx mirror repo and ai coding instructions",
+      "done": true,
+      "created_at": "2026-04-09T09:40:58.814523-07:00",
+      "completed_at": "2026-04-09T13:16:26.23564-07:00"
+    },
+    {
+      "id": 39,
+      "description": "ai training",
+      "done": true,
+      "created_at": "2026-04-09T11:31:01.006718-07:00",
+      "completed_at": "2026-04-09T12:36:56.654758-07:00"
+    },
+    {
+      "id": 41,
+      "description": "update dev fovia ingresses",
+      "done": true,
+      "created_at": "2026-04-09T13:16:45.520247-07:00",
+      "completed_at": "2026-04-09T14:54:16.742888-07:00"
+    },
+    {
+      "id": 42,
+      "description": "design migration fovia services to main cluster",
+      "done": true,
+      "created_at": "2026-04-09T13:56:05.792929-07:00",
+      "completed_at": "2026-04-09T14:54:21.758577-07:00"
+    },
+    {
+      "id": 43,
+      "description": "troubleshoot nodepools",
+      "done": true,
+      "created_at": "2026-04-09T14:54:36.101968-07:00",
+      "completed_at": "2026-04-13T09:39:46.216475-07:00"
+    },
+    {
+      "id": 44,
+      "description": "udpate performance tests",
+      "done": true,
+      "created_at": "2026-04-10T15:03:29.798514-07:00",
+      "completed_at": "2026-04-20T09:52:04.01364-07:00"
+    },
+    {
+      "id": 45,
+      "description": "catch up",
+      "done": true,
+      "created_at": "2026-04-20T09:52:16.746234-07:00",
+      "completed_at": "2026-04-20T11:44:32.925037-07:00"
+    },
+    {
+      "id": 46,
+      "description": "finish development of jaim",
+      "done": true,
+      "created_at": "2026-04-20T11:44:47.917907-07:00",
+      "completed_at": "2026-04-21T09:01:32.041174-07:00"
+    },
+    {
+      "id": 47,
+      "description": "grooming",
+      "done": true,
+      "created_at": "2026-04-20T12:14:31.927661-07:00",
+      "completed_at": "2026-04-20T13:17:06.610074-07:00"
+    },
+    {
+      "id": 48,
+      "description": "update the throwntom messages",
+      "done": true,
+      "created_at": "2026-04-20T13:17:36.829515-07:00",
+      "completed_at": "2026-04-20T14:18:20.941021-07:00"
+    },
+    {
+      "id": 49,
+      "description": "review usc1 preprod",
+      "done": true,
+      "created_at": "2026-04-20T14:18:37.108324-07:00",
+      "completed_at": "2026-04-21T09:01:36.643914-07:00"
+    },
+    {
+      "id": 50,
+      "description": "review design of fenway performance tests",
+      "done": true,
+      "created_at": "2026-04-21T09:01:19.996053-07:00",
+      "completed_at": "2026-04-21T09:33:10.56935-07:00"
+    },
+    {
+      "id": 52,
+      "description": "spike OPFS",
+      "done": true,
+      "created_at": "2026-04-21T09:33:38.454956-07:00",
+      "completed_at": "2026-04-21T15:23:49.130029-07:00"
+    },
+    {
+      "id": 53,
+      "description": "usc1",
+      "done": true,
+      "created_at": "2026-04-21T11:35:11.061685-07:00",
+      "completed_at": "2026-04-21T12:50:03.266766-07:00"
+    },
+    {
+      "id": 54,
+      "description": "spike artillery",
+      "done": true,
+      "created_at": "2026-04-21T15:46:06.168093-07:00",
+      "completed_at": "2026-05-13T09:22:43.189206-07:00"
+    },
+    {
+      "id": 55,
+      "description": "fovia diagram for Chris",
+      "done": true,
+      "created_at": "2026-04-23T10:13:53.45446-07:00",
+      "completed_at": "2026-04-23T10:53:35.829005-07:00"
+    },
+    {
+      "id": 56,
+      "description": "AI training",
+      "done": true,
+      "created_at": "2026-04-23T11:20:27.742772-07:00",
+      "completed_at": "2026-05-13T09:22:51.196389-07:00"
+    },
+    {
+      "id": 57,
+      "description": "deploy to usc1",
+      "done": true,
+      "created_at": "2026-04-24T13:35:57.763495-07:00",
+      "completed_at": "2026-05-13T09:22:54.338411-07:00"
+    },
+    {
+      "id": 59,
+      "description": "project update",
+      "done": true,
+      "created_at": "2026-05-13T09:22:21.959776-07:00",
+      "completed_at": "2026-05-13T14:13:22.514862-07:00"
+    },
+    {
+      "id": 60,
+      "description": "redesign of mig/scenario",
+      "done": true,
+      "created_at": "2026-05-13T14:13:43.725264-07:00",
+      "completed_at": "2026-05-13T15:11:48.779109-07:00"
+    },
+    {
+      "id": 61,
+      "description": "fix gas city",
+      "done": true,
+      "created_at": "2026-05-13T14:35:32.1565-07:00",
+      "completed_at": "2026-05-26T09:06:37.504977-07:00"
+    },
+    {
+      "id": 62,
+      "description": "author mulitiple exam bead",
+      "done": false,
+      "created_at": "2026-05-26T09:06:54.931702-07:00",
+      "completed_at": "0001-01-01T00:00:00Z"
+    }
+  ]
+}

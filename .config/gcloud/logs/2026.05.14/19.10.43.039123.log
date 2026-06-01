@@ -1,0 +1,37 @@
+2026-05-14 19:10:43,107 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 19:10:43,109 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-14 19:10:43,111 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-14 19:10:43,112 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-", --format: "value(name,zone)", --project: "env-integration-fenway"]
+2026-05-14 19:10:43,114 DEBUG    root            On GCE from memory cache: False
+2026-05-14 19:10:43,146 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-14 19:10:43,146 DEBUG    root            On GCE from server: False
+2026-05-14 19:10:43,239 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-14 19:10:43,240 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,zone)
+2026-05-14 19:10:43,240 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,zone)"
+2026-05-14 19:10:43,245 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 19:10:43,964 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-14 19:10:44,204 INFO     ___FILE_ONLY___ loadgen-bq12	us-central1-b
+
+2026-05-14 19:10:44,207 INFO     ___FILE_ONLY___ loadgen-3str	us-central1-c
+
+2026-05-14 19:10:44,207 INFO     ___FILE_ONLY___ loadgen-lwqh	us-central1-c
+
+2026-05-14 19:10:44,208 INFO     ___FILE_ONLY___ loadgen-fn09	us-central1-f
+
+2026-05-14 19:10:44,220 DEBUG    root            Metrics reporting process started...

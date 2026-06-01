@@ -1,0 +1,45 @@
+2026-05-14 13:44:30,703 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2026-05-14 13:44:30,704 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2026-05-14 13:44:30,705 DEBUG    root            Running [gcloud.auth.list] with arguments: []
+2026-05-14 13:44:30,765 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-14 13:44:30,765 DEBUG    root            On GCE from server: False
+2026-05-14 13:44:30,766 DEBUG    root            Chosen display Format:    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    )
+2026-05-14 13:44:30,766 INFO     root            Display format: "    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    )"
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___                           Credentialed Accounts
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ 
+
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ ACTIVE
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___   
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ ACCOUNT
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ 
+
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ *
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___        
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ jpresley@synthesis.health
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ 
+
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___         
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ vision-dashboards-terraform-ac@idg-devops.iam.gserviceaccount.com
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ 
+
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___         
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ vision-synthetic-terraform-acc@idg-devops.iam.gserviceaccount.com
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ 
+
+2026-05-14 13:44:30,801 INFO     ___FILE_ONLY___ 
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+
+
+2026-05-14 13:44:30,809 DEBUG    root            Checking for updates...
+2026-05-14 13:44:30,810 DEBUG    root            On GCE from memory cache: False
+2026-05-14 13:44:30,810 DEBUG    root            On GCE from memory cache: False
+2026-05-14 13:44:30,818 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-05-14 13:44:30,954 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 25078
+2026-05-14 13:44:30,991 DEBUG    root            Metrics reporting process started...

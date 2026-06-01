@@ -1,0 +1,12 @@
+2026-05-14 16:17:57,369 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-05-14 16:17:57,439 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:17:58,109 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'ls']
+2026-05-14 16:17:58,111 DEBUG    root            Running [gcloud.storage.ls] with arguments: [PATH:1: "['gs://artillery-loadgen-scenarios-env-integration-fenway/v0001-placeholder/']"]
+2026-05-14 16:17:58,112 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:17:58,121 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-05-14 16:17:58,352 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o/v0001-placeholder%2F?alt=json&fields=bucket%2Cname%2Csize%2Cgeneration&projection=noAcl HTTP/1.1" 404 345
+2026-05-14 16:17:58,482 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o?alt=json&fields=prefixes%2Citems%2Fname%2Citems%2Fsize%2Citems%2Fgeneration%2CnextPageToken&delimiter=%2F&includeFoldersAsPrefixes=True&maxResults=1000&prefix=v0001-placeholder&projection=noAcl HTTP/1.1" 200 49
+2026-05-14 16:17:58,590 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o?alt=json&fields=prefixes%2Citems%2Fname%2Citems%2Fsize%2Citems%2Fgeneration%2CnextPageToken&delimiter=%2F&includeFoldersAsPrefixes=True&maxResults=1000&prefix=v0001-placeholder%2F&projection=noAcl HTTP/1.1" 200 684
+2026-05-14 16:17:58,592 DEBUG    root            Chosen display Format:default
+2026-05-14 16:17:58,593 INFO     root            Display format: "default"
+2026-05-14 16:17:58,603 DEBUG    root            Metrics reporting process started...

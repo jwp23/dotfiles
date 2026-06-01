@@ -1,0 +1,36 @@
+2026-05-28 07:08:35,771 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:08:35,774 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-28 07:08:35,779 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'list']
+2026-05-28 07:08:35,780 DEBUG    root            Running [gcloud.compute.images.list] with arguments: [--filter: "name~fenway OR name~loadgen", --format: "value(name,creationTimestamp,family)"]
+2026-05-28 07:08:35,782 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:08:35,783 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:08:35,894 INFO     root            client_filter='name~fenway OR name~loadgen' server_filter=None
+2026-05-28 07:08:35,894 INFO     root            client_filter='(name~fenway OR name~loadgen)' server_filter=None
+2026-05-28 07:08:35,895 DEBUG    root            Chosen display Format:    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(name,creationTimestamp,family)
+2026-05-28 07:08:35,896 INFO     root            Display format: "    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(name,creationTimestamp,family)"
+2026-05-28 07:08:35,906 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:08:37,187 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:08:38,202 INFO     ___FILE_ONLY___ artillery-loadgen-gpu-1778189997	2026-05-07T14:49:26.832-07:00	artillery-loadgen-gpu
+
+2026-05-28 07:08:38,203 INFO     ___FILE_ONLY___ artillery-loadgen-gpu-1778811478	2026-05-14T19:25:48.585-07:00	artillery-loadgen-gpu
+
+2026-05-28 07:08:39,667 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:08:41,331 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:08:43,034 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:08:44,614 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:08:46,123 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:08:47,357 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:08:48,012 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/windows-sql-cloud/global/images?alt=json&maxResults=500&pageToken=CloI282ZopTclAM6TwoCGAEKAiAACgIYAgoHIKfOoeD3GgoCGAYKKComc3FsLTIwMjItd2ViLXdpbmRvd3MtMjAyMi1kYy12MjAyMzA2MTYKCiDyt4XRm9LR8Tk%3D HTTP/1.1" 200 None
+2026-05-28 07:08:48,033 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,19 @@
+2026-05-07 16:20:57,201 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-07 16:20:57,204 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-07 16:20:57,206 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'get_serial_port_output']
+2026-05-07 16:20:57,207 DEBUG    root            Running [gcloud.compute.instances.get-serial-port-output] with arguments: [--start: "263098", --zone: "us-central1-c", INSTANCE_NAME: "loadgen-sgw6"]
+2026-05-07 16:20:57,209 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:20:57,210 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:20:57,304 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-07 16:20:57,532 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-sgw6/serialPort?alt=json&port=1&start=263098 HTTP/1.1" 200 None
+2026-05-07 16:20:57,533 DEBUG    root            Chosen display Format:value[no-quote](contents)
+2026-05-07 16:20:57,539 INFO     root            Display format: "value[no-quote](contents)"
+2026-05-07 16:20:57,552 INFO     ___FILE_ONLY___ 2026-05-07T23:20:19.245649+00:00 loadgen-sgw6 systemd[1]: Starting sysstat-collect.service - system activity accounting tool...
+2026-05-07T23:20:19.251510+00:00 loadgen-sgw6 systemd[1]: sysstat-collect.service: Deactivated successfully.
+2026-05-07T23:20:19.251746+00:00 loadgen-sgw6 systemd[1]: Finished sysstat-collect.service - system activity accounting tool.
+
+
+2026-05-07 16:20:57,552 INFO     ___FILE_ONLY___ 
+Specify --start=263464 in the next get-serial-port-output invocation to get only the new output starting from here.
+
+2026-05-07 16:20:57,564 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,1350 @@
+2026-05-07 17:25:10,074 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-07 17:25:10,077 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-07 17:25:10,080 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-07 17:25:10,081 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "yaml(properties.metadata.items)", NAME: "artillery-loadgen-tpl-prod"]
+2026-05-07 17:25:10,083 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:25:10,085 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:25:10,180 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-07 17:25:10,574 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod?alt=json HTTP/1.1" 200 None
+2026-05-07 17:25:10,580 DEBUG    root            Chosen display Format:default yaml(properties.metadata.items)
+2026-05-07 17:25:10,581 INFO     root            Display format: "default yaml(properties.metadata.items)"
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ properties
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___   
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ metadata
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___     
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ items
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___     
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ -
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ key
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ env
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___       
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ value
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ production
+2026-05-07 17:25:10,598 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___     
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ -
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ key
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ results-bucket
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___       
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ value
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ artillery-loadgen-results-env-integration-fenway
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___     
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ -
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ key
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ run-id
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___       
+2026-05-07 17:25:10,599 INFO     ___FILE_ONLY___ value
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ 20260508T002400Z
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___     
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ -
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ key
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ scenario-bucket
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___       
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ value
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ artillery-loadgen-scenarios-env-integration-fenway
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___     
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ -
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ key
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ scenario-version
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___       
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ value
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ v0001-placeholder
+2026-05-07 17:25:10,600 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___     
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___ -
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___ key
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___ startup-script
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___       
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___ value
+2026-05-07 17:25:10,601 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___  |
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ #!/usr/bin/env bash
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ # infra/startup.sh — MIG instance startup script for Artillery load-generator
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ # VMs (Epic 12.5).
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ # This script is baked into the regional MIG instance template's
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ # `metadata.startup-script` by infra/create-mig.sh (Epic 12.3). GCE runs it
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ # automatically as root on every instance the MIG creates. Claude does not
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ # invoke this script directly; the gcloud / gsutil calls below are executed
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ # by the MIG VM, not by the local terminal.
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ # What this script does, in order:
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ #   1. Read the run-scoped instance metadata vars (set by Epic 12.3's
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,605 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      create-mig.sh — see "Metadata vars" below for the exact contract).
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #   2. Verify GPU presence with `nvidia-smi` and fail fast if absent. The
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      Packer image's GPU smoke test (Epic 12.1) catches this at build time;
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      this re-check catches the runtime case where the host's driver does
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      not match the GPU SKU's current minimum (spike RESULT.md "Gotchas",
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      "Driver version drift between image build and run").
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #   3. Pull the versioned scenario bundle from
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      gs://${SCENARIO_BUCKET}/${SCENARIO_VERSION}/ into /var/loadgen.
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #   4. Source ${WORK}/.env.${ENV} from the bundle (if present) for
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      environment-specific Viewer credentials, fixture IDs, and the
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      OTEL_DEPLOYMENT_ENVIRONMENT label. The .env.<env> files are
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      gitignored locally and only present in the bundle the operator
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      uploads via infra/upload-scenario.sh (Epic 12.2).
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #   5. Read shared OTLP + Vertex secrets from Secret Manager — these
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      override anything set in .env.<env>. Secret names match the
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      contract Epic 12.4's setup-service-account.sh provisions.
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #   6. Install scenario-bundle deps if a bare bundle was uploaded
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ #      (package.json present but node_modules missing). `npm ci` runs the
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,606 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      `postinstall: patch-package` hook, which reapplies the
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      Grafana-Cloud OTLP-temporality patch documented in ADR-001.
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #   7. Run Artillery in a loop with VUs=1 (load shape lives in infra/ramp.sh,
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      not in scenario phases — see docs/designs/load-generator-rollout.md
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      "VU model and ramp orchestrator"). The loop terminates on:
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #        - SIGTERM (delivered when the MIG resizes down and deletes this
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #          instance — handled by the trap below; the in-flight Artillery
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #          process is signalled so OTLP buffers flush before exit).
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #        - The optional RUN_DURATION_SEC bound (instance metadata
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #          attribute `run-duration-sec`, in seconds).
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #   8. Upload each iteration's result JSON to
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      gs://${RESULTS_BUCKET}/${RUN_ID}/ as soon as the iteration ends, so
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      a SIGTERM mid-loop does not lose data from completed iterations.
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #   9. Self-delete the instance with `gcloud compute instances delete` so
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      the MIG actual size drops to match its target. The custom IAM role
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      provisioned by Epic 12.4 (loadgenSelfDelete) grants exactly the two
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      permissions this needs: compute.instances.delete and
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ #      compute.zoneOperations.get.
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,607 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ # Metadata vars (read from the GCE metadata server). Names match what
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ # Epic 12.3's infra/create-mig.sh sets unless noted as 12.5-only.
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #   scenario-bucket        Required. GCS bucket holding scenario bundles.
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #   scenario-version       Required. Bundle version key (e.g., v0001-abc1234).
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #   results-bucket         Required. GCS bucket where result JSONs are
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #                          uploaded.
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #   target-url             Required. Viewer URL the scenarios target. Exported
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #                          as VIEWER_BASE_URL (overrides any VIEWER_BASE_URL
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #                          in .env.<env>; the metadata var is the operator's
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #                          per-run intent).
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #   run-id                 Required. Unique identifier for this run.
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #   env                    Required. integration | production. Selects which
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #                          .env.<env> file is sourced from the bundle.
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #   scenario-file          Optional (12.5-only, defaults to
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #                          scenarios/scenario.yml). Path to the scenario YAML
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #                          relative to the bundle root.
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,608 INFO     ___FILE_ONLY___ #   run-duration-sec       Optional (12.5-only, defaults to empty = run
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #                          forever until SIGTERM). Bounds the iteration loop.
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ # Secret Manager secrets (created by Epic 12.4's setup-service-account.sh):
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #   grafana-otlp-endpoint  → GRAFANA_OTLP_ENDPOINT
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #   grafana-otlp-auth      → GRAFANA_OTLP_AUTH
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #   google-vertex-api-key  → GOOGLE_VERTEX_API_KEY
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ # Bundle layout (uploaded via infra/upload-scenario.sh, Epic 12.2):
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #   gs://${SCENARIO_BUCKET}/${SCENARIO_VERSION}/
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #     scenarios/<file>.yml            ← the scenario YAML
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #     config/base.yml                 ← Artillery launch options + plugins
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #     processors/                     ← TS processors imported by scenarios
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #     package.json + package-lock.json + patches/   ← if node_modules omitted
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #     node_modules/ (optional)        ← saves the npm-ci step on each boot
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #     .env.${env}                     ← per-env Viewer creds + fixtures
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ #
+2026-05-07 17:25:10,609 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ # References:
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ #   spikes/load-generator/RESULT.md   "Startup script" section
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ #   docs/designs/load-generator-rollout.md  "VU model and ramp orchestrator"
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ #   docs/adr/001-otlp-over-pushgateway.md   GRAFANA_OTLP_* env-var contract
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ #   .env.example                            full env-var contract
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ set -euo pipefail
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ # --- Constants ------------------------------------------------------------
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ WORK="/var/loadgen"
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ METADATA_BASE="http://metadata/computeMetadata/v1"
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ METADATA_HEADER="Metadata-Flavor: Google"
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ SECRET_GRAFANA_ENDPOINT="grafana-otlp-endpoint"
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ SECRET_GRAFANA_AUTH="grafana-otlp-auth"
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ SECRET_VERTEX_KEY="google-vertex-api-key"
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ DEFAULT_SCENARIO_FILE="scenarios/scenario.yml"
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,610 INFO     ___FILE_ONLY___ log() {
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___   printf '[startup %s] %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*"
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ }
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ # Read a metadata server attribute. First arg is the path under
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ # /computeMetadata/v1/. Returns non-zero (and empty stdout) if the attribute
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ # is not set, so callers can use `|| default` for optional vars.
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ read_metadata() {
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___   local path="$1"
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___   local code
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___   local body
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___   body=$(curl -sf -H "${METADATA_HEADER}" "${METADATA_BASE}/${path}") && code=0 || code=$?
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___   if [[ "${code}" -eq 0 ]]; then
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___     printf '%s' "${body}"
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___   fi
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___   return "${code}"
+2026-05-07 17:25:10,611 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ }
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ read_metadata_required() {
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___   local path="$1"
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___   local label="$2"
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___   local value
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___   if ! value=$(read_metadata "${path}"); then
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___     log "FATAL: required metadata attribute '${label}' (${path}) is not set."
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___     exit 2
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___   fi
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___   if [[ -z "${value}" ]]; then
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___     log "FATAL: required metadata attribute '${label}' (${path}) is empty."
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___     exit 2
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___   fi
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___   printf '%s' "${value}"
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ }
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ # --- Read instance + run-scoped metadata ---------------------------------
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,612 INFO     ___FILE_ONLY___ INSTANCE_NAME=$(read_metadata_required "instance/name" "instance name")
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ ZONE_FULL=$(read_metadata_required "instance/zone" "instance zone")
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ ZONE="${ZONE_FULL##*/}"
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ ENV=$(read_metadata_required "instance/attributes/env" "env")
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ SCENARIO_BUCKET=$(read_metadata_required "instance/attributes/scenario-bucket" "scenario-bucket")
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ SCENARIO_VERSION=$(read_metadata_required "instance/attributes/scenario-version" "scenario-version")
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ RESULTS_BUCKET=$(read_metadata_required "instance/attributes/results-bucket" "results-bucket")
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ TARGET_URL=$(read_metadata_required "instance/attributes/target-url" "target-url")
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ RUN_ID=$(read_metadata_required "instance/attributes/run-id" "run-id")
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ SCENARIO_FILE=$(read_metadata "instance/attributes/scenario-file" || true)
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ SCENARIO_FILE="${SCENARIO_FILE:-${DEFAULT_SCENARIO_FILE}}"
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ RUN_DURATION_SEC=$(read_metadata "instance/attributes/run-duration-sec" || true)
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ case "${ENV}" in
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___   integration | production) ;;
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___   *)
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,613 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___     log "FATAL: env='${ENV}' is not 'integration' or 'production'."
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___     exit 2
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___     ;;
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ esac
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ if [[ -n "${RUN_DURATION_SEC}" && ! "${RUN_DURATION_SEC}" =~ ^[0-9]+$ ]]; then
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___   log "FATAL: run-duration-sec='${RUN_DURATION_SEC}' is not a non-negative integer."
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___   exit 2
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ fi
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ log "instance=${INSTANCE_NAME} zone=${ZONE} env=${ENV} run_id=${RUN_ID}"
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ log "bundle=gs://${SCENARIO_BUCKET}/${SCENARIO_VERSION}/  results=gs://${RESULTS_BUCKET}/${RUN_ID}/"
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ log "scenario_file=${SCENARIO_FILE}  run_duration_sec=${RUN_DURATION_SEC:-(unbounded)}"
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ # --- GPU pre-check --------------------------------------------------------
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ # CLAUDE.md "Critical Constraints": GPU is required. The Packer image's
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ # build-time GPU smoke test catches missing-driver cases on the build host;
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ # this run-time check catches driver-version drift between build and run.
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ if ! nvidia-smi >/dev/null 2>&1; then
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,614 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___   log "FATAL: nvidia-smi failed — GPU is not available on this instance."
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___   log "       Chromium would fall back to SwiftShader (CPU) and produce"
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___   log "       invalid SLO measurements. Aborting before any scenario runs."
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___   exit 1
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ fi
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ log "nvidia-smi: GPU available."
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ # --- Pull scenario bundle -------------------------------------------------
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ mkdir -p "${WORK}"
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ cd "${WORK}"
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ log "Pulling scenario bundle..."
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ gsutil -m cp -r "gs://${SCENARIO_BUCKET}/${SCENARIO_VERSION}/*" .
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ if [[ ! -f "${SCENARIO_FILE}" ]]; then
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___   log "FATAL: scenario file '${SCENARIO_FILE}' not found in bundle."
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___   log "       Bundle contents:"
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___   ls -la "${WORK}" >&2 || true
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,615 INFO     ___FILE_ONLY___   exit 2
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ fi
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ # --- Source per-env file from bundle --------------------------------------
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ env_file="${WORK}/.env.${ENV}"
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ if [[ -f "${env_file}" ]]; then
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___   log "Sourcing ${env_file}"
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___   set -a
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___   # shellcheck source=/dev/null
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___   source "${env_file}"
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___   set +a
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ else
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___   log "Note: ${env_file} not found in bundle (continuing with metadata + secrets only)."
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ fi
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ # --- Read shared secrets from Secret Manager (override .env.<env>) -------
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ log "Reading shared secrets from Secret Manager..."
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ GRAFANA_OTLP_ENDPOINT=$(gcloud secrets versions access latest --secret="${SECRET_GRAFANA_ENDPOINT}")
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,616 INFO     ___FILE_ONLY___ GRAFANA_OTLP_AUTH=$(gcloud secrets versions access latest --secret="${SECRET_GRAFANA_AUTH}")
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ GOOGLE_VERTEX_API_KEY=$(gcloud secrets versions access latest --secret="${SECRET_VERTEX_KEY}")
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ export GRAFANA_OTLP_ENDPOINT GRAFANA_OTLP_AUTH GOOGLE_VERTEX_API_KEY
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ # Metadata `target-url` is the operator's per-run intent and overrides any
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ # VIEWER_BASE_URL the bundle's .env.<env> may carry.
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ export VIEWER_BASE_URL="${TARGET_URL}"
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ export ARTILLERY_DISABLE_TELEMETRY=true
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ # --- Install bundle deps (only if node_modules absent) -------------------
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ if [[ -d "${WORK}/node_modules" ]]; then
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___   log "node_modules present in bundle; skipping npm ci."
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ elif [[ -f "${WORK}/package.json" ]]; then
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___   log "node_modules absent; running npm ci to install bundle deps."
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___   npm ci
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ else
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___   log "Note: no package.json in bundle. Relying on globally-installed Artillery / Playwright (Packer image)."
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ fi
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,617 INFO     ___FILE_ONLY___ # --- SIGTERM-aware run loop ----------------------------------------------
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ artillery_pid=""
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ terminate=0
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ # shellcheck disable=SC2329  # invoked via `trap` below.
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ handle_sigterm() {
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___   terminate=1
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___   log "SIGTERM received — flushing in-flight Artillery and shutting down."
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___   if [[ -n "${artillery_pid}" ]] && kill -0 "${artillery_pid}" 2>/dev/null; then
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___     # Give Artillery's OTLP exporter time to flush. The plugin shuts down
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___     # cleanly on SIGTERM (see docs/metrics.md "When metrics don't appear" —
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___     # the 'Shut down successful' log line is the success signal).
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___     kill -TERM "${artillery_pid}" 2>/dev/null || true
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___   fi
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ }
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ trap handle_sigterm TERM INT
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ start_ts=$(date +%s)
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ iter=0
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,618 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ last_artillery_exit=0
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ while ((terminate == 0)); do
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   if [[ -n "${RUN_DURATION_SEC}" ]]; then
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___     now=$(date +%s)
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___     elapsed=$((now - start_ts))
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___     if ((elapsed >= RUN_DURATION_SEC)); then
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___       log "RUN_DURATION_SEC=${RUN_DURATION_SEC} elapsed; exiting loop after ${iter} iterations."
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___       break
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___     fi
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   fi
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   iter=$((iter + 1))
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   iter_label=$(printf "%04d" "${iter}")
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   output_json="result-${RUN_ID}-${INSTANCE_NAME}-${iter_label}.json"
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   log "Iteration ${iter} starting (output=${output_json})"
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   # Run Artillery under xvfb-run so headed Chromium attaches its window
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   # surface to a virtual X display. Production base.yml is `headless: false`
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___   # because --headless=new silently selects software rendering on this
+2026-05-07 17:25:10,619 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   # driver/Chromium combo (vfps-ibupub) — xvfb provides the X surface,
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   # ANGLE/Vulkan rendering bypasses xvfb and binds to the NVIDIA Vulkan
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   # ICD on the T4. xvfb-run -a auto-picks a free display number; -s sets
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   # a 1920x1080x24 virtual display large enough for the Viewer's worst-case
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   # four-viewport layout. Run in the background so the SIGTERM trap can
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   # signal it cleanly. `set +e` around the wait so the loop survives a
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   # non-zero exit — load tests do not abort the whole instance on one
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   # failed iteration.
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   set +e
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   xvfb-run -a -s "-screen 0 1920x1080x24" \
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___     npx artillery run \
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___     --config config/base.yml \
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___     --output "${output_json}" \
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___     "${SCENARIO_FILE}" &
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   artillery_pid=$!
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   wait "${artillery_pid}"
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___   last_artillery_exit=$?
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,620 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___   set -e
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___   artillery_pid=""
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___   if [[ -f "${output_json}" ]]; then
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___     if gsutil cp "${output_json}" "gs://${RESULTS_BUCKET}/${RUN_ID}/"; then
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___       log "Iteration ${iter} result uploaded (exit=${last_artillery_exit})."
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___     else
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___       log "Warning: failed to upload ${output_json} (exit=${last_artillery_exit}); continuing."
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___     fi
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___   else
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___     log "Warning: iteration ${iter} produced no output file (exit=${last_artillery_exit})."
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___   fi
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ done
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ log "Run loop finished after ${iter} iteration(s); last Artillery exit=${last_artillery_exit}."
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ # --- Self-delete ----------------------------------------------------------
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ # spikes/load-generator/RESULT.md "Startup script" — self-delete so the MIG
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ # drops to its target size after the run. The custom IAM role provisioned
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,621 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ # by Epic 12.4 grants compute.instances.delete and compute.zoneOperations
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ # .get, which is exactly what this call needs.
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ log "Self-deleting instance ${INSTANCE_NAME} in ${ZONE}."
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ gcloud compute instances delete "${INSTANCE_NAME}" --zone="${ZONE}" --quiet
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ # Unreachable in normal flow; the delete call terminates the VM. Emitted
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ # only if gcloud returns before the VM is destroyed (e.g., dry-run shells).
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___         
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ exit 0
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___     
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ -
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ key
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ target-url
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___       
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ value
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ :
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___  
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ https://pacs.stratus.optum.com/
+2026-05-07 17:25:10,622 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:25:10,639 DEBUG    root            Metrics reporting process started...

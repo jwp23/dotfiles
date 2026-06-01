@@ -1,0 +1,31 @@
+2026-05-14 17:13:19,569 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 17:13:19,571 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-14 17:13:19,573 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-14 17:13:19,575 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-", --format: "value(name,status,creationTimestamp)", --project: "env-integration-fenway"]
+2026-05-14 17:13:19,578 DEBUG    root            On GCE from memory cache: False
+2026-05-14 17:13:19,618 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-14 17:13:19,618 DEBUG    root            On GCE from server: False
+2026-05-14 17:13:19,739 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-14 17:13:19,740 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,status,creationTimestamp)
+2026-05-14 17:13:19,741 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,status,creationTimestamp)"
+2026-05-14 17:13:19,748 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 17:13:20,376 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-14 17:13:20,694 INFO     ___FILE_ONLY___ loadgen-vdc9	RUNNING	2026-05-14T16:45:44.508-07:00
+
+2026-05-14 17:13:20,711 DEBUG    root            Metrics reporting process started...

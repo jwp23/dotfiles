@@ -1,0 +1,48 @@
+2026-05-26 19:36:30,726 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-26 19:36:30,729 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-26 19:36:30,730 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-26 19:36:30,738 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'describe']
+2026-05-26 19:36:30,741 DEBUG    root            Running [gcloud.compute.instance-groups.managed.describe] with arguments: [--project: "env-integration-fenway", --region: "us-central1", NAME: "artillery-loadgen-mig"]
+2026-05-26 19:36:30,743 DEBUG    root            On GCE from memory cache: False
+2026-05-26 19:36:30,745 DEBUG    root            On GCE from memory cache: False
+2026-05-26 19:36:30,917 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-26 19:36:31,361 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig?alt=json HTTP/1.1" 404 None
+2026-05-26 19:36:31,363 DEBUG    root            (gcloud.compute.instance-groups.managed.describe) HTTPError 404: The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found. This command is authenticated as jpresley@synthesis.health which is the active account specified by the [core/account] property
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_groups/managed/describe.py", line 57, in Run
+    igm = encoding.MessageToDict(service.Get(request_type(**ref.AsDict())))
+                                 ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/compute/v1/compute_v1_client.py", line 17974, in Get
+    return self._RunMethod(
+           ~~~~~~~~~~~~~~~^
+        config, request, global_params=global_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+        http_response, method_config=method_config, request=request)
+apitools.base.py.exceptions.HttpNotFoundError: HttpError accessing <https://compute.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig?alt=json>: response: <{'content-type': 'application/json; charset=UTF-8', 'vary': 'Origin, X-Origin, Referer', 'content-encoding': 'gzip', 'date': 'Wed, 27 May 2026 02:36:31 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 404}>, content <{
+  "error": {
+    "code": 404,
+    "message": "The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found",
+    "errors": [
+      {
+        "message": "The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found",
+        "domain": "global",
+        "reason": "notFound"
+      }
+    ]
+  }
+}
+>
+2026-05-26 19:36:31,369 ERROR    root            (gcloud.compute.instance-groups.managed.describe) HTTPError 404: The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found. This command is authenticated as jpresley@synthesis.health which is the active account specified by the [core/account] property
+2026-05-26 19:36:31,382 DEBUG    root            Metrics reporting process started...

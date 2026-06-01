@@ -1,0 +1,487 @@
+2026-05-27 17:45:35,271 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 17:45:35,275 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-27 17:45:35,278 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-27 17:45:35,290 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'resize']
+2026-05-27 17:45:35,293 DEBUG    root            Running [gcloud.compute.instance-groups.managed.resize] with arguments: [--project: "env-integration-fenway", --quiet: "True", --region: "us-central1", --size: "0", NAME: "artillery-loadgen-mig"]
+2026-05-27 17:45:35,300 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:45:35,358 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-27 17:45:35,359 DEBUG    root            On GCE from server: False
+2026-05-27 17:45:35,731 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 17:45:36,146 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig/resize?alt=json&size=0 HTTP/1.1" 200 None
+2026-05-27 17:45:36,146 DEBUG    root            Operations to inspect: [(<Operation
+ id: 8780448890332262111
+ insertTime: '2026-05-27T17:45:36.047-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1779929135888-652d60bdeb8d9-230746a2-c60e1d58'
+ operationType: 'compute.instanceGroupManagers.resize'
+ progress: 0
+ region: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1779929135888-652d60bdeb8d9-230746a2-c60e1d58'
+ startTime: '2026-05-27T17:45:36.050-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9133668997915095277
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]
+2026-05-27 17:45:40,774 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1779929135888-652d60bdeb8d9-230746a2-c60e1d58/wait?alt=json HTTP/1.1" 200 None
+2026-05-27 17:45:40,775 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2026-05-27T17:45:40.674-07:00'
+ id: 8780448890332262111
+ insertTime: '2026-05-27T17:45:36.047-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1779929135888-652d60bdeb8d9-230746a2-c60e1d58'
+ operationType: 'compute.instanceGroupManagers.resize'
+ progress: 100
+ region: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1779929135888-652d60bdeb8d9-230746a2-c60e1d58'
+ startTime: '2026-05-27T17:45:36.050-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 9133668997915095277
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]
+2026-05-27 17:45:40,775 INFO     ___FILE_ONLY___ Updated [https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig].
+
+2026-05-27 17:45:40,969 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig?alt=json HTTP/1.1" 200 None
+2026-05-27 17:45:40,971 DEBUG    root            Chosen display Format:default
+2026-05-27 17:45:40,971 INFO     root            Display format: "default"
+2026-05-27 17:45:40,987 INFO     ___FILE_ONLY___ ---
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___ baseInstanceName
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___ loadgen
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___ creationTimestamp
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,988 INFO     ___FILE_ONLY___  '
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___ 2026-05-27T17:36:18.896-07:00
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___ '
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___ currentActions
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___ abandoning
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,989 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ creating
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ creatingWithoutRetries
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ deleting
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,990 INFO     ___FILE_ONLY___ 1
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ none
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ recreating
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ refreshing
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ restarting
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ resuming
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ starting
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,991 INFO     ___FILE_ONLY___ stopping
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ suspending
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ verifying
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ distributionPolicy
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ targetShape
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ EVEN
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ zones
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ -
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ zone
+2026-05-27 17:45:40,992 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-b
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ -
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ zone
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-c
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ -
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ zone
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/zones/us-central1-f
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ fingerprint
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ 2TTr4bKBmCw=
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ id
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___  '
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ 9133668997915095277
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ '
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ instanceGroup
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroups/artillery-loadgen-mig
+2026-05-27 17:45:40,993 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ instanceLifecyclePolicy
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ defaultActionOnFailure
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ REPAIR
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ forceUpdateOnRepair
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ NO
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ onFailedHealthCheck
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ DEFAULT_ACTION
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ instanceTemplate
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ kind
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ compute#instanceGroupManager
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ listManagedInstancesResults
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ PAGELESS
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,994 INFO     ___FILE_ONLY___ name
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ artillery-loadgen-mig
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ region
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ satisfiesPzi
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ true
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ satisfiesPzs
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ true
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ selfLink
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ standbyPolicy
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ mode
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ MANUAL
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ status
+2026-05-27 17:45:40,995 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ allInstancesConfig
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ effective
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ true
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ isStable
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ false
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ stateful
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ hasStatefulConfig
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ false
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ perInstanceConfigs
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___       
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ allEffective
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ true
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ versionTarget
+2026-05-27 17:45:40,996 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ isReached
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ true
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ targetSize
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ targetSizePolicy
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ mode
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ INDIVIDUAL
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ targetStoppedSize
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ targetSuspendedSize
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ updatePolicy
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ instanceRedistributionType
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,997 INFO     ___FILE_ONLY___ PROACTIVE
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ maxSurge
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ calculated
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 3
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ fixed
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 3
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ maxUnavailable
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ calculated
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 3
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ fixed
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 3
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ minimalAction
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ REPLACE
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ replacementMethod
+2026-05-27 17:45:40,998 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ SUBSTITUTE
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ type
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ OPPORTUNISTIC
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ versions
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ -
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ instanceTemplate
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___   
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ targetSize
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___     
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ calculated
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ :
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___  
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:45:40,999 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:45:41,016 DEBUG    root            Metrics reporting process started...

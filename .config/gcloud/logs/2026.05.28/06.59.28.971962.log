@@ -1,0 +1,193 @@
+2026-05-28 06:59:29,071 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 06:59:29,088 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-28 06:59:29,093 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-28 06:59:29,096 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~loadgen OR name~fenway", --format: "table(name,zone,status,creationTimestamp,disks[0].source.scope(images))", --project: "env-integration-fenway"]
+2026-05-28 06:59:29,098 DEBUG    root            On GCE from memory cache: False
+2026-05-28 06:59:29,101 DEBUG    root            On GCE from memory cache: False
+2026-05-28 06:59:29,249 INFO     root            client_filter='name~loadgen OR name~fenway' server_filter=None
+2026-05-28 06:59:29,250 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,zone,status,creationTimestamp,disks[0].source.scope(images))
+2026-05-28 06:59:29,250 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,zone,status,creationTimestamp,disks[0].source.scope(images))"
+2026-05-28 06:59:29,260 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 06:59:29,921 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ NAME
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___                                                  
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ ZONE
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___            
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ STATUS
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___       
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ CREATION_TIMESTAMP
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___              
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ SOURCE
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-09b424e0-w40n
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ 2026-05-10T22:35:33.621-07:00
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-09b424e0-w40n
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-09b424e0-z7ib
+2026-05-28 06:59:30,238 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ 2026-05-10T22:40:38.564-07:00
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-09b424e0-z7ib
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-3b8d18c3-z44p
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ 2026-05-26T22:48:15.959-07:00
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-3b8d18c3-z44p
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ integration-fenway-cloud-hub
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___                          
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:30,239 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ TERMINATED
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 2025-11-14T06:56:34.490-08:00
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ integration-fenway-cloud-hub
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ tailscale-fenway-before-patching-20260331-131458
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ TERMINATED
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 2026-03-31T06:15:13.714-07:00
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ tailscale-fenway-before-patching-20260331-131458
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-0ecc5615-cyqy
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 2026-05-10T22:50:49.619-07:00
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-0ecc5615-cyqy
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-0ecc5615-ixcz
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 2026-05-10T22:45:47.336-07:00
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-0ecc5615-ixcz
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-a1d6f90a-4so1
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 2026-05-26T22:52:06.911-07:00
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-a1d6f90a-4so1
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-b340f2d4-304b
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:30,240 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 2026-05-10T22:06:24.873-07:00
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-b340f2d4-304b
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway-monitoring-5c5aec31-sae3
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 2026-05-27T20:21:24.244-07:00
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway-monitoring-5c5aec31-sae3
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-f5a026af-vby7
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 2026-05-11T21:08:48.007-07:00
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-f5a026af-vby7
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-4f8989aa-1asr
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 2026-05-26T22:55:53.012-07:00
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-4f8989aa-1asr
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-3d4634a2-tli1
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 2026-05-10T22:09:51.721-07:00
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-3d4634a2-tli1
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ tailscale-fenway
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___                                      
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,241 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:30,242 INFO     ___FILE_ONLY___      
+2026-05-28 06:59:30,242 INFO     ___FILE_ONLY___ 2025-12-16T06:32:50.514-08:00
+2026-05-28 06:59:30,242 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:30,242 INFO     ___FILE_ONLY___ tailscale-fenway
+2026-05-28 06:59:30,242 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:30,252 DEBUG    root            Metrics reporting process started...

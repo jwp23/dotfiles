@@ -1,0 +1,314 @@
+2026-05-28 06:59:30,953 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 06:59:30,964 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-28 06:59:30,967 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-28 06:59:30,970 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~loadgen OR name~fenway", --format: "table(name,zone,status,creationTimestamp,disks[0].source.scope(images))", --project: "env-preprod-fenway"]
+2026-05-28 06:59:30,972 DEBUG    root            On GCE from memory cache: False
+2026-05-28 06:59:30,973 DEBUG    root            On GCE from memory cache: False
+2026-05-28 06:59:31,171 INFO     root            client_filter='name~loadgen OR name~fenway' server_filter=None
+2026-05-28 06:59:31,172 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,zone,status,creationTimestamp,disks[0].source.scope(images))
+2026-05-28 06:59:31,173 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,zone,status,creationTimestamp,disks[0].source.scope(images))"
+2026-05-28 06:59:31,196 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 06:59:32,011 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-preprod-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 06:59:32,684 INFO     ___FILE_ONLY___ NAME
+2026-05-28 06:59:32,685 INFO     ___FILE_ONLY___                                                  
+2026-05-28 06:59:32,685 INFO     ___FILE_ONLY___ ZONE
+2026-05-28 06:59:32,685 INFO     ___FILE_ONLY___            
+2026-05-28 06:59:32,685 INFO     ___FILE_ONLY___ STATUS
+2026-05-28 06:59:32,685 INFO     ___FILE_ONLY___    
+2026-05-28 06:59:32,685 INFO     ___FILE_ONLY___ CREATION_TIMESTAMP
+2026-05-28 06:59:32,686 INFO     ___FILE_ONLY___              
+2026-05-28 06:59:32,686 INFO     ___FILE_ONLY___ SOURCE
+2026-05-28 06:59:32,686 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,686 INFO     ___FILE_ONLY___ fenway-cloud-hub
+2026-05-28 06:59:32,686 INFO     ___FILE_ONLY___                                      
+2026-05-28 06:59:32,686 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,686 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,686 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ 2025-08-12T11:45:37.714-07:00
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ fenway-cloud-hub
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ gke-env-preprod-fenway--foviacache-v3-8d85b39c-cepe
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ 2026-05-27T20:24:26.949-07:00
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ gke-env-preprod-fenway--foviacache-v3-8d85b39c-cepe
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ gke-env-preprod-fenway--foviacache-v3-8d85b39c-dszt
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___ 2026-05-27T23:05:37.242-07:00
+2026-05-28 06:59:32,687 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ gke-env-preprod-fenway--foviacache-v3-8d85b39c-dszt
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ gke-env-preprod-fenway--foviacache-v3-8d85b39c-r4xc
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ 2026-05-27T23:06:47.465-07:00
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ gke-env-preprod-fenway--foviacache-v3-8d85b39c-r4xc
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ gke-env-preprod-fenway--foviacache-v3-8d85b39c-vr2m
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___ 2026-05-27T23:05:37.431-07:00
+2026-05-28 06:59:32,688 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ gke-env-preprod-fenway--foviacache-v3-8d85b39c-vr2m
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-c-fovia-viewer-8e56ad0a-gfg6
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ 2026-05-26T22:20:12.225-07:00
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-c-fovia-viewer-8e56ad0a-gfg6
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-c-fovia-viewer-8e56ad0a-pxeg
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ 2026-05-26T22:02:12.976-07:00
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-c-fovia-viewer-8e56ad0a-pxeg
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-clus-fenway-ai-f421223b-kfwj
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,689 INFO     ___FILE_ONLY___ 2026-05-13T22:12:55.848-07:00
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-clus-fenway-ai-f421223b-kfwj
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-b98b0146-3ava
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ 2026-05-27T22:02:01.238-07:00
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-b98b0146-3ava
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-b98b0146-qzk4
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ 2026-05-27T22:11:38.470-07:00
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-b98b0146-qzk4
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-b98b0146-sx2l
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ 2026-05-27T22:06:43.463-07:00
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-b98b0146-sx2l
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-mongodb-c0ae0f01-7pnj
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___ 2026-05-14T20:29:35.016-07:00
+2026-05-28 06:59:32,690 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-mongodb-c0ae0f01-7pnj
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-trigram-fa930ca6-h7od
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 2026-05-26T20:28:50.358-07:00
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-trigram-fa930ca6-h7od
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-c2ca83e5-5hbw
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 2026-05-27T22:38:52.957-07:00
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-c2ca83e5-5hbw
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-c2ca83e5-mb7j
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ us-central1-a
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 2026-05-16T21:26:55.452-07:00
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-c2ca83e5-mb7j
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-ae646306-mpno
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 2026-05-27T22:16:45.870-07:00
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-ae646306-mpno
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-ae646306-nwey
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,691 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 2026-05-27T22:26:48.249-07:00
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-ae646306-nwey
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-ae646306-s78y
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 2026-05-27T22:21:48.078-07:00
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-backend-ae646306-s78y
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-mongodb-5aa62f43-j100
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 2026-05-14T20:33:16.260-07:00
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-mongodb-5aa62f43-j100
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-trigram-df86817b-k7z2
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 2026-05-26T20:25:19.759-07:00
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-trigram-df86817b-k7z2
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-06fddd83-7cis
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___ 2026-05-16T21:34:14.712-07:00
+2026-05-28 06:59:32,692 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-06fddd83-7cis
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-06fddd83-pwck
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 2026-05-16T21:37:41.250-07:00
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-06fddd83-pwck
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-mongodb-2eb65d49-6rz9
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 2026-05-14T20:37:03.086-07:00
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-cluste-mongodb-2eb65d49-6rz9
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-1379d766-3ipp
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 2026-05-16T21:44:24.793-07:00
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-1379d766-3ipp
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-1379d766-bv06
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ RUNNING
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 2026-05-16T21:41:08.999-07:00
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___   
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ gke-env-preprod-fenway-core-ingestion-1379d766-bv06
+2026-05-28 06:59:32,693 INFO     ___FILE_ONLY___ 
+
+2026-05-28 06:59:32,708 DEBUG    root            Metrics reporting process started...

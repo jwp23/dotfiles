@@ -1,0 +1,15 @@
+2026-05-15 11:03:07,090 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-15 11:03:07,092 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-15 11:03:07,094 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-15 11:03:07,099 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'describe']
+2026-05-15 11:03:07,101 DEBUG    root            Running [gcloud.compute.instance-groups.managed.describe] with arguments: [--format: "value(instanceTemplate,versions[0].instanceTemplate)", --project: "env-integration-fenway", --region: "us-central1", NAME: "artillery-loadgen-mig-prod"]
+2026-05-15 11:03:07,102 DEBUG    root            On GCE from memory cache: False
+2026-05-15 11:03:07,104 DEBUG    root            On GCE from memory cache: False
+2026-05-15 11:03:07,203 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-15 11:03:07,641 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig-prod?alt=json HTTP/1.1" 200 None
+2026-05-15 11:03:07,799 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 11:03:07,800 DEBUG    root            Chosen display Format:default value(instanceTemplate,versions[0].instanceTemplate)
+2026-05-15 11:03:07,801 INFO     root            Display format: "default value(instanceTemplate,versions[0].instanceTemplate)"
+2026-05-15 11:03:07,818 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod	https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod
+
+2026-05-15 11:03:07,831 DEBUG    root            Metrics reporting process started...

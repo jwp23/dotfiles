@@ -1,0 +1,10 @@
+2026-05-06 08:21:05,966 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-06 08:21:05,969 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get']
+2026-05-06 08:21:05,970 DEBUG    root            Running [gcloud.config.get] with arguments: [SECTION/PROPERTY: "project"]
+2026-05-06 08:21:05,970 DEBUG    root            Chosen display Format:value(.)
+2026-05-06 08:21:05,970 INFO     root            Display format: "value(.)"
+2026-05-06 08:21:05,970 INFO     ___FILE_ONLY___ env-integration-fenway
+
+2026-05-06 08:21:06,037 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-06 08:21:06,037 DEBUG    root            On GCE from server: False
+2026-05-06 08:21:06,047 DEBUG    root            Metrics reporting process started...

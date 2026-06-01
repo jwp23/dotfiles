@@ -1,0 +1,21 @@
+2026-05-28 07:09:40,396 DEBUG    root            Loaded Command Group: ['gcloud', 'logging']
+2026-05-28 07:09:40,424 DEBUG    root            Loaded Command Group: ['gcloud', 'logging', 'read']
+2026-05-28 07:09:40,428 DEBUG    root            Running [gcloud.logging.read] with arguments: [--format: "value(timestamp,resource.labels.instance_id,textPayload,jsonPayload.message)", --freshness: "1209600", --limit: "20", LOG_FILTER: "resource.type=gce_instance AND (textPayload:"heartbeat" OR textPayload:"fleet-heartbeat" OR jsonPayload.message:"heartbeat" OR jsonPayload.message:"fleet-heartbeat")"]
+2026-05-28 07:09:40,433 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:40,436 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:40,469 DEBUG    root            Chosen display Format:default value(timestamp,resource.labels.instance_id,textPayload,jsonPayload.message)
+2026-05-28 07:09:40,470 INFO     root            Display format: "default value(timestamp,resource.labels.instance_id,textPayload,jsonPayload.message)"
+2026-05-28 07:09:40,504 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): logging.googleapis.com:443
+2026-05-28 07:09:47,675 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:09:53,032 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:00,140 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:07,334 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:12,859 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:19,958 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:25,912 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:32,710 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:38,677 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:44,734 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:51,827 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:56,200 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:10:56,265 DEBUG    root            Metrics reporting process started...

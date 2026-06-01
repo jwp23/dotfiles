@@ -1,0 +1,51 @@
+2026-05-15 06:43:40,337 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-15 06:43:40,339 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-15 06:43:40,340 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-15 06:43:40,343 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list']
+2026-05-15 06:43:40,344 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list] with arguments: [--filter: "name=artillery-loadgen-mig", --format: "table(name,size,targetSize)", --project: "env-integration-fenway", --regions: "['us-central1']"]
+2026-05-15 06:43:40,345 DEBUG    root            On GCE from memory cache: False
+2026-05-15 06:43:40,346 DEBUG    root            On GCE from memory cache: False
+2026-05-15 06:43:40,431 INFO     root            client_filter=None server_filter='name eq ".*\\bartillery\\-loadgen\\-mig\\b.*"'
+2026-05-15 06:43:40,431 INFO     root            client_filter='((name=artillery-loadgen-mig)) AND (region :(us-central1))' server_filter='name eq ".*\\bartillery\\-loadgen\\-mig\\b.*"'
+2026-05-15 06:43:40,436 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-15 06:43:40,694 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers?alt=json&filter=name+eq+%22.%2A%5Cbartillery%5C-loadgen%5C-mig%5Cb.%2A%22&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 06:43:41,084 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroups?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 06:43:41,434 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 06:43:41,435 DEBUG    root            Chosen display Format:    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+ table(name,size,targetSize)
+2026-05-15 06:43:41,438 INFO     root            Display format: "    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+ table(name,size,targetSize)"
+2026-05-15 06:43:41,457 WARNING  root            --filter : operator evaluation is changing for consistency across Google APIs.  name=artillery-loadgen-mig currently does not match but will match in the near future.  Run `gcloud topic filters` for details.
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___ NAME
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___                    
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___ SIZE
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___   
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___ TARGET_SIZE
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___ 
+
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___ artillery-loadgen-mig
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___   
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___ 0
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___      
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___ 0
+2026-05-15 06:43:41,457 INFO     ___FILE_ONLY___ 
+
+2026-05-15 06:43:41,469 DEBUG    root            Metrics reporting process started...

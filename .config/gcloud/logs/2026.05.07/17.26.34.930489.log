@@ -1,0 +1,103 @@
+2026-05-07 17:26:34,941 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-05-07 17:26:34,943 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2026-05-07 17:26:34,994 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:26:35,273 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'add_iam_policy_binding']
+2026-05-07 17:26:35,274 DEBUG    root            Running [gcloud.storage.buckets.add-iam-policy-binding] with arguments: [--member: "serviceAccount:loadgen-mig@env-integration-fenway.iam.gserviceaccount.com", --role: "roles/storage.objectViewer", URL: "gs://artillery-loadgen-scenarios-env-integration-fenway"]
+2026-05-07 17:26:35,275 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:26:35,283 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-05-07 17:26:35,524 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/iam?alt=json&fields=bindings%2Cetag&optionsRequestedPolicyVersion=3 HTTP/1.1" 200 529
+2026-05-07 17:26:35,967 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/iam?alt=json HTTP/1.1" 200 662
+2026-05-07 17:26:35,970 DEBUG    root            Chosen display Format:default
+2026-05-07 17:26:35,971 INFO     root            Display format: "default"
+2026-05-07 17:26:35,985 INFO     ___FILE_ONLY___ bindings
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ -
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ members
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___   
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ -
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ projectEditor:env-integration-fenway
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___   
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ -
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ projectOwner:env-integration-fenway
+2026-05-07 17:26:35,986 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___   
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ role
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ roles/storage.legacyBucketOwner
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ -
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ members
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___   
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ -
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ projectViewer:env-integration-fenway
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___   
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ role
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ roles/storage.legacyBucketReader
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ -
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ members
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,987 INFO     ___FILE_ONLY___   
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ -
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ serviceAccount:loadgen-mig@env-integration-fenway.iam.gserviceaccount.com
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___   
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ role
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ roles/storage.objectViewer
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ etag
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ CAQ=
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ kind
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ storage#policy
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ resourceId
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ projects/_/buckets/artillery-loadgen-scenarios-env-integration-fenway
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,988 INFO     ___FILE_ONLY___ version
+2026-05-07 17:26:35,989 INFO     ___FILE_ONLY___ :
+2026-05-07 17:26:35,989 INFO     ___FILE_ONLY___  
+2026-05-07 17:26:35,989 INFO     ___FILE_ONLY___ 1
+2026-05-07 17:26:35,989 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:26:35,995 DEBUG    root            Metrics reporting process started...

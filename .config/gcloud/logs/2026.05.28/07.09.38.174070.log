@@ -1,0 +1,13 @@
+2026-05-28 07:09:38,365 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:09:38,371 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-28 07:09:38,375 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-28 07:09:38,377 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "value(properties.disks[0].initializeParams.sourceImage)", NAME: "artillery-loadgen-tpl-fenway"]
+2026-05-28 07:09:38,378 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:38,380 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:38,702 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:09:39,012 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-fenway?alt=json HTTP/1.1" 200 None
+2026-05-28 07:09:39,015 DEBUG    root            Chosen display Format:default value(properties.disks[0].initializeParams.sourceImage)
+2026-05-28 07:09:39,015 INFO     root            Display format: "default value(properties.disks[0].initializeParams.sourceImage)"
+2026-05-28 07:09:39,028 INFO     ___FILE_ONLY___ https://compute.googleapis.com/compute/v1/projects/env-integration-fenway/global/images/family/artillery-loadgen-gpu
+
+2026-05-28 07:09:39,039 DEBUG    root            Metrics reporting process started...

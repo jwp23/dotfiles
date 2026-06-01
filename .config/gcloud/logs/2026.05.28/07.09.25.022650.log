@@ -1,0 +1,30 @@
+2026-05-28 07:09:25,068 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:09:25,070 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-28 07:09:25,071 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'list']
+2026-05-28 07:09:25,073 DEBUG    root            Running [gcloud.compute.instance-groups.list] with arguments: [--format: "value(name,size,targetSize)", --regions: "['us-central1']"]
+2026-05-28 07:09:25,074 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:25,108 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-28 07:09:25,108 DEBUG    root            On GCE from server: False
+2026-05-28 07:09:25,199 INFO     root            client_filter='(region :(us-central1))' server_filter=None
+2026-05-28 07:09:25,204 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:09:25,637 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroups?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-28 07:09:26,099 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-28 07:09:26,102 DEBUG    root            Chosen display Format:        table(
+          name,
+          location():label=LOCATION,
+          location_scope():label=SCOPE,
+          network.basename(),
+          isManaged:label=MANAGED,
+          size:label=INSTANCES
+        ) value(name,size,targetSize)
+2026-05-28 07:09:26,106 INFO     root            Display format: "        table(
+          name,
+          location():label=LOCATION,
+          location_scope():label=SCOPE,
+          network.basename(),
+          isManaged:label=MANAGED,
+          size:label=INSTANCES
+        ) value(name,size,targetSize)"
+2026-05-28 07:09:26,116 INFO     ___FILE_ONLY___ artillery-loadgen-mig-fenway	0	
+
+2026-05-28 07:09:26,125 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,23 @@
+2026-05-28 15:03:02,262 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-28 15:03:02,280 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'list']
+2026-05-28 15:03:02,281 DEBUG    root            Running [gcloud.config.list] with arguments: []
+2026-05-28 15:03:02,282 DEBUG    root            On GCE from memory cache: False
+2026-05-28 15:03:02,283 DEBUG    root            Chosen display Format:config
+2026-05-28 15:03:02,283 INFO     root            Display format: "config"
+2026-05-28 15:03:02,317 INFO     ___FILE_ONLY___ [core]
+account = jpresley@synthesis.health
+disable_usage_reporting = False
+project = env-integration-fenway
+
+2026-05-28 15:03:02,317 INFO     ___FILE_ONLY___ 
+Your active configuration is: [default]
+
+2026-05-28 15:03:02,321 DEBUG    root            On GCE from memory cache: False
+2026-05-28 15:03:02,342 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-05-28 15:03:02,571 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/env-integration-fenway?alt=json HTTP/1.1" 200 None
+2026-05-28 15:03:02,577 DEBUG    root            On GCE from memory cache: False
+2026-05-28 15:03:02,581 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-05-28 15:03:03,042 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v3/effectiveTags?alt=json&pageSize=100&parent=%2F%2Fcloudresourcemanager.googleapis.com%2Fprojects%2Fenv-integration-fenway HTTP/1.1" 200 None
+2026-05-28 15:03:03,042 INFO     ___FILE_ONLY___ [environment: Development]
+
+2026-05-28 15:03:03,058 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,71 @@
+2026-05-29 13:27:18,611 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-29 13:27:18,626 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'accelerator_types']
+2026-05-29 13:27:18,628 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'accelerator-types', 'list']
+2026-05-29 13:27:18,629 DEBUG    root            Running [gcloud.compute.accelerator-types.list] with arguments: [--filter: "zone:us-south1 AND name~rtx-pro-6000", --project: "env-integration-fenway"]
+2026-05-29 13:27:18,634 DEBUG    root            On GCE from memory cache: False
+2026-05-29 13:27:18,668 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-29 13:27:18,668 DEBUG    root            On GCE from server: False
+2026-05-29 13:27:18,678 DEBUG    root            On GCE from memory cache: False
+2026-05-29 13:27:18,679 DEBUG    root            On GCE from memory cache: False
+2026-05-29 13:27:18,679 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-29 13:27:18,684 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-29 13:27:18,846 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-29 13:27:18,941 INFO     root            client_filter=None server_filter='(zone eq ".*\\bus\\-south1\\b.*")(name eq ".*(rtx-pro-6000).*")'
+2026-05-29 13:27:18,942 DEBUG    root            Chosen display Format:
+        table(
+          name,
+          zone.basename(),
+          description
+        )
+    
+2026-05-29 13:27:18,946 INFO     root            Display format: "
+        table(
+          name,
+          zone.basename(),
+          description
+        )
+    "
+2026-05-29 13:27:18,948 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-29 13:27:19,444 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/acceleratorTypes?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 13:27:19,900 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/acceleratorTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxH4CQAAAAAAABIVChNudmlkaWEtcnR4LXByby02MDAw&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 13:27:19,904 INFO     ___FILE_ONLY___ NAME
+2026-05-29 13:27:19,904 INFO     ___FILE_ONLY___                      
+2026-05-29 13:27:19,904 INFO     ___FILE_ONLY___ ZONE
+2026-05-29 13:27:19,904 INFO     ___FILE_ONLY___          
+2026-05-29 13:27:19,904 INFO     ___FILE_ONLY___ DESCRIPTION
+2026-05-29 13:27:19,904 INFO     ___FILE_ONLY___ 
+
+2026-05-29 13:27:19,904 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___       
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___   
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ NVIDIA RTX PRO 6000
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ 
+
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000-vws
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___   
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___   
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ NVIDIA_RTX_PRO_6000
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ 
+
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___       
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___   
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ NVIDIA RTX PRO 6000
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ 
+
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000-vws
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___   
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___   
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ NVIDIA_RTX_PRO_6000
+2026-05-29 13:27:19,905 INFO     ___FILE_ONLY___ 
+
+2026-05-29 13:27:19,914 DEBUG    root            Checking for updates...
+2026-05-29 13:27:19,915 DEBUG    root            On GCE from memory cache: False
+2026-05-29 13:27:19,915 DEBUG    root            On GCE from memory cache: False
+2026-05-29 13:27:19,916 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-05-29 13:27:20,055 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 25040
+2026-05-29 13:27:20,116 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,42 @@
+2026-05-27 17:35:50,579 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 17:35:50,583 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-27 17:35:50,584 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-27 17:35:50,592 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'resize']
+2026-05-27 17:35:50,594 DEBUG    root            Running [gcloud.compute.instance-groups.managed.resize] with arguments: [--project: "env-integration-fenway", --quiet: "True", --region: "us-central1", --size: "0", NAME: "artillery-loadgen-mig"]
+2026-05-27 17:35:50,599 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:35:50,602 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:35:50,817 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 17:35:51,116 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig/resize?alt=json&size=0 HTTP/1.1" 404 None
+2026-05-27 17:35:51,120 DEBUG    root            Chosen display Format:list[title="Could not fetch resource:",always-display-title]
+2026-05-27 17:35:51,120 DEBUG    root            (gcloud.compute.instance-groups.managed.resize) Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_groups/managed/resize.py", line 102, in Run
+    return self._MakeRmigResizeRequest(client, igm_ref, args)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_groups/managed/resize.py", line 91, in _MakeRmigResizeRequest
+    return client.MakeRequests([(service, 'Resize', request)])
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/client_adapter.py", line 156, in MakeRequests
+    utils.RaiseToolException(
+    ~~~~~~~~~~~~~~~~~~~~~~~~^
+        errors, error_message='Could not fetch resource:')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 136, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 145, in RaiseException
+    raise exception(
+        ConstructList(error_message or 'Some requests did not succeed:',
+                      ParseErrors(errors)))
+googlecloudsdk.calliope.exceptions.ToolException: Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found
+
+2026-05-27 17:35:51,125 ERROR    root            (gcloud.compute.instance-groups.managed.resize) Could not fetch resource:
+ - The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found
+
+2026-05-27 17:35:51,144 DEBUG    root            Metrics reporting process started...

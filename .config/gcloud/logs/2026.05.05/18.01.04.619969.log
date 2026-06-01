@@ -1,0 +1,12 @@
+2026-05-05 18:01:04,620 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2026-05-05 18:01:04,639 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'create']
+2026-05-05 18:01:04,647 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:01:04,648 DEBUG    root            Running [gcloud.secrets.create] with arguments: [--project: "env-integration-fenway", --replication-policy: "automatic", SECRET: "google-vertex-api-key"]
+2026-05-05 18:01:04,651 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:01:04,667 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2026-05-05 18:01:05,388 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "POST /v1/projects/env-integration-fenway/secrets?alt=json&secretId=google-vertex-api-key HTTP/1.1" 200 None
+2026-05-05 18:01:05,389 INFO     ___FILE_ONLY___ Created secret [google-vertex-api-key].
+
+2026-05-05 18:01:05,390 DEBUG    root            Chosen display Format:none
+2026-05-05 18:01:05,390 INFO     root            Display format: "none"
+2026-05-05 18:01:05,435 DEBUG    root            Metrics reporting process started...

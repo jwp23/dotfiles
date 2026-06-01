@@ -1,0 +1,22 @@
+2026-05-04 16:43:24,942 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-04 16:43:24,990 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2026-05-04 16:43:24,991 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "env-integration-fenway"]
+2026-05-04 16:43:24,993 DEBUG    root            On GCE from memory cache: False
+2026-05-04 16:43:24,997 DEBUG    root            On GCE from memory cache: False
+2026-05-04 16:43:25,005 DEBUG    root            On GCE from memory cache: False
+2026-05-04 16:43:25,006 DEBUG    root            On GCE from memory cache: False
+2026-05-04 16:43:25,006 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-04 16:43:25,010 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-04 16:43:25,166 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-04 16:43:25,172 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-05-04 16:43:25,429 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/env-integration-fenway?alt=json HTTP/1.1" 200 None
+2026-05-04 16:43:25,433 DEBUG    root            On GCE from memory cache: False
+2026-05-04 16:43:25,438 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-05-04 16:43:25,874 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v3/effectiveTags?alt=json&pageSize=100&parent=%2F%2Fcloudresourcemanager.googleapis.com%2Fprojects%2Fenv-integration-fenway HTTP/1.1" 200 None
+2026-05-04 16:43:25,875 INFO     ___FILE_ONLY___ [environment: Development]
+
+2026-05-04 16:43:25,877 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2026-05-04 16:43:25,878 DEBUG    root            Chosen display Format:default
+2026-05-04 16:43:25,878 INFO     root            Display format: "default"
+2026-05-04 16:43:25,889 DEBUG    root            Metrics reporting process started...

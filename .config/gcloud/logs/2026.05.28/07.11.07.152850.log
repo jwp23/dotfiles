@@ -1,0 +1,13 @@
+2026-05-28 07:11:07,279 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:11:07,282 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-28 07:11:07,288 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'describe_from_family']
+2026-05-28 07:11:07,290 DEBUG    root            Running [gcloud.compute.images.describe-from-family] with arguments: [--format: "value(name,creationTimestamp)", IMAGE_NAME: "artillery-loadgen-gpu"]
+2026-05-28 07:11:07,295 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:11:07,298 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:11:08,246 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:11:08,837 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/images/family/artillery-loadgen-gpu?alt=json HTTP/1.1" 200 None
+2026-05-28 07:11:08,839 DEBUG    root            Chosen display Format:default value(name,creationTimestamp)
+2026-05-28 07:11:08,839 INFO     root            Display format: "default value(name,creationTimestamp)"
+2026-05-28 07:11:08,865 INFO     ___FILE_ONLY___ artillery-loadgen-gpu-1778811478	2026-05-14T19:25:48.585-07:00
+
+2026-05-28 07:11:08,890 DEBUG    root            Metrics reporting process started...

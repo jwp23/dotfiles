@@ -1,0 +1,9 @@
+2026-05-27 10:02:59,951 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-27 10:02:59,958 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
+2026-05-27 10:02:59,960 DEBUG    root            Running [gcloud.config.get-value] with arguments: [SECTION/PROPERTY: "compute/region"]
+2026-05-27 10:02:59,961 INFO     ___FILE_ONLY___ (unset)
+
+2026-05-27 10:02:59,961 DEBUG    root            Chosen display Format:value(.)
+2026-05-27 10:02:59,962 INFO     root            Display format: "value(.)"
+2026-05-27 10:03:00,130 DEBUG    root            On GCE from memory cache: False
+2026-05-27 10:03:00,138 DEBUG    root            Metrics reporting process started...

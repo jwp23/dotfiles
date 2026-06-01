@@ -1,0 +1,30 @@
+2026-05-27 23:17:34,904 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 23:17:34,908 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-27 23:17:34,910 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-27 23:17:34,912 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-", --format: "value(name,zone,status,creationTimestamp)", --project: "env-integration-fenway"]
+2026-05-27 23:17:34,917 DEBUG    root            On GCE from memory cache: False
+2026-05-27 23:17:34,920 DEBUG    root            On GCE from memory cache: False
+2026-05-27 23:17:35,040 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-27 23:17:35,041 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,zone,status,creationTimestamp)
+2026-05-27 23:17:35,042 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,zone,status,creationTimestamp)"
+2026-05-27 23:17:35,050 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 23:17:35,709 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-27 23:17:36,041 INFO     ___FILE_ONLY___ loadgen-tknk	us-central1-b	RUNNING	2026-05-27T23:11:29.162-07:00
+
+2026-05-27 23:17:36,055 DEBUG    root            Metrics reporting process started...

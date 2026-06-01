@@ -1,0 +1,7 @@
+[[schedule]]
+time = "09:00"
+
+[[schedule]]
+days = ["Fri"]
+time = "10:00"
+

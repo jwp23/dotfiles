@@ -1,0 +1,33 @@
+2026-05-06 08:57:18,300 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-06 08:57:18,303 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-06 08:57:18,307 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'list']
+2026-05-06 08:57:18,309 DEBUG    root            Running [gcloud.compute.images.list] with arguments: [--filter: "family ~ common-cu.*", --format: "value(family)", --project: "deeplearning-platform-release"]
+2026-05-06 08:57:18,313 DEBUG    root            On GCE from memory cache: False
+2026-05-06 08:57:18,316 DEBUG    root            On GCE from memory cache: False
+2026-05-06 08:57:18,446 INFO     root            client_filter=None server_filter='family eq ".*(common-cu.*).*"'
+2026-05-06 08:57:18,447 INFO     root            client_filter=None server_filter='family eq ".*(common-cu.*).*"'
+2026-05-06 08:57:18,448 DEBUG    root            Chosen display Format:    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(family)
+2026-05-06 08:57:18,448 INFO     root            Display format: "    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(family)"
+2026-05-06 08:57:18,461 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-06 08:57:19,850 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-06 08:57:20,625 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/deeplearning-platform-release/global/images?alt=json&filter=family+eq+%22.%2A%28common-cu.%2A%29.%2A%22&maxResults=500&pageToken=ClYIgdyZv4OllAM6SwoCGAEKAiAACgIYAgoHIIaY1e_jDQoCGAYKJCoiY29tbW9uLWN1MTEwLXYyMDIwMTEwNS11YnVudHUtMTgwNAoKIPDzmoiY4OmLaw%3D%3D HTTP/1.1" 200 None
+2026-05-06 08:57:21,245 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/deeplearning-platform-release/global/images?alt=json&filter=family+eq+%22.%2A%28common-cu.%2A%29.%2A%22&maxResults=500&pageToken=ClAIiujwv4OllAM6RQoCGAEKAiAACgIYAgoHIIaY1e_jDQoCGAYKHiocY29tbW9uLWN1MTEzLXYyMDI0MDczMC1weTMxMAoKIIC9_8DbpbSgSw%3D%3D HTTP/1.1" 200 None
+2026-05-06 08:57:21,974 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/deeplearning-platform-release/global/images?alt=json&filter=family+eq+%22.%2A%28common-cu.%2A%29.%2A%22&maxResults=500&pageToken=ClwI7uiZwIOllAM6UQoCGAEKAiAACgIYAgoHIIaY1e_jDQoCGAYKKiooY29tbW9uLWN1MTIyLXYyMDI0MDkyMi11YnVudHUtMjAwNC1weTMxMAoKILXk58LLkeXaRA%3D%3D HTTP/1.1" 200 None
+2026-05-06 08:57:22,031 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2204-nvidia-580
+
+2026-05-06 08:57:22,032 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2404-nvidia-580
+
+2026-05-06 08:57:29,706 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/deeplearning-platform-release/global/images?alt=json&filter=family+eq+%22.%2A%28common-cu.%2A%29.%2A%22&maxResults=500&pageToken=ClIItO3AwIOllAM6RwoCGAEKAiAACgIYAgoHIIaY1e_jDQoCGAYKICoeY29tbW9uLWN1OTEtdjIwMjAwODA0LWRlYmlhbi05CgoghPnxjNi7tsxB HTTP/1.1" 200 None
+2026-05-06 08:57:29,751 DEBUG    root            Metrics reporting process started...

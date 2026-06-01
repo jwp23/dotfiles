@@ -1,0 +1,53 @@
+2026-05-14 16:00:00,512 DEBUG    root            Loaded Command Group: ['gcloud', 'logging']
+2026-05-14 16:00:00,524 DEBUG    root            Loaded Command Group: ['gcloud', 'logging', 'read']
+2026-05-14 16:00:00,526 DEBUG    root            Running [gcloud.logging.read] with arguments: [--format: "value(timestamp,labels."compute.googleapis.com/resource_name",textPayload)", --freshness: "1209600", --limit: "10", --project: "env-integration-fenway", LOG_FILTER: "resource.type="gce_instance" AND logName=~"serial_port" AND labels."compute.googleapis.com/resource_name"~"^loadgen""]
+2026-05-14 16:00:00,527 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:00:00,529 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:00:00,548 DEBUG    root            Chosen display Format:default value(timestamp,labels."compute.googleapis.com/resource_name",textPayload)
+2026-05-14 16:00:00,549 INFO     root            Display format: "default value(timestamp,labels."compute.googleapis.com/resource_name",textPayload)"
+2026-05-14 16:00:00,553 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): logging.googleapis.com:443
+2026-05-14 16:00:00,704 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 400 None
+2026-05-14 16:00:00,705 DEBUG    root            (gcloud.logging.read) INVALID_ARGUMENT: Unparseable filter: syntax error at line 1, column 151, token '~'
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 971, in Run
+    ).Display()
+      ~~~~~~~^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/display.py", line 504, in Display
+    self._printer.Print(self._resources)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/core/resource/resource_printer_base.py", line 297, in Print
+    for resource in resources:
+                    ^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/core/util/peek_iterable.py", line 207, in __next__
+    item = self._NextItem()
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/core/util/peek_iterable.py", line 179, in _NextItem
+    return next(self._iterable)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/list_pager.py", line 120, in YieldFromList
+    response = getattr(service, method)(request,
+                                        global_params=global_params)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/logging/v2/logging_v2_client.py", line 1629, in List
+    return self._RunMethod(
+           ~~~~~~~~~~~~~~~^
+        config, request, global_params=global_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+        http_response, method_config=method_config, request=request)
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://logging.googleapis.com/v2/entries:list?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Thu, 14 May 2026 23:00:00 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'server-timing': 'gfet4t7; dur=53', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Unparseable filter: syntax error at line 1, column 151, token '~'",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+>
+2026-05-14 16:00:00,710 ERROR    root            (gcloud.logging.read) INVALID_ARGUMENT: Unparseable filter: syntax error at line 1, column 151, token '~'
+2026-05-14 16:00:00,720 DEBUG    root            Metrics reporting process started...

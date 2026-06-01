@@ -1,0 +1,356 @@
+2026-06-01 10:50:10,363 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'quotas']
+2026-06-01 10:50:10,364 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'quotas', 'info']
+2026-06-01 10:50:10,368 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'quotas', 'info', 'describe']
+2026-06-01 10:50:10,369 DEBUG    root            Running [gcloud.alpha.quotas.info.describe] with arguments: [--format: "json", --project: "env-integration-fenway", --service: "compute.googleapis.com", QUOTA_ID: "GPUS-PER-GPU-FAMILY-per-project-region"]
+2026-06-01 10:50:10,371 DEBUG    root            On GCE from memory cache: False
+2026-06-01 10:50:10,372 DEBUG    root            On GCE from memory cache: False
+2026-06-01 10:50:10,387 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudquotas.googleapis.com:443
+2026-06-01 10:50:11,431 DEBUG    urllib3.connectionpool https://cloudquotas.googleapis.com:443 "GET /v1/projects/env-integration-fenway/locations/global/services/compute.googleapis.com/quotaInfos/GPUS-PER-GPU-FAMILY-per-project-region?alt=json HTTP/1.1" 200 None
+2026-06-01 10:50:11,434 DEBUG    root            Chosen display Format:default json
+2026-06-01 10:50:11,434 INFO     root            Display format: "default json"
+2026-06-01 10:50:11,482 INFO     ___FILE_ONLY___ {
+  "containerType": "PROJECT",
+  "dimensions": [
+    "gpu_family",
+    "region"
+  ],
+  "dimensionsInfos": [
+    {
+      "applicableLocations": [
+        "us-central1"
+      ],
+      "details": {},
+      "dimensions": {
+        "gpu_family": "NVIDIA_RTX_PRO_6000",
+        "region": "us-central1"
+      }
+    },
+    {
+      "applicableLocations": [
+        "us-south1"
+      ],
+      "details": {
+        "value": "4"
+      },
+      "dimensions": {
+        "gpu_family": "NVIDIA_RTX_PRO_6000",
+        "region": "us-south1"
+      }
+    },
+    {
+      "applicableLocations": [
+        "africa-south1",
+        "asia-east1",
+        "asia-east2",
+        "asia-northeast1",
+        "asia-northeast2",
+        "asia-northeast3",
+        "asia-south1",
+        "asia-south2",
+        "asia-southeast1",
+        "asia-southeast2",
+        "asia-southeast3",
+        "australia-southeast1",
+        "australia-southeast2",
+        "europe-central2",
+        "europe-north1",
+        "europe-north2",
+        "europe-southwest1",
+        "europe-west1",
+        "europe-west10",
+        "europe-west12",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
+        "europe-west8",
+        "europe-west9",
+        "me-central1",
+        "me-central2",
+        "me-west1",
+        "northamerica-northeast1",
+        "northamerica-northeast2",
+        "northamerica-south1",
+        "southamerica-east1",
+        "southamerica-west1",
+        "us-central1",
+        "us-east1",
+        "us-east4",
+        "us-east5",
+        "us-south1",
+        "us-west1",
+        "us-west2",
+        "us-west3",
+        "us-west4"
+      ],
+      "details": {},
+      "dimensions": {
+        "gpu_family": "NVIDIA_B200"
+      }
+    },
+    {
+      "applicableLocations": [
+        "africa-south1",
+        "asia-east1",
+        "asia-east2",
+        "asia-northeast1",
+        "asia-northeast2",
+        "asia-northeast3",
+        "asia-south1",
+        "asia-south2",
+        "asia-southeast1",
+        "asia-southeast2",
+        "asia-southeast3",
+        "australia-southeast1",
+        "australia-southeast2",
+        "europe-central2",
+        "europe-north1",
+        "europe-north2",
+        "europe-southwest1",
+        "europe-west1",
+        "europe-west10",
+        "europe-west12",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
+        "europe-west8",
+        "europe-west9",
+        "me-central1",
+        "me-central2",
+        "me-west1",
+        "northamerica-northeast1",
+        "northamerica-northeast2",
+        "northamerica-south1",
+        "southamerica-east1",
+        "southamerica-west1",
+        "us-central1",
+        "us-east1",
+        "us-east4",
+        "us-east5",
+        "us-south1",
+        "us-west1",
+        "us-west2",
+        "us-west3",
+        "us-west4"
+      ],
+      "details": {},
+      "dimensions": {
+        "gpu_family": "NVIDIA_H100_MEGA"
+      }
+    },
+    {
+      "applicableLocations": [
+        "africa-south1",
+        "asia-east1",
+        "asia-east2",
+        "asia-northeast1",
+        "asia-northeast2",
+        "asia-northeast3",
+        "asia-south1",
+        "asia-south2",
+        "asia-southeast1",
+        "asia-southeast2",
+        "asia-southeast3",
+        "australia-southeast1",
+        "australia-southeast2",
+        "europe-central2",
+        "europe-north1",
+        "europe-north2",
+        "europe-southwest1",
+        "europe-west1",
+        "europe-west10",
+        "europe-west12",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
+        "europe-west8",
+        "europe-west9",
+        "me-central1",
+        "me-central2",
+        "me-west1",
+        "northamerica-northeast1",
+        "northamerica-northeast2",
+        "northamerica-south1",
+        "southamerica-east1",
+        "southamerica-west1",
+        "us-central1",
+        "us-east1",
+        "us-east4",
+        "us-east5",
+        "us-south1",
+        "us-west1",
+        "us-west2",
+        "us-west3",
+        "us-west4"
+      ],
+      "details": {},
+      "dimensions": {
+        "gpu_family": "NVIDIA_H100"
+      }
+    },
+    {
+      "applicableLocations": [
+        "africa-south1",
+        "asia-east1",
+        "asia-east2",
+        "asia-northeast1",
+        "asia-northeast2",
+        "asia-northeast3",
+        "asia-south1",
+        "asia-south2",
+        "asia-southeast1",
+        "asia-southeast2",
+        "asia-southeast3",
+        "australia-southeast1",
+        "australia-southeast2",
+        "europe-central2",
+        "europe-north1",
+        "europe-north2",
+        "europe-southwest1",
+        "europe-west1",
+        "europe-west10",
+        "europe-west12",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
+        "europe-west8",
+        "europe-west9",
+        "me-central1",
+        "me-central2",
+        "me-west1",
+        "northamerica-northeast1",
+        "northamerica-northeast2",
+        "northamerica-south1",
+        "southamerica-east1",
+        "southamerica-west1",
+        "us-central1",
+        "us-east1",
+        "us-east4",
+        "us-east5",
+        "us-south1",
+        "us-west1",
+        "us-west2",
+        "us-west3",
+        "us-west4"
+      ],
+      "details": {},
+      "dimensions": {
+        "gpu_family": "NVIDIA_H200"
+      }
+    },
+    {
+      "applicableLocations": [
+        "africa-south1",
+        "asia-east1",
+        "asia-east2",
+        "asia-northeast1",
+        "asia-northeast2",
+        "asia-northeast3",
+        "asia-south1",
+        "asia-south2",
+        "asia-southeast1",
+        "asia-southeast2",
+        "asia-southeast3",
+        "australia-southeast1",
+        "australia-southeast2",
+        "europe-central2",
+        "europe-north1",
+        "europe-north2",
+        "europe-southwest1",
+        "europe-west1",
+        "europe-west10",
+        "europe-west12",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
+        "europe-west8",
+        "europe-west9",
+        "me-central1",
+        "me-central2",
+        "me-west1",
+        "northamerica-northeast1",
+        "northamerica-northeast2",
+        "northamerica-south1",
+        "southamerica-east1",
+        "southamerica-west1",
+        "us-east1",
+        "us-east4",
+        "us-east5",
+        "us-west1",
+        "us-west2",
+        "us-west3",
+        "us-west4"
+      ],
+      "details": {},
+      "dimensions": {
+        "gpu_family": "NVIDIA_RTX_PRO_6000"
+      }
+    },
+    {
+      "applicableLocations": [
+        "africa-south1",
+        "asia-east1",
+        "asia-east2",
+        "asia-northeast1",
+        "asia-northeast2",
+        "asia-northeast3",
+        "asia-south1",
+        "asia-south2",
+        "asia-southeast1",
+        "asia-southeast2",
+        "asia-southeast3",
+        "australia-southeast1",
+        "australia-southeast2",
+        "europe-central2",
+        "europe-north1",
+        "europe-north2",
+        "europe-southwest1",
+        "europe-west1",
+        "europe-west10",
+        "europe-west12",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
+        "europe-west8",
+        "europe-west9",
+        "me-central1",
+        "me-central2",
+        "me-west1",
+        "northamerica-northeast1",
+        "northamerica-northeast2",
+        "northamerica-south1",
+        "southamerica-east1",
+        "southamerica-west1",
+        "us-central1",
+        "us-east1",
+        "us-east4",
+        "us-east5",
+        "us-south1",
+        "us-west1",
+        "us-west2",
+        "us-west3",
+        "us-west4"
+      ],
+      "details": {}
+    }
+  ],
+  "isPrecise": true,
+  "metric": "compute.googleapis.com/gpus_per_gpu_family",
+  "metricDisplayName": "GPU count per GPU family.",
+  "metricUnit": "1",
+  "name": "projects/386659319067/locations/global/services/compute.googleapis.com/quotaInfos/GPUS-PER-GPU-FAMILY-per-project-region",
+  "quotaDisplayName": "GPUs per GPU family",
+  "quotaId": "GPUS-PER-GPU-FAMILY-per-project-region",
+  "quotaIncreaseEligibility": {
+    "isEligible": true
+  },
+  "service": "compute.googleapis.com"
+}
+2026-06-01 10:50:11,482 INFO     ___FILE_ONLY___ 
+
+2026-06-01 10:50:11,499 DEBUG    root            Metrics reporting process started...

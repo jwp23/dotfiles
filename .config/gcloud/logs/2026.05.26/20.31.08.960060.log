@@ -1,0 +1,24 @@
+2026-05-26 20:31:09,060 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-26 20:31:09,064 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-26 20:31:09,066 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-26 20:31:09,074 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'resize']
+2026-05-26 20:31:09,076 DEBUG    root            Running [gcloud.compute.instance-groups.managed.resize] with arguments: [--project: "env-integration-fenway", --quiet: "True", --region: "us-central1", --size: "0", NAME: "artillery-loadgen-mig"]
+2026-05-26 20:31:09,081 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:31:09,084 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:31:09,229 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-26 20:31:09,590 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig/resize?alt=json&size=0 HTTP/1.1" 200 None
+2026-05-26 20:31:09,591 DEBUG    root            Operations to inspect: [(<Operation
+ id: 3232823192401468306
+ insertTime: '2026-05-26T20:31:09.502-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1779852669363-652c43e1c24f3-a79e6889-91148ef6'
+ operationType: 'compute.instanceGroupManagers.resize'
+ progress: 0
+ region: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1779852669363-652c43e1c24f3-a79e6889-91148ef6'
+ startTime: '2026-05-26T20:31:09.505-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 6883988424173019196
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]

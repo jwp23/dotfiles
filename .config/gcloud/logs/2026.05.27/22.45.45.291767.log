@@ -1,0 +1,16 @@
+2026-05-27 22:45:45,418 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 22:45:45,423 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-27 22:45:45,426 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-27 22:45:45,464 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'describe']
+2026-05-27 22:45:45,467 DEBUG    root            Running [gcloud.compute.instance-groups.managed.describe] with arguments: [--format: "value(targetSize,name,zone)", --project: "env-integration-fenway", --region: "us-central1", NAME: "artillery-loadgen-mig-fenway"]
+2026-05-27 22:45:45,470 DEBUG    root            On GCE from memory cache: False
+2026-05-27 22:45:45,534 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-27 22:45:45,534 DEBUG    root            On GCE from server: False
+2026-05-27 22:45:45,699 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 22:45:45,944 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig-fenway?alt=json HTTP/1.1" 200 None
+2026-05-27 22:45:46,278 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-27 22:45:46,279 DEBUG    root            Chosen display Format:default value(targetSize,name,zone)
+2026-05-27 22:45:46,280 INFO     root            Display format: "default value(targetSize,name,zone)"
+2026-05-27 22:45:46,299 INFO     ___FILE_ONLY___ 0	artillery-loadgen-mig-fenway	
+
+2026-05-27 22:45:46,317 DEBUG    root            Metrics reporting process started...

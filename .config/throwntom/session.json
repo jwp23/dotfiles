@@ -1,0 +1,19 @@
+{
+  "saved_at": "2026-05-26T20:55:42.79405-07:00",
+  "app": {
+    "engine": {
+      "state": "paused",
+      "last_phase": "short_break",
+      "paused_from": "short_break",
+      "work_sessions": 2,
+      "completed_today": 2,
+      "work_day_started": true,
+      "work_date": "2026-05-26T09:06:26.23889-07:00"
+    },
+    "phase_end_at": "0001-01-01T00:00:00Z",
+    "paused_remaining": 296773537042
+  },
+  "focused_task_ids": [
+    62
+  ]
+}

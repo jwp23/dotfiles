@@ -1,0 +1,39 @@
+2026-05-27 22:52:01,184 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2026-05-27 22:52:01,186 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2026-05-27 22:52:01,187 DEBUG    root            Running [gcloud.auth.list] with arguments: []
+2026-05-27 22:52:01,189 DEBUG    root            On GCE from memory cache: False
+2026-05-27 22:52:01,189 DEBUG    root            Chosen display Format:    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    )
+2026-05-27 22:52:01,190 INFO     root            Display format: "    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    )"
+2026-05-27 22:52:01,216 INFO     ___FILE_ONLY___                           Credentialed Accounts
+2026-05-27 22:52:01,216 INFO     ___FILE_ONLY___ 
+
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ ACTIVE
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___   
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ ACCOUNT
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ 
+
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ *
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___        
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ jpresley@synthesis.health
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ 
+
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___         
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ vision-dashboards-terraform-ac@idg-devops.iam.gserviceaccount.com
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ 
+
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___         
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ vision-synthetic-terraform-acc@idg-devops.iam.gserviceaccount.com
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ 
+
+2026-05-27 22:52:01,217 INFO     ___FILE_ONLY___ 
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+
+
+2026-05-27 22:52:01,225 DEBUG    root            Metrics reporting process started...

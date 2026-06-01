@@ -1,0 +1,69 @@
+2026-05-15 11:10:54,614 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-15 11:10:54,618 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-15 11:10:54,620 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-15 11:10:54,632 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list_instances']
+2026-05-15 11:10:54,634 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list-instances] with arguments: [--format: "table(NAME,ZONE.basename(),STATUS,INSTANCE_STATUS)", --project: "env-integration-fenway", --region: "us-central1", NAME: "artillery-loadgen-mig-prod"]
+2026-05-15 11:10:54,639 DEBUG    root            On GCE from memory cache: False
+2026-05-15 11:10:54,642 DEBUG    root            On GCE from memory cache: False
+2026-05-15 11:10:54,813 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-15 11:10:55,303 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig-prod/listManagedInstances?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 11:10:55,304 DEBUG    root            Chosen display Format:        table(name:label=NAME,
+              instance.scope().segment(0):label=ZONE,
+              instanceStatus:label=STATUS,
+              instanceHealth[0].detailedHealthState:label=HEALTH_STATE,
+              currentAction:label=ACTION,
+              version.instanceTemplate.basename():label=INSTANCE_TEMPLATE,
+              version.name:label=VERSION_NAME,
+              lastAttempt.errors.errors.map().format(
+                "Error {0}: {1}", code, message).list(separator=", ")
+                :label=LAST_ERROR
+        ) table(NAME,ZONE.basename(),STATUS,INSTANCE_STATUS)
+2026-05-15 11:10:55,306 INFO     root            Display format: "        table(name:label=NAME,
+              instance.scope().segment(0):label=ZONE,
+              instanceStatus:label=STATUS,
+              instanceHealth[0].detailedHealthState:label=HEALTH_STATE,
+              currentAction:label=ACTION,
+              version.instanceTemplate.basename():label=INSTANCE_TEMPLATE,
+              version.name:label=VERSION_NAME,
+              lastAttempt.errors.errors.map().format(
+                "Error {0}: {1}", code, message).list(separator=", ")
+                :label=LAST_ERROR
+        ) table(NAME,ZONE.basename(),STATUS,INSTANCE_STATUS)"
+2026-05-15 11:10:55,331 INFO     ___FILE_ONLY___ NAME
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___           
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ ZONE
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___            
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ STATUS
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___    
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ INSTANCE_STATUS
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ 
+
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ loadgen-csxx
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___   
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___   
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ RUNNING
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ 
+
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___ loadgen-n5rs
+2026-05-15 11:10:55,332 INFO     ___FILE_ONLY___   
+2026-05-15 11:10:55,334 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-15 11:10:55,335 INFO     ___FILE_ONLY___   
+2026-05-15 11:10:55,335 INFO     ___FILE_ONLY___ RUNNING
+2026-05-15 11:10:55,335 INFO     ___FILE_ONLY___ 
+
+2026-05-15 11:10:55,335 INFO     ___FILE_ONLY___ loadgen-c9m8
+2026-05-15 11:10:55,335 INFO     ___FILE_ONLY___   
+2026-05-15 11:10:55,335 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-15 11:10:55,335 INFO     ___FILE_ONLY___   
+2026-05-15 11:10:55,335 INFO     ___FILE_ONLY___ RUNNING
+2026-05-15 11:10:55,336 INFO     ___FILE_ONLY___ 
+
+2026-05-15 11:10:55,336 INFO     ___FILE_ONLY___ loadgen-4lpk
+2026-05-15 11:10:55,336 INFO     ___FILE_ONLY___   
+2026-05-15 11:10:55,336 INFO     ___FILE_ONLY___ us-central1-f
+2026-05-15 11:10:55,336 INFO     ___FILE_ONLY___   
+2026-05-15 11:10:55,336 INFO     ___FILE_ONLY___ RUNNING
+2026-05-15 11:10:55,336 INFO     ___FILE_ONLY___ 
+
+2026-05-15 11:10:55,358 DEBUG    root            Metrics reporting process started...

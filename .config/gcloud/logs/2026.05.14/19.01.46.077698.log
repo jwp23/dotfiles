@@ -1,0 +1,36 @@
+2026-05-14 19:01:46,145 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 19:01:46,147 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-14 19:01:46,149 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-14 19:01:46,151 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-", --format: "value(name,zone)", --project: "env-integration-fenway"]
+2026-05-14 19:01:46,153 DEBUG    root            On GCE from memory cache: False
+2026-05-14 19:01:46,154 DEBUG    root            On GCE from memory cache: False
+2026-05-14 19:01:46,243 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-14 19:01:46,244 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,zone)
+2026-05-14 19:01:46,244 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,zone)"
+2026-05-14 19:01:46,249 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 19:01:47,038 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-14 19:01:47,663 INFO     ___FILE_ONLY___ loadgen-bq12	us-central1-b
+
+2026-05-14 19:01:47,666 INFO     ___FILE_ONLY___ loadgen-3str	us-central1-c
+
+2026-05-14 19:01:47,666 INFO     ___FILE_ONLY___ loadgen-lwqh	us-central1-c
+
+2026-05-14 19:01:47,667 INFO     ___FILE_ONLY___ loadgen-fn09	us-central1-f
+
+2026-05-14 19:01:47,682 DEBUG    root            Metrics reporting process started...

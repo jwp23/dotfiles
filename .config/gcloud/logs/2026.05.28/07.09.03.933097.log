@@ -1,0 +1,62 @@
+2026-05-28 07:09:04,013 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:09:04,016 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-28 07:09:04,019 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'list']
+2026-05-28 07:09:04,021 DEBUG    root            Running [gcloud.compute.instance-groups.list] with arguments: [--filter: "name~fenway OR name~loadgen OR name~artillery", --format: "value(name,location,size,targetSize)"]
+2026-05-28 07:09:04,023 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:04,025 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:09:04,154 INFO     root            client_filter='name~fenway OR name~loadgen OR name~artillery' server_filter=None
+2026-05-28 07:09:04,162 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:09:04,469 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instanceGroups?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 07:09:04,732 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:09:05,128 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-28 07:09:05,130 DEBUG    root            Chosen display Format:        table(
+          name,
+          location():label=LOCATION,
+          location_scope():label=SCOPE,
+          network.basename(),
+          isManaged:label=MANAGED,
+          size:label=INSTANCES
+        ) value(name,location,size,targetSize)
+2026-05-28 07:09:05,131 INFO     root            Display format: "        table(
+          name,
+          location():label=LOCATION,
+          location_scope():label=SCOPE,
+          network.basename(),
+          isManaged:label=MANAGED,
+          size:label=INSTANCES
+        ) value(name,location,size,targetSize)"
+2026-05-28 07:09:05,148 INFO     ___FILE_ONLY___ artillery-loadgen-mig-fenway		0	
+
+2026-05-28 07:09:05,149 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-09b424e0-grp		2	
+
+2026-05-28 07:09:05,149 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-3b8d18c3-grp		1	
+
+2026-05-28 07:09:05,149 INFO     ___FILE_ONLY___ gke-env-integration-fenway-monitoring-4b9b4a13-grp		0	
+
+2026-05-28 07:09:05,149 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-eaac0b98-grp		0	
+
+2026-05-28 07:09:05,149 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-0ecc5615-grp		2	
+
+2026-05-28 07:09:05,149 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-a1d6f90a-grp		1	
+
+2026-05-28 07:09:05,149 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-b340f2d4-grp		1	
+
+2026-05-28 07:09:05,149 INFO     ___FILE_ONLY___ gke-env-integration-fenway-monitoring-5c5aec31-grp		1	
+
+2026-05-28 07:09:05,150 INFO     ___FILE_ONLY___ gke-env-integration-fenway-prometheus-8ce0a05e-grp		0	
+
+2026-05-28 07:09:05,150 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-f5a026af-grp		1	
+
+2026-05-28 07:09:05,150 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-4f8989aa-grp		1	
+
+2026-05-28 07:09:05,150 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-3d4634a2-grp		1	
+
+2026-05-28 07:09:05,150 INFO     ___FILE_ONLY___ gke-env-integration-fenway-prometheus-dde967d1-grp		0	
+
+2026-05-28 07:09:05,150 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-984caf60-grp		0	
+
+2026-05-28 07:09:05,150 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-cbc9828a-grp		0	
+
+2026-05-28 07:09:05,150 INFO     ___FILE_ONLY___ gke-env-integration-fenway-prometheus-451b8c62-grp		0	
+
+2026-05-28 07:09:05,167 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,35 @@
+2026-05-28 07:00:06,828 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:00:06,830 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-28 07:00:06,831 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-28 07:00:06,835 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list']
+2026-05-28 07:00:06,836 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list] with arguments: [--filter: "name~loadgen OR name~artillery", --project: "fenway-devops"]
+2026-05-28 07:00:06,838 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:00:06,839 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:00:06,968 INFO     root            client_filter='name~loadgen OR name~artillery' server_filter=None
+2026-05-28 07:00:06,984 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:00:07,365 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/fenway-devops/aggregated/instanceGroupManagers?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 07:00:07,573 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:00:07,898 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 07:00:07,900 DEBUG    root            Chosen display Format:    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+
+2026-05-28 07:00:07,901 INFO     root            Display format: "    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+"
+2026-05-28 07:00:07,936 DEBUG    root            Metrics reporting process started...

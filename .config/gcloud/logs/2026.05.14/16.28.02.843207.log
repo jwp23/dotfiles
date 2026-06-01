@@ -1,0 +1,571 @@
+2026-05-14 16:28:02,913 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 16:28:02,916 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-14 16:28:02,918 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'get_serial_port_output']
+2026-05-14 16:28:02,919 DEBUG    root            Running [gcloud.compute.instances.get-serial-port-output] with arguments: [--project: "env-integration-fenway", --start: "409459", --zone: "us-central1-c", INSTANCE_NAME: "loadgen-8zvf"]
+2026-05-14 16:28:02,921 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:28:02,953 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-14 16:28:02,954 DEBUG    root            On GCE from server: False
+2026-05-14 16:28:03,055 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 16:28:03,534 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-8zvf/serialPort?alt=json&port=1&start=409459 HTTP/1.1" 200 None
+2026-05-14 16:28:03,535 DEBUG    root            Chosen display Format:value[no-quote](contents)
+2026-05-14 16:28:03,536 INFO     root            Display format: "value[no-quote](contents)"
+2026-05-14 16:28:03,545 INFO     ___FILE_ONLY___ artup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   46.967365] google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:26:57.010435+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   46.967397] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:26:57.010468+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+[   46.967430] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/core@1.15.2
+2026-05-14T23:26:57.010501+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/core@1.15.2
+2026-05-14T23:26:57.010534+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/otlp-exporter-base/node_modules/@opentelemetry/core
+[   46.967464] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/otlp-exporter-base/node_modules/@opentelemetry/core
+[   47.318879] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/core@"1.15.2" from @opentelemetry/otlp-exporter-base@0.41.2
+[   47.318942] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/otlp-exporter-base
+[   47.318995] google_metadata_script_runner[2032]: startup-script: npm warn
+[   47.319056] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:26:57.361941+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/core@"1.15.2" from @opentelemetry/otlp-exporter-base@0.41.2
+2026-05-14T23:26:57.362015+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/otlp-exporter-base
+2026-05-14T23:26:57.362069+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:26:57.362130+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+[   47.319093] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   47.319127] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/core@1.15.2
+2026-05-14T23:26:57.362162+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:57.362200+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/core@1.15.2
+[   47.319162] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/otlp-exporter-base/node_modules/@opentelemetry/core
+2026-05-14T23:26:57.362231+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/otlp-exporter-base/node_modules/@opentelemetry/core
+[   47.319233] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/core@"1.15.2" from @opentelemetry/otlp-exporter-base@0.41.2
+[   47.319284] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-exporter-base
+2026-05-14T23:26:57.362302+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/core@"1.15.2" from @opentelemetry/otlp-exporter-base@0.41.2
+2026-05-14T23:26:57.362356+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-exporter-base
+[   47.319325] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:26:57.362395+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+[   47.319369] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/core@1.15.2
+2026-05-14T23:26:57.362439+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/core@1.15.2
+[   47.319406] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:26:57.362477+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:26:57.362513+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   47.319442] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   47.670200] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   47.670261] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+[   47.670297] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   47.670333] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:57.713263+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:26:57.713335+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:26:57.713371+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+2026-05-14T23:26:57.713405+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   47.670381] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   47.670414] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:26:57.713450+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+2026-05-14T23:26:57.713487+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   47.670448] google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:26:57.713518+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   47.670485] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+[   47.670521] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/core@1.15.2
+2026-05-14T23:26:57.713555+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:26:57.713591+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/core@1.15.2
+[   47.670556] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/otlp-grpc-exporter-base/node_modules/@opentelemetry/core
+2026-05-14T23:26:57.713627+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/otlp-grpc-exporter-base/node_modules/@opentelemetry/core
+[   47.670611] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/core@"1.15.2" from @opentelemetry/otlp-grpc-exporter-base@0.41.2
+[   47.670651] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/otlp-grpc-exporter-base
+2026-05-14T23:26:57.713680+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/core@"1.15.2" from @opentelemetry/otlp-grpc-exporter-base@0.41.2
+2026-05-14T23:26:57.713724+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/otlp-grpc-exporter-base
+2026-05-14T23:26:57.713763+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   47.670693] google_metadata_script_runner[2032]: startup-script: npm warn
+[   48.024919] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+[   48.024978] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   48.025054] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/core@1.15.2
+[   48.025095] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/otlp-grpc-exporter-base/node_modules/@opentelemetry/core
+2026-05-14T23:26:58.067982+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:26:58.068051+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:58.068127+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/core@1.15.2
+2026-05-14T23:26:58.068163+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/otlp-grpc-exporter-base/node_modules/@opentelemetry/core
+[   48.025150] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/core@"1.15.2" from @opentelemetry/otlp-grpc-exporter-base@0.41.2
+[   48.025197] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-grpc-exporter-base
+2026-05-14T23:26:58.068219+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/core@"1.15.2" from @opentelemetry/otlp-grpc-exporter-base@0.41.2
+2026-05-14T23:26:58.068270+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-grpc-exporter-base
+[   48.025262] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:26:58.068326+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:26:58.068615+00:00 loadgen-8zvf systemd[1]: systemd-fsckd.service: Deactivated successfully.
+[   48.025665] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-logs@0.41.2
+[   48.025713] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:26:58.068734+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-logs@0.41.2
+2026-05-14T23:26:58.068783+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+[   48.025750] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   48.025786] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:26:58.068820+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:58.068857+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   48.025823] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:26:58.068892+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:26:58.068930+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   48.025861] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   48.382301] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   48.382355] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   48.382395] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:26:58.425367+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:58.425429+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+2026-05-14T23:26:58.425467+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   48.382429] google_metadata_script_runner[2032]: startup-script: npm warn
+[   48.382480] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:26:58.425499+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:26:58.425553+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+[   48.382517] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+2026-05-14T23:26:58.425587+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+[   48.382577] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   48.382621] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:26:58.425643+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+2026-05-14T23:26:58.425691+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+[   48.382671] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:58.425741+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+[   48.382709] google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:26:58.425779+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   48.382746] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:26:58.425816+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+[   48.382783] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:58.425853+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:58.425890+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+[   48.382820] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+[   48.738360] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   48.738419] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:26:58.781424+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+2026-05-14T23:26:58.781493+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+[   48.738476] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+[   48.738521] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:26:58.781544+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:58.781591+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+[   48.738558] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-trace-base@1.15.2
+[   48.738595] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:26:58.781628+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-trace-base@1.15.2
+2026-05-14T23:26:58.781664+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+[   48.738629] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:58.781700+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   48.738665] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:26:58.781735+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   48.738701] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:26:58.781771+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+[   48.738736] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+2026-05-14T23:26:58.781806+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   48.738771] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:58.781842+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:58.781877+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   48.738806] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   49.089213] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   49.089274] google_metadata_script_runner[2032]: startup-script: npm warn
+[   49.089309] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:26:59.132276+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:26:59.132347+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:26:59.132383+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+[   49.089369] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/sdk-trace-base@1.15.2
+[   49.089407] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-trace-base
+2026-05-14T23:26:59.132437+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/sdk-trace-base@1.15.2
+2026-05-14T23:26:59.132480+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-trace-base
+[   49.089453] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-trace-base@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+[   49.089498] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:59.132522+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-trace-base@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:26:59.132568+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+[   49.089535] google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:26:59.132605+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   49.089571] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:26:59.132642+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+[   49.089608] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:59.132678+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   49.089645] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/sdk-trace-base@1.15.2
+2026-05-14T23:26:59.132715+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/sdk-trace-base@1.15.2
+[   49.089683] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-trace-base
+2026-05-14T23:26:59.132753+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-trace-base
+[   49.437096] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-trace-base@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+[   49.437153] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+[   49.437188] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+[   49.437221] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-logs@0.41.2
+[   49.437252] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+[   49.437284] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:59.480162+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-trace-base@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:26:59.480226+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-metrics-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:59.480261+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:26:59.480294+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-logs@0.41.2
+[   49.437329] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:26:59.480326+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:26:59.480357+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:59.480401+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   49.437368] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+[   49.437401] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+2026-05-14T23:26:59.480437+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:26:59.480474+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   49.437436] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:59.480506+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   49.437471] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+2026-05-14T23:26:59.480543+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   49.437507] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:26:59.480577+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:26:59.480613+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   49.437542] google_metadata_script_runner[2032]: startup-script: npm warn
+[   49.786427] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+[   49.786486] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+[   49.786523] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   49.786573] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+[   49.786611] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:59.829491+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:26:59.829560+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+2026-05-14T23:26:59.829596+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+2026-05-14T23:26:59.829646+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:26:59.829679+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer
+[   49.786648] google_metadata_script_runner[2032]: startup-script: npm warn
+[   49.786680] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:26:59.829717+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:26:59.829754+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+[   49.786715] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   49.786751] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+2026-05-14T23:26:59.829785+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:26:59.829821+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+[   49.786787] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+2026-05-14T23:26:59.829857+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   49.786824] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:26:59.829894+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+[   49.786860] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:26:59.829930+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer
+[   50.134918] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+[   50.134986] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-trace-base@1.15.2
+[   50.135050] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+[   50.135092] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:00.177985+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:27:00.178060+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-trace-base@1.15.2
+2026-05-14T23:27:00.178124+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:27:00.178165+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   50.135217] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   50.135253] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+[   50.135287] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+2026-05-14T23:27:00.178286+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:27:00.178327+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:27:00.178357+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   50.135319] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:00.178392+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   50.135353] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+2026-05-14T23:27:00.178423+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   50.135386] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:27:00.178457+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   50.135420] google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:27:00.178490+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   50.135453] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:27:00.178524+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+[   50.135487] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/sdk-trace-base@1.15.2
+2026-05-14T23:27:00.178557+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/sdk-trace-base@1.15.2
+[   50.135523] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-trace-base
+2026-05-14T23:27:00.178593+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-trace-base
+[   50.484468] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-trace-base@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+[   50.484528] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer
+[   50.484561] google_metadata_script_runner[2032]: startup-script: npm warn
+[   50.484610] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+[   50.484642] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:00.527534+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-trace-base@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:27:00.527601+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:00.527634+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:27:00.527683+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:27:00.527716+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   50.484678] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/sdk-trace-base@1.15.2
+[   50.484717] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-trace-base
+2026-05-14T23:27:00.527748+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.0.0 <1.5.0" from @opentelemetry/sdk-trace-base@1.15.2
+2026-05-14T23:27:00.527790+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-trace-base
+[   50.484762] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-trace-base@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+[   50.484799] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:00.527832+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-trace-base@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:27:00.527869+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-metrics-otlp-http/node_modules/@opentelemetry/otlp-transformer
+[   50.484834] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:27:00.527905+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+[   50.484869] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-logs@0.43.0
+2026-05-14T23:27:00.527940+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-logs@0.43.0
+[   50.833255] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+[   50.833332] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   50.833366] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   50.833410] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+[   50.833440] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   50.833472] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   50.833505] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   50.833535] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   50.833567] google_metadata_script_runner[2032]: startup-script: npm warn
+[   50.833601] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:27:00.876321+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:27:00.876405+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:00.876439+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:27:00.876483+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:27:00.876513+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+2026-05-14T23:27:00.876544+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:00.876575+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+2026-05-14T23:27:00.876608+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   50.833634] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.4.0 <1.7.0" from @opentelemetry/sdk-logs@0.43.0
+2026-05-14T23:27:00.876637+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:27:00.876671+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:27:00.876704+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.4.0 <1.7.0" from @opentelemetry/sdk-logs@0.43.0
+[   50.833674] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+2026-05-14T23:27:00.876745+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   50.833717] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-logs@"0.43.0" from @opentelemetry/otlp-transformer@0.43.0
+2026-05-14T23:27:00.876788+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-logs@"0.43.0" from @opentelemetry/otlp-transformer@0.43.0
+[   51.172058] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+[   51.172144] google_metadata_script_runner[2032]: startup-script: npm warn
+[   51.172179] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.6.0
+[   51.172213] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   51.172246] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.4.0 <1.7.0" from @opentelemetry/sdk-logs@0.43.0
+2026-05-14T23:27:01.215125+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:01.215217+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:27:01.215253+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.6.0
+2026-05-14T23:27:01.215286+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:01.215319+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.4.0 <1.7.0" from @opentelemetry/sdk-logs@0.43.0
+[   51.172295] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   51.172349] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-logs@"0.43.0" from @opentelemetry/otlp-transformer@0.43.0
+2026-05-14T23:27:01.215364+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+2026-05-14T23:27:01.215418+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-logs@"0.43.0" from @opentelemetry/otlp-transformer@0.43.0
+[   51.172393] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+[   51.172437] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:27:01.215463+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:01.215507+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+[   51.172474] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-metrics@1.17.0
+2026-05-14T23:27:01.215544+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-metrics@1.17.0
+[   51.172517] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:27:01.215587+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+[   51.172554] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:01.215625+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   51.516902] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   51.516955] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+[   51.516987] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   51.517042] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   51.517083] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   51.517114] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:27:01.559966+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:27:01.560028+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:27:01.560060+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+2026-05-14T23:27:01.560116+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   51.517143] google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:27:01.560153+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+2026-05-14T23:27:01.560188+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:27:01.560217+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   51.517187] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+[   51.517218] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.3.0 <1.7.0" from @opentelemetry/sdk-metrics@1.17.0
+2026-05-14T23:27:01.560257+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:27:01.560292+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.3.0 <1.7.0" from @opentelemetry/sdk-metrics@1.17.0
+[   51.517268] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-metrics
+[   51.517301] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-metrics@"1.17.0" from @opentelemetry/otlp-transformer@0.43.0
+2026-05-14T23:27:01.560338+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-metrics
+2026-05-14T23:27:01.560374+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-metrics@"1.17.0" from @opentelemetry/otlp-transformer@0.43.0
+[   51.517338] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:01.560409+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:01.560443+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   51.517372] google_metadata_script_runner[2032]: startup-script: npm warn
+[   51.857062] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.6.0
+[   51.857139] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:01.900126+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.6.0
+[   51.857178] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.3.0 <1.7.0" from @opentelemetry/sdk-metrics@1.17.0
+2026-05-14T23:27:01.900208+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:01.900248+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.3.0 <1.7.0" from @opentelemetry/sdk-metrics@1.17.0
+[   51.857228] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-metrics
+[   51.857273] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-metrics@"1.17.0" from @opentelemetry/otlp-transformer@0.43.0
+2026-05-14T23:27:01.900298+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-metrics
+2026-05-14T23:27:01.900343+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-metrics@"1.17.0" from @opentelemetry/otlp-transformer@0.43.0
+[   51.857309] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:01.900379+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-trace-otlp-grpc/node_modules/@opentelemetry/otlp-transformer
+[   51.857350] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:27:01.900420+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+[   51.857387] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-logs@0.41.2
+[   51.857423] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:27:01.900457+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-logs@0.41.2
+2026-05-14T23:27:01.900493+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+[   51.857458] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:01.900528+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   51.857494] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:27:01.900564+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   51.857531] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:27:01.900601+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+[   52.195817] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+2026-05-14T23:27:02.238883+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   52.195992] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:02.239061+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   52.196117] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   52.196157] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:27:02.239186+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+2026-05-14T23:27:02.239230+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   52.196207] google_metadata_script_runner[2032]: startup-script: npm warn
+[   52.196241] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:27:02.239277+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:27:02.239314+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+[   52.196276] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+2026-05-14T23:27:02.239346+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+[   52.196313] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+2026-05-14T23:27:02.239383+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   52.196350] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:27:02.239420+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+[   52.196394] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:02.239465+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer
+[   52.196434] google_metadata_script_runner[2032]: startup-script: npm warn
+[   52.196470] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:27:02.239501+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:27:02.239540+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:27:02.239575+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   52.196504] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   52.534534] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+[   52.534592] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   52.534646] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:27:02.577597+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.4.0 <1.5.0" from @opentelemetry/sdk-logs@0.41.2
+2026-05-14T23:27:02.577666+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-logs
+[   52.534686] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:02.577719+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-logs@"0.41.2" from @opentelemetry/otlp-transformer@0.41.2
+[   52.534721] google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+2026-05-14T23:27:02.577755+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:02.577794+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn ERESOLVE overriding peer dependency
+[   52.534758] google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-metrics@1.15.2
+[   52.534793] google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+[   52.534828] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:02.577828+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn While resolving: @opentelemetry/sdk-metrics@1.15.2
+2026-05-14T23:27:02.577866+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Found: @opentelemetry/api@1.9.1
+2026-05-14T23:27:02.577898+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   52.534865] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+2026-05-14T23:27:02.577935+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/api@"^1.3.0" from @opentelemetry/api-logs@0.205.0
+[   52.534914] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+[   52.534961] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+2026-05-14T23:27:02.577984+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/api-logs
+2026-05-14T23:27:02.578032+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/api-logs@"0.205.0" from @opentelemetry/otlp-transformer@0.205.0
+[   52.534994] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:02.578065+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/otlp-transformer
+[   52.870694] google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+[   52.870755] google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+[   52.870789] google_metadata_script_runner[2032]: startup-script: npm warn
+[   52.870825] google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:27:02.913761+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     1 more (@opentelemetry/sdk-logs)
+2026-05-14T23:27:02.913828+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   39 more (@opentelemetry/context-async-hooks, ...)
+2026-05-14T23:27:02.913863+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   52.870858] google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.3.0 <1.5.0" from @opentelemetry/sdk-metrics@1.15.2
+2026-05-14T23:27:02.913895+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Could not resolve dependency:
+2026-05-14T23:27:02.913932+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn peer @opentelemetry/api@">=1.3.0 <1.5.0" from @opentelemetry/sdk-metrics@1.15.2
+[   52.870896] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-metrics
+2026-05-14T23:27:02.913966+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-metrics
+[   52.870969] google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-metrics@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:27:02.914039+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   @opentelemetry/sdk-metrics@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+[   52.871027] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:02.914098+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer
+[   52.871062] google_metadata_script_runner[2032]: startup-script: npm warn
+2026-05-14T23:27:02.914133+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn
+[   52.871100] google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+2026-05-14T23:27:02.914171+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn Conflicting peer dependency: @opentelemetry/api@1.4.1
+[   52.871139] google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+2026-05-14T23:27:02.914210+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn node_modules/@opentelemetry/api
+[   52.871173] google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.3.0 <1.5.0" from @opentelemetry/sdk-metrics@1.15.2
+2026-05-14T23:27:02.914244+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   peer @opentelemetry/api@">=1.3.0 <1.5.0" from @opentelemetry/sdk-metrics@1.15.2
+[   52.871208] google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-metrics
+2026-05-14T23:27:02.914278+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn   node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer/node_modules/@opentelemetry/sdk-metrics
+[   53.206925] google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-metrics@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+[   53.206996] google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer
+[   53.207064] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE Unsupported engine {
+[   53.207109] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   package: 'vision-fenway-prod-slo@0.1.0',
+2026-05-14T23:27:03.249991+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     @opentelemetry/sdk-metrics@"1.15.2" from @opentelemetry/otlp-transformer@0.41.2
+2026-05-14T23:27:03.250069+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn     node_modules/@opentelemetry/exporter-trace-otlp-http/node_modules/@opentelemetry/otlp-transformer
+2026-05-14T23:27:03.250137+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE Unsupported engine {
+2026-05-14T23:27:03.250179+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   package: 'vision-fenway-prod-slo@0.1.0',
+[   53.207163] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   required: { node: '24.14.1' },
+[   53.207201] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   current: { node: 'v20.20.2', npm: '10.8.2' }
+2026-05-14T23:27:03.250226+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   required: { node: '24.14.1' },
+2026-05-14T23:27:03.250274+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   current: { node: 'v20.20.2', npm: '10.8.2' }
+[   53.207237] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE }
+2026-05-14T23:27:03.250307+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE }
+[   53.207272] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE Unsupported engine {
+2026-05-14T23:27:03.250345+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE Unsupported engine {
+[   53.207305] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   package: 'artillery@2.0.30',
+2026-05-14T23:27:03.250376+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   package: 'artillery@2.0.30',
+[   53.207352] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   required: { node: '>= 22.13.0' },
+2026-05-14T23:27:03.250421+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   required: { node: '>= 22.13.0' },
+[   53.207396] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   current: { node: 'v20.20.2', npm: '10.8.2' }
+2026-05-14T23:27:03.250460+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE   current: { node: 'v20.20.2', npm: '10.8.2' }
+[   53.207433] google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE }
+2026-05-14T23:27:03.250504+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn EBADENGINE }
+2026-05-14T23:27:03.250538+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+[   53.207467] google_metadata_script_runner[2032]: startup-script: npm warn deprecated whatwg-encoding@3.1.1: Use @exodus/bytes instead for a more spec-conformant and faster implementation
+2026-05-14T23:27:03.585793+00:00 loadgen-8zvf systemd[1]: systemd-hostnamed.service: Deactivated successfully.
+2026-05-14T23:27:03.594313+00:00 loadgen-8zvf systemd[1]: systemd-timedated.service: Deactivated successfully.
+[   60.794306] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:10.837371+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   60.794504] google_metadata_script_runner[2032]: startup-script: > vision-fenway-prod-slo@0.1.0 postinstall
+2026-05-14T23:27:10.837571+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: > vision-fenway-prod-slo@0.1.0 postinstall
+[   60.794616] google_metadata_script_runner[2032]: startup-script: > patch-package
+[   60.794653] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:10.837685+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: > patch-package
+2026-05-14T23:27:10.837726+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   60.972533] google_metadata_script_runner[2032]: startup-script: patch-package 8.0.1
+2026-05-14T23:27:11.015600+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: patch-package 8.0.1
+[   60.972831] google_metadata_script_runner[2032]: startup-script: Applying patches...
+2026-05-14T23:27:11.015900+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: Applying patches...
+[   60.978338] google_metadata_script_runner[2032]: startup-script: artillery-plugin-publish-metrics@2.35.0 ✔
+2026-05-14T23:27:11.021402+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: artillery-plugin-publish-metrics@2.35.0 ✔
+[   60.984394] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:11.027461+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   60.984461] google_metadata_script_runner[2032]: startup-script: > vision-fenway-prod-slo@0.1.0 prepare
+2026-05-14T23:27:11.027530+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: > vision-fenway-prod-slo@0.1.0 prepare
+[   60.984529] google_metadata_script_runner[2032]: startup-script: > husky
+2026-05-14T23:27:11.027598+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: > husky
+[   60.984583] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:11.027653+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   61.072885] google_metadata_script_runner[2032]: startup-script: .git can't be found
+[   61.072977] google_metadata_script_runner[2032]: startup-script: added 836 packages, and audited 837 packages in 27s
+2026-05-14T23:27:11.115951+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: .git can't be found
+2026-05-14T23:27:11.116046+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: added 836 packages, and audited 837 packages in 27s
+[   61.073104] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:11.116173+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   61.073163] google_metadata_script_runner[2032]: startup-script: 161 packages are looking for funding
+2026-05-14T23:27:11.116233+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: 161 packages are looking for funding
+[   61.073209] google_metadata_script_runner[2032]: startup-script:   run `npm fund` for details
+2026-05-14T23:27:11.116279+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:   run `npm fund` for details
+[   61.080090] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:11.123156+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   61.080161] google_metadata_script_runner[2032]: startup-script: 4 vulnerabilities (2 moderate, 2 high)
+2026-05-14T23:27:11.123230+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: 4 vulnerabilities (2 moderate, 2 high)
+[   61.080211] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:11.123281+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   61.080246] google_metadata_script_runner[2032]: startup-script: To address all issues, run:
+2026-05-14T23:27:11.123316+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: To address all issues, run:
+[   61.080286] google_metadata_script_runner[2032]: startup-script:   npm audit fix
+2026-05-14T23:27:11.123357+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:   npm audit fix
+[   61.080325] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:11.123395+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   61.080366] google_metadata_script_runner[2032]: startup-script: Run `npm audit` for details.
+2026-05-14T23:27:11.123436+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: Run `npm audit` for details.
+[   61.081294] google_metadata_script_runner[2032]: startup-script: npm notice
+2026-05-14T23:27:11.124362+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm notice
+[   61.081357] google_metadata_script_runner[2032]: startup-script: npm notice New major version of npm available! 10.8.2 -> 11.14.1
+2026-05-14T23:27:11.124427+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm notice New major version of npm available! 10.8.2 -> 11.14.1
+[   61.081411] google_metadata_script_runner[2032]: startup-script: npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.14.1
+[   61.081449] google_metadata_script_runner[2032]: startup-script: npm notice To update run: npm install -g npm@11.14.1
+2026-05-14T23:27:11.124481+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.14.1
+2026-05-14T23:27:11.124519+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm notice To update run: npm install -g npm@11.14.1
+[   61.081491] google_metadata_script_runner[2032]: startup-script: npm notice
+2026-05-14T23:27:11.124560+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: npm notice
+[   61.151129] google_metadata_script_runner[2032]: startup-script: [startup 2026-05-14T23:27:11Z] Iteration 1 starting (output=result-20260507T230915Z-loadgen-8zvf-0001.json)
+2026-05-14T23:27:11.194183+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: [startup 2026-05-14T23:27:11Z] Iteration 1 starting (output=result-20260507T230915Z-loadgen-8zvf-0001.json)
+2026-05-14T23:27:12.046740+00:00 loadgen-8zvf systemd[1]: Starting e2scrub_all.service - Online ext4 Metadata Check for All Filesystems...
+2026-05-14T23:27:12.049874+00:00 loadgen-8zvf systemd[1]: e2scrub_all.service: Deactivated successfully.
+2026-05-14T23:27:12.050109+00:00 loadgen-8zvf systemd[1]: Finished e2scrub_all.service - Online ext4 Metadata Check for All Filesystems.
+[   64.187553] google_metadata_script_runner[2032]: startup-script: Test run id: t5edt_fwccdyed9acgcbtqhtnrnhj4kt4t8_9qbb
+2026-05-14T23:27:14.230617+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: Test run id: t5edt_fwccdyed9acgcbtqhtnrnhj4kt4t8_9qbb
+[   64.638640] google_metadata_script_runner[2032]: startup-script: Bundled Typescript file into JS. New processor path: /var/loadgen/processors/dist/warm-launch.js
+2026-05-14T23:27:14.681684+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: Bundled Typescript file into JS. New processor path: /var/loadgen/processors/dist/warm-launch.js
+[   65.987662] google_metadata_script_runner[2032]: startup-script: Phase started: unnamed (index: 0, duration: 1s) 23:27:16(+0000)
+2026-05-14T23:27:16.030709+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: Phase started: unnamed (index: 0, duration: 1s) 23:27:16(+0000)
+2026-05-14T23:27:16.030872+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   65.987799] google_metadata_script_runner[2032]: startup-script:
+[   66.992573] google_metadata_script_runner[2032]: startup-script: Phase completed: unnamed (index: 0, duration: 1s) 23:27:17(+0000)
+2026-05-14T23:27:17.035635+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: Phase completed: unnamed (index: 0, duration: 1s) 23:27:17(+0000)
+[   66.992743] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:17.035812+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   72.853400] google_metadata_script_runner[2032]: startup-script: --------------------------------------
+2026-05-14T23:27:22.896466+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: --------------------------------------
+[   72.853689] google_metadata_script_runner[2032]: startup-script: Metrics for period to: 23:27:20(+0000) (width: 0s)
+[   72.853742] google_metadata_script_runner[2032]: startup-script: --------------------------------------
+2026-05-14T23:27:22.896758+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: Metrics for period to: 23:27:20(+0000) (width: 0s)
+2026-05-14T23:27:22.896812+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: --------------------------------------
+[   72.853778] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:22.896849+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   72.854066] google_metadata_script_runner[2032]: startup-script: vusers.created: ................................................................ 1
+2026-05-14T23:27:22.897135+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: vusers.created: ................................................................ 1
+[   72.854168] google_metadata_script_runner[2032]: startup-script: vusers.created_by_name.0: ...................................................... 1
+2026-05-14T23:27:22.897237+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script: vusers.created_by_name.0: ...................................................... 1
+[   72.854213] google_metadata_script_runner[2032]: startup-script:
+2026-05-14T23:27:22.897283+00:00 loadgen-8zvf google_metadata_script_runner[2032]: startup-script:
+[   72.854258] google_metadata_script_runner[2032]: startup-script:
+
+
+2026-05-14 16:28:03,545 INFO     ___FILE_ONLY___ 
+Specify --start=490439 in the next get-serial-port-output invocation to get only the new output starting from here.
+
+2026-05-14 16:28:03,555 DEBUG    root            Metrics reporting process started...

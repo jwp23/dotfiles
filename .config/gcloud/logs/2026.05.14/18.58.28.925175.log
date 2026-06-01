@@ -1,0 +1,21 @@
+2026-05-14 18:58:29,008 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 18:58:29,011 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-14 18:58:29,013 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'get_serial_port_output']
+2026-05-14 18:58:29,015 DEBUG    root            Running [gcloud.compute.instances.get-serial-port-output] with arguments: [--project: "env-integration-fenway", --zone: "us-central1-c", INSTANCE_NAME: "loadgen-lwqh"]
+2026-05-14 18:58:29,017 DEBUG    root            On GCE from memory cache: False
+2026-05-14 18:58:29,019 DEBUG    root            On GCE from memory cache: False
+2026-05-14 18:58:29,142 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 18:58:29,567 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-lwqh/serialPort?alt=json&port=1 HTTP/1.1" 400 None
+2026-05-14 18:58:29,569 DEBUG    root            (gcloud.compute.instances.get-serial-port-output) Could not fetch serial port output: The resource 'projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-lwqh' is not ready
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instances/get_serial_port_output.py", line 93, in Run
+    raise GetSerialPortOutputException(
+        'Could not fetch serial port output: ' +
+        ','.join([error[1] for error in errors]))
+__calliope__command__.650fb130a10b4d6797fe5bbb18c35699.gcloud.compute.instances.get_serial_port_output.GetSerialPortOutputException: Could not fetch serial port output: The resource 'projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-lwqh' is not ready
+2026-05-14 18:58:29,571 ERROR    root            (gcloud.compute.instances.get-serial-port-output) Could not fetch serial port output: The resource 'projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-lwqh' is not ready
+2026-05-14 18:58:29,584 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,87 @@
+2026-05-07 17:24:03,627 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-07 17:24:03,631 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-07 17:24:04,085 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'create']
+2026-05-07 17:24:04,184 DEBUG    root            Running [gcloud.compute.instance-templates.create] with arguments: [--accelerator: "OrderedDict({'count': 1, 'type': 'nvidia-tesla-t4'})", --boot-disk-auto-delete: "True", --boot-disk-size: "2147483648000", --boot-disk-type: "pd-ssd", --image-family: "artillery-loadgen-gpu", --image-project: "env-integration-fenway", --machine-type: "n1-custom-24-65536", --maintenance-policy: "TERMINATE", --metadata: "OrderedDict({'scenario-bucket': 'artillery-loadgen-scenarios-env-integration-fenway', 'scenario-version': 'v0001-placeholder', 'results-bucket': 'artillery-loadgen-results-env-integration-fenway', 'target-url': 'https://pacs.stratus.optum.com/', 'run-id': '20260508T002400Z', 'env': 'production'})", --metadata-from-file: "OrderedDict({'startup-script': 'infra/startup.sh'})", --network: "default", --no-preemptible: "False", --no-restart-on-failure: "False", --project: "env-integration-fenway", --scopes: "['cloud-platform']", --service-account: "loadgen-mig@env-integration-fenway.iam.gserviceaccount.com", --subnet: "default", NAME: "artillery-loadgen-tpl-prod"]
+2026-05-07 17:24:04,186 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:24:04,221 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-07 17:24:04,221 DEBUG    root            On GCE from server: False
+2026-05-07 17:24:04,228 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:24:04,228 DEBUG    root            On GCE from memory cache: False
+2026-05-07 17:24:04,228 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-07 17:24:04,238 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-07 17:24:04,402 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-07 17:24:04,415 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-07 17:24:05,049 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-07 17:24:10,822 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/images/family/artillery-loadgen-gpu?alt=json HTTP/1.1" 200 None
+2026-05-07 17:24:11,967 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/global/instanceTemplates?alt=json HTTP/1.1" 200 None
+2026-05-07 17:24:11,968 DEBUG    root            Operations to inspect: [(<Operation
+ id: 8619680761178526660
+ insertTime: '2026-05-07T17:24:11.379-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1778199850950-651436a74a062-f1fab6d4-bab78635'
+ operationType: 'compute.instanceTemplates.insert'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/operations/operation-1778199850950-651436a74a062-f1fab6d4-bab78635'
+ startTime: '2026-05-07T17:24:11.382-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 2532993387214181317
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod'
+ user: 'jpresley@synthesis.health'
+ warnings: [<WarningsValueListEntry
+ data: []
+ message: 'You are creating an instance template with global DNS attributes. VM instances using global DNS are vulnerable to cross-regional outages. To reduce the risk of widespread service disruption, use zonal DNS instead. Learn more at https://cloud.google.com/compute/docs/networking/zonal-dns?utm_id=tmpl-insert'>]>, 3)]
+2026-05-07 17:24:12,322 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/global/operations/operation-1778199850950-651436a74a062-f1fab6d4-bab78635/wait?alt=json HTTP/1.1" 200 None
+2026-05-07 17:24:12,323 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2026-05-07T17:24:11.967-07:00'
+ id: 8619680761178526660
+ insertTime: '2026-05-07T17:24:11.379-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1778199850950-651436a74a062-f1fab6d4-bab78635'
+ operationType: 'compute.instanceTemplates.insert'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/operations/operation-1778199850950-651436a74a062-f1fab6d4-bab78635'
+ startTime: '2026-05-07T17:24:11.382-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 2532993387214181317
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod'
+ user: 'jpresley@synthesis.health'
+ warnings: [<WarningsValueListEntry
+ data: []
+ message: 'You are creating an instance template with global DNS attributes. VM instances using global DNS are vulnerable to cross-regional outages. To reduce the risk of widespread service disruption, use zonal DNS instead. Learn more at https://cloud.google.com/compute/docs/networking/zonal-dns?utm_id=tmpl-insert'>]>, 3)]
+2026-05-07 17:24:12,323 INFO     ___FILE_ONLY___ Created [https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod].
+
+2026-05-07 17:24:12,577 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod?alt=json HTTP/1.1" 200 None
+2026-05-07 17:24:12,581 DEBUG    root            Chosen display Format:list[title="Some requests generated warnings:",always-display-title]
+2026-05-07 17:24:12,582 WARNING  root            Some requests generated warnings:
+ - You are creating an instance template with global DNS attributes. VM instances using global DNS are vulnerable to cross-regional outages. To reduce the risk of widespread service disruption, use zonal DNS instead. Learn more at https://cloud.google.com/compute/docs/networking/zonal-dns?utm_id=tmpl-insert
+
+2026-05-07 17:24:12,582 DEBUG    root            Chosen display Format:    table(
+      name,
+      properties.machineType.machine_type(),
+      properties.scheduling.preemptible.yesno(yes=true, no=''),
+      creationTimestamp
+    )
+2026-05-07 17:24:12,583 INFO     root            Display format: "    table(
+      name,
+      properties.machineType.machine_type(),
+      properties.scheduling.preemptible.yesno(yes=true, no=''),
+      creationTimestamp
+    )"
+2026-05-07 17:24:12,602 INFO     root            cache collection=compute.instanceTemplates api_version=v1 params=['project', 'instanceTemplate']
+2026-05-07 17:24:12,650 INFO     ___FILE_ONLY___ NAME
+2026-05-07 17:24:12,650 INFO     ___FILE_ONLY___                         
+2026-05-07 17:24:12,650 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2026-05-07 17:24:12,650 INFO     ___FILE_ONLY___      
+2026-05-07 17:24:12,650 INFO     ___FILE_ONLY___ PREEMPTIBLE
+2026-05-07 17:24:12,650 INFO     ___FILE_ONLY___   
+2026-05-07 17:24:12,651 INFO     ___FILE_ONLY___ CREATION_TIMESTAMP
+2026-05-07 17:24:12,651 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:24:12,651 INFO     ___FILE_ONLY___ artillery-loadgen-tpl-prod
+2026-05-07 17:24:12,651 INFO     ___FILE_ONLY___   
+2026-05-07 17:24:12,651 INFO     ___FILE_ONLY___ custom-24-65536
+2026-05-07 17:24:12,651 INFO     ___FILE_ONLY___                
+2026-05-07 17:24:12,651 INFO     ___FILE_ONLY___ 2026-05-07T17:24:11.381-07:00
+2026-05-07 17:24:12,651 INFO     ___FILE_ONLY___ 
+
+2026-05-07 17:24:12,661 DEBUG    root            Metrics reporting process started...

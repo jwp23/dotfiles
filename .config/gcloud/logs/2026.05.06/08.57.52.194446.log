@@ -1,0 +1,242 @@
+2026-05-06 08:57:52,285 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-06 08:57:52,287 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-06 08:57:52,291 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'list']
+2026-05-06 08:57:52,293 DEBUG    root            Running [gcloud.compute.images.list] with arguments: [--filter: "family ~ common-cu.*", --format: "table(family,creationTimestamp,deprecated.state)", --limit: "30", --project: "deeplearning-platform-release", --show-deprecated: "True", --sort-by: "['~creationTimestamp']"]
+2026-05-06 08:57:52,295 DEBUG    root            On GCE from memory cache: False
+2026-05-06 08:57:52,297 DEBUG    root            On GCE from memory cache: False
+2026-05-06 08:57:52,406 INFO     root            client_filter=None server_filter='family eq ".*(common-cu.*).*"'
+2026-05-06 08:57:52,407 INFO     root            client_filter=None server_filter='family eq ".*(common-cu.*).*"'
+2026-05-06 08:57:52,408 DEBUG    root            Chosen display Format:    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) table(family,creationTimestamp,deprecated.state):(creationTimestamp:sort=1:reverse)
+2026-05-06 08:57:52,419 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-06 08:57:53,909 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-06 08:57:54,685 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/deeplearning-platform-release/global/images?alt=json&filter=family+eq+%22.%2A%28common-cu.%2A%29.%2A%22&maxResults=500&pageToken=ClYIzem3z4OllAM6SwoCGAEKAiAACgIYAgoHIIaY1e_jDQoCGAYKJCoiY29tbW9uLWN1MTEwLXYyMDIwMTEwNS11YnVudHUtMTgwNAoKIPDzmoiY4OmLaw%3D%3D HTTP/1.1" 200 None
+2026-05-06 08:57:55,397 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/deeplearning-platform-release/global/images?alt=json&filter=family+eq+%22.%2A%28common-cu.%2A%29.%2A%22&maxResults=500&pageToken=ClAIxNqM0IOllAM6RQoCGAEKAiAACgIYAgoHIIaY1e_jDQoCGAYKHiocY29tbW9uLWN1MTEzLXYyMDI0MDczMC1weTMxMAoKIIC9_8DbpbSgSw%3D%3D HTTP/1.1" 200 None
+2026-05-06 08:57:56,086 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/deeplearning-platform-release/global/images?alt=json&filter=family+eq+%22.%2A%28common-cu.%2A%29.%2A%22&maxResults=500&pageToken=ClwI_6650IOllAM6UQoCGAEKAiAACgIYAgoHIIaY1e_jDQoCGAYKKiooY29tbW9uLWN1MTIyLXYyMDI0MDkyMi11YnVudHUtMjAwNC1weTMxMAoKILXk58LLkeXaRA%3D%3D HTTP/1.1" 200 None
+2026-05-06 08:58:01,468 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/deeplearning-platform-release/global/images?alt=json&filter=family+eq+%22.%2A%28common-cu.%2A%29.%2A%22&maxResults=500&pageToken=ClIIvu3k0IOllAM6RwoCGAEKAiAACgIYAgoHIIaY1e_jDQoCGAYKICoeY29tbW9uLWN1OTEtdjIwMjAwODA0LWRlYmlhbi05CgoghPnxjNi7tsxB HTTP/1.1" 200 None
+2026-05-06 08:58:01,496 INFO     root            Display format: "    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) table(family,creationTimestamp,deprecated.state):(creationTimestamp:sort=1:reverse)"
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___ FAMILY
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___                                
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___ CREATION_TIMESTAMP
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___              
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2404-nvidia-580
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___ 2026-04-30T05:28:02.040-07:00
+2026-05-06 08:58:01,514 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2204-nvidia-580
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 2026-04-30T03:54:28.283-07:00
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2404-nvidia-580
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 2026-04-27T04:45:05.765-07:00
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2204-nvidia-580
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 2026-04-27T02:59:55.267-07:00
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2204-nvidia-580
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 2026-04-08T04:00:48.228-07:00
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ common-cu129-ubuntu-2404-nvidia-580
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 2026-04-08T03:56:48.862-07:00
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 2026-03-23T00:32:16.043-07:00
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___ 2026-03-20T00:59:37.575-07:00
+2026-05-06 08:58:01,515 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-03-18T00:34:59.745-07:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-03-04T22:33:34.939-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-02-20T00:36:33.411-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-02-19T22:43:29.015-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-02-17T05:11:45.833-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-02-17T02:00:28.455-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-01-29T00:08:32.713-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-01-28T22:02:49.084-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-01-19T01:44:26.695-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 2026-01-19T00:12:00.924-08:00
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,516 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2026-01-12T23:25:05.096-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2026-01-12T21:54:48.789-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-12-30T05:03:24.479-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-12-30T02:16:53.362-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-12-17T02:47:23.310-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-12-16T03:17:48.363-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-12-09T07:23:36.780-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-12-08T21:16:30.701-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-12-08T00:11:06.227-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2204-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-11-19T03:28:27.927-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___ 2025-11-18T22:38:54.953-08:00
+2026-05-06 08:58:01,517 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,518 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,518 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,518 INFO     ___FILE_ONLY___ common-cu128-ubuntu-2404-nvidia-570
+2026-05-06 08:58:01,518 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,518 INFO     ___FILE_ONLY___ 2025-11-10T06:28:43.561-08:00
+2026-05-06 08:58:01,518 INFO     ___FILE_ONLY___   
+2026-05-06 08:58:01,518 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-06 08:58:01,518 INFO     ___FILE_ONLY___ 
+
+2026-05-06 08:58:01,536 DEBUG    root            Metrics reporting process started...

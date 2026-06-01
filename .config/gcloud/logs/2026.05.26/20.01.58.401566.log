@@ -1,0 +1,63 @@
+2026-05-26 20:01:58,717 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-26 20:01:58,720 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks']
+2026-05-26 20:01:58,721 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets']
+2026-05-26 20:01:58,725 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'networks', 'subnets', 'list']
+2026-05-26 20:01:58,727 DEBUG    root            Running [gcloud.compute.networks.subnets.list] with arguments: [--filter: "name=default AND region:us-central1", --project: "env-integration-fenway"]
+2026-05-26 20:01:58,728 DEBUG    root            Chosen display Format:    table(
+      name,
+      region.basename(),
+      network.basename(),
+      ipCidrRange:label=RANGE,
+      stackType,
+      ipv6AccessType,
+      internalIpv6Prefix,
+      externalIpv6Prefix,
+      utilizationDetails
+    )
+2026-05-26 20:01:58,729 INFO     root            Display format: "    table(
+      name,
+      region.basename(),
+      network.basename(),
+      ipCidrRange:label=RANGE,
+      stackType,
+      ipv6AccessType,
+      internalIpv6Prefix,
+      externalIpv6Prefix,
+      utilizationDetails
+    )"
+2026-05-26 20:01:58,732 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:01:58,772 DEBUG    root            On GCE from memory cache: False
+2026-05-26 20:01:59,121 INFO     root            client_filter=None server_filter='(name eq ".*\\bdefault\\b.*")(region eq ".*\\bus\\-central1\\b.*")'
+2026-05-26 20:01:59,148 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-26 20:02:01,496 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/subnetworks?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___ NAME
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___      
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___ REGION
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___        
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___ NETWORK
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___ RANGE
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___           
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___ STACK_TYPE
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,541 INFO     ___FILE_ONLY___ IPV6_ACCESS_TYPE
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ INTERNAL_IPV6_PREFIX
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ EXTERNAL_IPV6_PREFIX
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ UTILIZATION_DETAILS
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ 
+
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ default
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ us-central1
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ default
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ 10.128.0.0/20
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___   
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ IPV4_ONLY
+2026-05-26 20:02:01,542 INFO     ___FILE_ONLY___ 
+
+2026-05-26 20:02:01,555 DEBUG    root            Metrics reporting process started...

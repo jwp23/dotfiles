@@ -1,0 +1,15 @@
+2026-05-14 15:59:49,113 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 15:59:49,115 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-14 15:59:49,116 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-14 15:59:49,120 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'describe']
+2026-05-14 15:59:49,121 DEBUG    root            Running [gcloud.compute.instance-groups.managed.describe] with arguments: [--format: "value(versions[0].instanceTemplate,baseInstanceName,status.statefulPolicy)", --project: "env-integration-fenway", --region: "us-central1", NAME: "artillery-loadgen-mig"]
+2026-05-14 15:59:49,123 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:49,124 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:49,219 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 15:59:49,431 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig?alt=json HTTP/1.1" 200 None
+2026-05-14 15:59:49,796 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-14 15:59:49,797 DEBUG    root            Chosen display Format:default value(versions[0].instanceTemplate,baseInstanceName,status.statefulPolicy)
+2026-05-14 15:59:49,797 INFO     root            Display format: "default value(versions[0].instanceTemplate,baseInstanceName,status.statefulPolicy)"
+2026-05-14 15:59:49,809 INFO     ___FILE_ONLY___ https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl	loadgen	
+
+2026-05-14 15:59:49,821 DEBUG    root            Metrics reporting process started...

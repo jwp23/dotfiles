@@ -1,0 +1,45 @@
+2026-05-07 16:08:35,649 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-07 16:08:35,652 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-07 16:08:35,654 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'delete']
+2026-05-07 16:08:35,655 DEBUG    root            Running [gcloud.compute.instance-templates.delete] with arguments: [--project: "env-integration-fenway", --quiet: "True", NAME:1: "['artillery-loadgen-tpl']"]
+2026-05-07 16:08:35,657 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:08:35,658 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:08:35,743 DEBUG    root            Chosen display Format:list[title="The following instance templates will be deleted:",always-display-title]
+2026-05-07 16:08:35,748 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-07 16:08:36,478 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "DELETE /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl?alt=json HTTP/1.1" 200 None
+2026-05-07 16:08:36,485 DEBUG    root            Operations to inspect: [(<Operation
+ id: 4470343651428443547
+ insertTime: '2026-05-07T16:08:36.302-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1778195316177-651425c297943-3ac54511-cf6b2d67'
+ operationType: 'delete'
+ progress: 0
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/operations/operation-1778195316177-651425c297943-3ac54511-cf6b2d67'
+ startTime: '2026-05-07T16:08:36.311-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 1885592879126062700
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]
+2026-05-07 16:08:37,115 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/global/operations/operation-1778195316177-651425c297943-3ac54511-cf6b2d67/wait?alt=json HTTP/1.1" 200 None
+2026-05-07 16:08:37,117 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2026-05-07T16:08:36.856-07:00'
+ id: 4470343651428443547
+ insertTime: '2026-05-07T16:08:36.302-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1778195316177-651425c297943-3ac54511-cf6b2d67'
+ operationType: 'delete'
+ progress: 100
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/operations/operation-1778195316177-651425c297943-3ac54511-cf6b2d67'
+ startTime: '2026-05-07T16:08:36.311-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 1885592879126062700
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]
+2026-05-07 16:08:37,118 INFO     ___FILE_ONLY___ Deleted [https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl].
+
+2026-05-07 16:08:37,118 DEBUG    root            Chosen display Format:none
+2026-05-07 16:08:37,118 INFO     root            Display format: "none"
+2026-05-07 16:08:37,122 INFO     root            cache collection=compute.instanceTemplates api_version=v1 params=['project', 'instanceTemplate']
+2026-05-07 16:08:37,166 DEBUG    root            Metrics reporting process started...

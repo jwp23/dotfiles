@@ -1,0 +1,337 @@
+2026-05-14 15:59:50,492 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 15:59:50,494 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-14 15:59:50,496 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-14 15:59:50,497 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "value(properties.disks[0].initializeParams.sourceImage,properties.metadata.items[].key,properties.metadata.items[].value)", --project: "env-integration-fenway", NAME: "artillery-loadgen-tpl"]
+2026-05-14 15:59:50,498 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:50,499 DEBUG    root            On GCE from memory cache: False
+2026-05-14 15:59:50,594 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 15:59:50,974 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl?alt=json HTTP/1.1" 200 None
+2026-05-14 15:59:50,977 DEBUG    root            Chosen display Format:default value(properties.disks[0].initializeParams.sourceImage,properties.metadata.items[].key,properties.metadata.items[].value)
+2026-05-14 15:59:50,977 INFO     root            Display format: "default value(properties.disks[0].initializeParams.sourceImage,properties.metadata.items[].key,properties.metadata.items[].value)"
+2026-05-14 15:59:50,986 INFO     ___FILE_ONLY___ https://compute.googleapis.com/compute/v1/projects/env-integration-fenway/global/images/family/artillery-loadgen-gpu	env;results-bucket;run-id;scenario-bucket;scenario-version;startup-script;target-url	integration;artillery-loadgen-results-env-integration-fenway;20260507T230915Z;artillery-loadgen-scenarios-env-integration-fenway;v0001-placeholder;#!/usr/bin/env bash
+# infra/startup.sh — MIG instance startup script for Artillery load-generator
+# VMs (Epic 12.5).
+#
+# This script is baked into the regional MIG instance template's
+# `metadata.startup-script` by infra/create-mig.sh (Epic 12.3). GCE runs it
+# automatically as root on every instance the MIG creates. Claude does not
+# invoke this script directly; the gcloud / gsutil calls below are executed
+# by the MIG VM, not by the local terminal.
+#
+# What this script does, in order:
+#
+#   1. Read the run-scoped instance metadata vars (set by Epic 12.3's
+#      create-mig.sh — see "Metadata vars" below for the exact contract).
+#   2. Verify GPU presence with `nvidia-smi` and fail fast if absent. The
+#      Packer image's GPU smoke test (Epic 12.1) catches this at build time;
+#      this re-check catches the runtime case where the host's driver does
+#      not match the GPU SKU's current minimum (spike RESULT.md "Gotchas",
+#      "Driver version drift between image build and run").
+#   3. Pull the versioned scenario bundle from
+#      gs://${SCENARIO_BUCKET}/${SCENARIO_VERSION}/ into /var/loadgen.
+#   4. Source ${WORK}/.env.${ENV} from the bundle (if present) for
+#      environment-specific Viewer credentials, fixture IDs, and the
+#      OTEL_DEPLOYMENT_ENVIRONMENT label. The .env.<env> files are
+#      gitignored locally and only present in the bundle the operator
+#      uploads via infra/upload-scenario.sh (Epic 12.2).
+#   5. Read shared OTLP + Vertex secrets from Secret Manager — these
+#      override anything set in .env.<env>. Secret names match the
+#      contract Epic 12.4's setup-service-account.sh provisions.
+#   6. Install scenario-bundle deps if a bare bundle was uploaded
+#      (package.json present but node_modules missing). `npm ci` runs the
+#      `postinstall: patch-package` hook, which reapplies the
+#      Grafana-Cloud OTLP-temporality patch documented in ADR-001.
+#   7. Run Artillery in a loop with VUs=1 (load shape lives in infra/ramp.sh,
+#      not in scenario phases — see docs/designs/load-generator-rollout.md
+#      "VU model and ramp orchestrator"). The loop terminates on:
+#        - SIGTERM (delivered when the MIG resizes down and deletes this
+#          instance — handled by the trap below; the in-flight Artillery
+#          process is signalled so OTLP buffers flush before exit).
+#        - The optional RUN_DURATION_SEC bound (instance metadata
+#          attribute `run-duration-sec`, in seconds).
+#   8. Upload each iteration's result JSON to
+#      gs://${RESULTS_BUCKET}/${RUN_ID}/ as soon as the iteration ends, so
+#      a SIGTERM mid-loop does not lose data from completed iterations.
+#   9. Self-delete the instance with `gcloud compute instances delete` so
+#      the MIG actual size drops to match its target. The custom IAM role
+#      provisioned by Epic 12.4 (loadgenSelfDelete) grants exactly the two
+#      permissions this needs: compute.instances.delete and
+#      compute.zoneOperations.get.
+#
+# Metadata vars (read from the GCE metadata server). Names match what
+# Epic 12.3's infra/create-mig.sh sets unless noted as 12.5-only.
+#
+#   scenario-bucket        Required. GCS bucket holding scenario bundles.
+#   scenario-version       Required. Bundle version key (e.g., v0001-abc1234).
+#   results-bucket         Required. GCS bucket where result JSONs are
+#                          uploaded.
+#   target-url             Required. Viewer URL the scenarios target. Exported
+#                          as VIEWER_BASE_URL (overrides any VIEWER_BASE_URL
+#                          in .env.<env>; the metadata var is the operator's
+#                          per-run intent).
+#   run-id                 Required. Unique identifier for this run.
+#   env                    Required. integration | production. Selects which
+#                          .env.<env> file is sourced from the bundle.
+#   scenario-file          Optional (12.5-only, defaults to
+#                          scenarios/scenario.yml). Path to the scenario YAML
+#                          relative to the bundle root.
+#   run-duration-sec       Optional (12.5-only, defaults to empty = run
+#                          forever until SIGTERM). Bounds the iteration loop.
+#
+# Secret Manager secrets (created by Epic 12.4's setup-service-account.sh):
+#
+#   grafana-otlp-endpoint  → GRAFANA_OTLP_ENDPOINT
+#   grafana-otlp-auth      → GRAFANA_OTLP_AUTH
+#   google-vertex-api-key  → GOOGLE_VERTEX_API_KEY
+#
+# Bundle layout (uploaded via infra/upload-scenario.sh, Epic 12.2):
+#
+#   gs://${SCENARIO_BUCKET}/${SCENARIO_VERSION}/
+#     scenarios/<file>.yml            ← the scenario YAML
+#     config/base.yml                 ← Artillery launch options + plugins
+#     processors/                     ← TS processors imported by scenarios
+#     package.json + package-lock.json + patches/   ← if node_modules omitted
+#     node_modules/ (optional)        ← saves the npm-ci step on each boot
+#     .env.${env}                     ← per-env Viewer creds + fixtures
+#
+# References:
+#   spikes/load-generator/RESULT.md   "Startup script" section
+#   docs/designs/load-generator-rollout.md  "VU model and ramp orchestrator"
+#   docs/adr/001-otlp-over-pushgateway.md   GRAFANA_OTLP_* env-var contract
+#   .env.example                            full env-var contract
+
+set -euo pipefail
+
+# --- Constants ------------------------------------------------------------
+
+WORK="/var/loadgen"
+METADATA_BASE="http://metadata/computeMetadata/v1"
+METADATA_HEADER="Metadata-Flavor: Google"
+
+SECRET_GRAFANA_ENDPOINT="grafana-otlp-endpoint"
+SECRET_GRAFANA_AUTH="grafana-otlp-auth"
+SECRET_VERTEX_KEY="google-vertex-api-key"
+
+DEFAULT_SCENARIO_FILE="scenarios/scenario.yml"
+
+log() {
+  printf '[startup %s] %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "$*"
+}
+
+# Read a metadata server attribute. First arg is the path under
+# /computeMetadata/v1/. Returns non-zero (and empty stdout) if the attribute
+# is not set, so callers can use `|| default` for optional vars.
+read_metadata() {
+  local path="$1"
+  local code
+  local body
+  body=$(curl -sf -H "${METADATA_HEADER}" "${METADATA_BASE}/${path}") && code=0 || code=$?
+  if [[ "${code}" -eq 0 ]]; then
+    printf '%s' "${body}"
+  fi
+  return "${code}"
+}
+
+read_metadata_required() {
+  local path="$1"
+  local label="$2"
+  local value
+  if ! value=$(read_metadata "${path}"); then
+    log "FATAL: required metadata attribute '${label}' (${path}) is not set."
+    exit 2
+  fi
+  if [[ -z "${value}" ]]; then
+    log "FATAL: required metadata attribute '${label}' (${path}) is empty."
+    exit 2
+  fi
+  printf '%s' "${value}"
+}
+
+# --- Read instance + run-scoped metadata ---------------------------------
+
+INSTANCE_NAME=$(read_metadata_required "instance/name" "instance name")
+ZONE_FULL=$(read_metadata_required "instance/zone" "instance zone")
+ZONE="${ZONE_FULL##*/}"
+
+ENV=$(read_metadata_required "instance/attributes/env" "env")
+SCENARIO_BUCKET=$(read_metadata_required "instance/attributes/scenario-bucket" "scenario-bucket")
+SCENARIO_VERSION=$(read_metadata_required "instance/attributes/scenario-version" "scenario-version")
+RESULTS_BUCKET=$(read_metadata_required "instance/attributes/results-bucket" "results-bucket")
+TARGET_URL=$(read_metadata_required "instance/attributes/target-url" "target-url")
+RUN_ID=$(read_metadata_required "instance/attributes/run-id" "run-id")
+
+SCENARIO_FILE=$(read_metadata "instance/attributes/scenario-file" || true)
+SCENARIO_FILE="${SCENARIO_FILE:-${DEFAULT_SCENARIO_FILE}}"
+
+RUN_DURATION_SEC=$(read_metadata "instance/attributes/run-duration-sec" || true)
+
+case "${ENV}" in
+  integration | production) ;;
+  *)
+    log "FATAL: env='${ENV}' is not 'integration' or 'production'."
+    exit 2
+    ;;
+esac
+
+if [[ -n "${RUN_DURATION_SEC}" && ! "${RUN_DURATION_SEC}" =~ ^[0-9]+$ ]]; then
+  log "FATAL: run-duration-sec='${RUN_DURATION_SEC}' is not a non-negative integer."
+  exit 2
+fi
+
+log "instance=${INSTANCE_NAME} zone=${ZONE} env=${ENV} run_id=${RUN_ID}"
+log "bundle=gs://${SCENARIO_BUCKET}/${SCENARIO_VERSION}/  results=gs://${RESULTS_BUCKET}/${RUN_ID}/"
+log "scenario_file=${SCENARIO_FILE}  run_duration_sec=${RUN_DURATION_SEC:-(unbounded)}"
+
+# --- GPU pre-check --------------------------------------------------------
+
+# CLAUDE.md "Critical Constraints": GPU is required. The Packer image's
+# build-time GPU smoke test catches missing-driver cases on the build host;
+# this run-time check catches driver-version drift between build and run.
+if ! nvidia-smi >/dev/null 2>&1; then
+  log "FATAL: nvidia-smi failed — GPU is not available on this instance."
+  log "       Chromium would fall back to SwiftShader (CPU) and produce"
+  log "       invalid SLO measurements. Aborting before any scenario runs."
+  exit 1
+fi
+log "nvidia-smi: GPU available."
+
+# --- Pull scenario bundle -------------------------------------------------
+
+mkdir -p "${WORK}"
+cd "${WORK}"
+
+log "Pulling scenario bundle..."
+gsutil -m cp -r "gs://${SCENARIO_BUCKET}/${SCENARIO_VERSION}/*" .
+
+if [[ ! -f "${SCENARIO_FILE}" ]]; then
+  log "FATAL: scenario file '${SCENARIO_FILE}' not found in bundle."
+  log "       Bundle contents:"
+  ls -la "${WORK}" >&2 || true
+  exit 2
+fi
+
+# --- Source per-env file from bundle --------------------------------------
+
+env_file="${WORK}/.env.${ENV}"
+if [[ -f "${env_file}" ]]; then
+  log "Sourcing ${env_file}"
+  set -a
+  # shellcheck source=/dev/null
+  source "${env_file}"
+  set +a
+else
+  log "Note: ${env_file} not found in bundle (continuing with metadata + secrets only)."
+fi
+
+# --- Read shared secrets from Secret Manager (override .env.<env>) -------
+
+log "Reading shared secrets from Secret Manager..."
+GRAFANA_OTLP_ENDPOINT=$(gcloud secrets versions access latest --secret="${SECRET_GRAFANA_ENDPOINT}")
+GRAFANA_OTLP_AUTH=$(gcloud secrets versions access latest --secret="${SECRET_GRAFANA_AUTH}")
+GOOGLE_VERTEX_API_KEY=$(gcloud secrets versions access latest --secret="${SECRET_VERTEX_KEY}")
+export GRAFANA_OTLP_ENDPOINT GRAFANA_OTLP_AUTH GOOGLE_VERTEX_API_KEY
+
+# Metadata `target-url` is the operator's per-run intent and overrides any
+# VIEWER_BASE_URL the bundle's .env.<env> may carry.
+export VIEWER_BASE_URL="${TARGET_URL}"
+export ARTILLERY_DISABLE_TELEMETRY=true
+
+# --- Install bundle deps (only if node_modules absent) -------------------
+
+if [[ -d "${WORK}/node_modules" ]]; then
+  log "node_modules present in bundle; skipping npm ci."
+elif [[ -f "${WORK}/package.json" ]]; then
+  log "node_modules absent; running npm ci to install bundle deps."
+  npm ci
+else
+  log "Note: no package.json in bundle. Relying on globally-installed Artillery / Playwright (Packer image)."
+fi
+
+# --- SIGTERM-aware run loop ----------------------------------------------
+
+artillery_pid=""
+terminate=0
+
+# shellcheck disable=SC2329  # invoked via `trap` below.
+handle_sigterm() {
+  terminate=1
+  log "SIGTERM received — flushing in-flight Artillery and shutting down."
+  if [[ -n "${artillery_pid}" ]] && kill -0 "${artillery_pid}" 2>/dev/null; then
+    # Give Artillery's OTLP exporter time to flush. The plugin shuts down
+    # cleanly on SIGTERM (see docs/metrics.md "When metrics don't appear" —
+    # the 'Shut down successful' log line is the success signal).
+    kill -TERM "${artillery_pid}" 2>/dev/null || true
+  fi
+}
+trap handle_sigterm TERM INT
+
+start_ts=$(date +%s)
+iter=0
+last_artillery_exit=0
+
+while ((terminate == 0)); do
+  if [[ -n "${RUN_DURATION_SEC}" ]]; then
+    now=$(date +%s)
+    elapsed=$((now - start_ts))
+    if ((elapsed >= RUN_DURATION_SEC)); then
+      log "RUN_DURATION_SEC=${RUN_DURATION_SEC} elapsed; exiting loop after ${iter} iterations."
+      break
+    fi
+  fi
+
+  iter=$((iter + 1))
+  iter_label=$(printf "%04d" "${iter}")
+  output_json="result-${RUN_ID}-${INSTANCE_NAME}-${iter_label}.json"
+  log "Iteration ${iter} starting (output=${output_json})"
+
+  # Run Artillery under xvfb-run so headed Chromium attaches its window
+  # surface to a virtual X display. Production base.yml is `headless: false`
+  # because --headless=new silently selects software rendering on this
+  # driver/Chromium combo (vfps-ibupub) — xvfb provides the X surface,
+  # ANGLE/Vulkan rendering bypasses xvfb and binds to the NVIDIA Vulkan
+  # ICD on the T4. xvfb-run -a auto-picks a free display number; -s sets
+  # a 1920x1080x24 virtual display large enough for the Viewer's worst-case
+  # four-viewport layout. Run in the background so the SIGTERM trap can
+  # signal it cleanly. `set +e` around the wait so the loop survives a
+  # non-zero exit — load tests do not abort the whole instance on one
+  # failed iteration.
+  set +e
+  xvfb-run -a -s "-screen 0 1920x1080x24" \
+    npx artillery run \
+    --config config/base.yml \
+    --output "${output_json}" \
+    "${SCENARIO_FILE}" &
+  artillery_pid=$!
+  wait "${artillery_pid}"
+  last_artillery_exit=$?
+  set -e
+  artillery_pid=""
+
+  if [[ -f "${output_json}" ]]; then
+    if gsutil cp "${output_json}" "gs://${RESULTS_BUCKET}/${RUN_ID}/"; then
+      log "Iteration ${iter} result uploaded (exit=${last_artillery_exit})."
+    else
+      log "Warning: failed to upload ${output_json} (exit=${last_artillery_exit}); continuing."
+    fi
+  else
+    log "Warning: iteration ${iter} produced no output file (exit=${last_artillery_exit})."
+  fi
+done
+
+log "Run loop finished after ${iter} iteration(s); last Artillery exit=${last_artillery_exit}."
+
+# --- Self-delete ----------------------------------------------------------
+
+# spikes/load-generator/RESULT.md "Startup script" — self-delete so the MIG
+# drops to its target size after the run. The custom IAM role provisioned
+# by Epic 12.4 grants compute.instances.delete and compute.zoneOperations
+# .get, which is exactly what this call needs.
+log "Self-deleting instance ${INSTANCE_NAME} in ${ZONE}."
+gcloud compute instances delete "${INSTANCE_NAME}" --zone="${ZONE}" --quiet
+
+# Unreachable in normal flow; the delete call terminates the VM. Emitted
+# only if gcloud returns before the VM is destroyed (e.g., dry-run shells).
+exit 0
+;https://integration.pacs.stratus.optum.com/
+
+2026-05-14 15:59:50,995 DEBUG    root            Metrics reporting process started...

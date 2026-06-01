@@ -1,0 +1,57 @@
+2026-05-14 16:52:05,075 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 16:52:05,079 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-14 16:52:05,081 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-14 16:52:05,083 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-"]
+2026-05-14 16:52:05,086 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:52:05,127 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-14 16:52:05,128 DEBUG    root            On GCE from server: False
+2026-05-14 16:52:05,246 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-14 16:52:05,247 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    )
+2026-05-14 16:52:05,247 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    )"
+2026-05-14 16:52:05,253 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 16:52:05,950 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-14 16:52:06,446 INFO     ___FILE_ONLY___ NAME
+2026-05-14 16:52:06,446 INFO     ___FILE_ONLY___           
+2026-05-14 16:52:06,446 INFO     ___FILE_ONLY___ ZONE
+2026-05-14 16:52:06,446 INFO     ___FILE_ONLY___            
+2026-05-14 16:52:06,446 INFO     ___FILE_ONLY___ MACHINE_TYPE
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___      
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ PREEMPTIBLE
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___   
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ INTERNAL_IP
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___   
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ EXTERNAL_IP
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___    
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ STATUS
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ 
+
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ loadgen-vdc9
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___   
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___   
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ custom-24-65536
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___                
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ 10.128.0.53
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___   
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ 34.30.16.140
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___   
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ RUNNING
+2026-05-14 16:52:06,447 INFO     ___FILE_ONLY___ 
+
+2026-05-14 16:52:06,468 DEBUG    root            Metrics reporting process started...

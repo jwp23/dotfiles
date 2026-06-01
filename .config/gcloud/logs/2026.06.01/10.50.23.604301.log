@@ -1,0 +1,82 @@
+2026-06-01 10:50:23,606 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'quotas']
+2026-06-01 10:50:23,608 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'quotas', 'info']
+2026-06-01 10:50:23,611 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'quotas', 'info', 'describe']
+2026-06-01 10:50:23,613 DEBUG    root            Running [gcloud.alpha.quotas.info.describe] with arguments: [--format: "json", --project: "env-integration-fenway", --service: "compute.googleapis.com", QUOTA_ID: "NVIDIA-RTX-PRO-6000-VWS-GPUS-per-project-region"]
+2026-06-01 10:50:23,616 DEBUG    root            On GCE from memory cache: False
+2026-06-01 10:50:23,618 DEBUG    root            On GCE from memory cache: False
+2026-06-01 10:50:23,638 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudquotas.googleapis.com:443
+2026-06-01 10:50:24,071 DEBUG    urllib3.connectionpool https://cloudquotas.googleapis.com:443 "GET /v1/projects/env-integration-fenway/locations/global/services/compute.googleapis.com/quotaInfos/NVIDIA-RTX-PRO-6000-VWS-GPUS-per-project-region?alt=json HTTP/1.1" 200 None
+2026-06-01 10:50:24,073 DEBUG    root            Chosen display Format:default json
+2026-06-01 10:50:24,073 INFO     root            Display format: "default json"
+2026-06-01 10:50:24,123 INFO     ___FILE_ONLY___ {
+  "containerType": "PROJECT",
+  "dimensions": [
+    "region"
+  ],
+  "dimensionsInfos": [
+    {
+      "applicableLocations": [
+        "africa-south1",
+        "asia-east1",
+        "asia-east2",
+        "asia-northeast1",
+        "asia-northeast2",
+        "asia-northeast3",
+        "asia-south1",
+        "asia-south2",
+        "asia-southeast1",
+        "asia-southeast2",
+        "asia-southeast3",
+        "australia-southeast1",
+        "australia-southeast2",
+        "europe-central2",
+        "europe-north1",
+        "europe-north2",
+        "europe-southwest1",
+        "europe-west1",
+        "europe-west10",
+        "europe-west12",
+        "europe-west2",
+        "europe-west3",
+        "europe-west4",
+        "europe-west6",
+        "europe-west8",
+        "europe-west9",
+        "me-central1",
+        "me-central2",
+        "me-west1",
+        "northamerica-northeast1",
+        "northamerica-northeast2",
+        "northamerica-south1",
+        "southamerica-east1",
+        "southamerica-west1",
+        "us-central1",
+        "us-east1",
+        "us-east4",
+        "us-east5",
+        "us-south1",
+        "us-west1",
+        "us-west2",
+        "us-west3",
+        "us-west4"
+      ],
+      "details": {
+        "value": "32"
+      }
+    }
+  ],
+  "isPrecise": true,
+  "metric": "compute.googleapis.com/nvidia_rtx_pro_6000_vws_gpus",
+  "metricDisplayName": "NVIDIA RTX PRO 6000 Virtual Workstation GPUs",
+  "metricUnit": "1",
+  "name": "projects/386659319067/locations/global/services/compute.googleapis.com/quotaInfos/NVIDIA-RTX-PRO-6000-VWS-GPUS-per-project-region",
+  "quotaDisplayName": "NVIDIA RTX PRO 6000 Virtual Workstation GPUs",
+  "quotaId": "NVIDIA-RTX-PRO-6000-VWS-GPUS-per-project-region",
+  "quotaIncreaseEligibility": {
+    "isEligible": true
+  },
+  "service": "compute.googleapis.com"
+}
+2026-06-01 10:50:24,123 INFO     ___FILE_ONLY___ 
+
+2026-06-01 10:50:24,141 DEBUG    root            Metrics reporting process started...

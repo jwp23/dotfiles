@@ -1,0 +1,25 @@
+2026-05-28 10:15:52,853 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 10:15:52,855 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-28 10:15:52,857 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'get_serial_port_output']
+2026-05-28 10:15:52,858 DEBUG    root            Running [gcloud.compute.instances.get-serial-port-output] with arguments: [--zone: "us-central1-f", INSTANCE_NAME: "loadgen-x5r4"]
+2026-05-28 10:15:52,860 DEBUG    root            On GCE from memory cache: False
+2026-05-28 10:15:52,862 DEBUG    root            On GCE from memory cache: False
+2026-05-28 10:15:53,004 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 10:15:53,461 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/zones/us-central1-f/instances/loadgen-x5r4/serialPort?alt=json&port=1 HTTP/1.1" 200 None
+2026-05-28 10:15:53,463 DEBUG    root            Chosen display Format:value[no-quote](contents)
+2026-05-28 10:15:53,464 INFO     root            Display format: "value[no-quote](contents)"
+2026-05-28 10:15:53,480 INFO     ___FILE_ONLY___ [2J[01;01H[=3h[2J[01;01H[2J[01;01H[=3h[2J[01;01HCSM BBS Table full.
+BdsDxe: loading Boot0003 "Ubuntu" from PciRoot(0x0)/Pci(0x3,0x0)/Scsi(0x1,0x0)/HD(15,GPT,EE7C6507-6DCC-473C-9895-1E0F2DCF5E00,0x2800,0x35000)/\EFI\ubuntu\shimx64.efi
+BdsDxe: starting Boot0003 "Ubuntu" from PciRoot(0x0)/Pci(0x3,0x0)/Scsi(0x1,0x0)/HD(15,GPT,EE7C6507-6DCC-473C-9895-1E0F2DCF5E00,0x2800,0x35000)/\EFI\ubuntu\shimx64.efi
+
+UEFI: Attempting to start image.
+Description: Ubuntu
+FilePath: PciRoot(0x0)/Pci(0x3,0x0)/Scsi(0x1,0x0)/HD(15,GPT,EE7C6507-6DCC-473C-9895-1E0F2DCF5E00,0x2800,0x35000)/\EFI\ubuntu\shimx64.efi
+OptionNumber: 3.
+
+[H[J[1;1H
+
+2026-05-28 10:15:53,480 INFO     ___FILE_ONLY___ 
+Specify --start=641 in the next get-serial-port-output invocation to get only the new output starting from here.
+
+2026-05-28 10:15:53,494 DEBUG    root            Metrics reporting process started...

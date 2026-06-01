@@ -1,0 +1,32 @@
+2026-05-15 12:13:45,716 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-15 12:13:45,719 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-15 12:13:45,720 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-15 12:13:45,727 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list_instances']
+2026-05-15 12:13:45,729 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list-instances] with arguments: [--format: "table(NAME,STATUS,INSTANCE_STATUS,CURRENT_ACTION)", --project: "env-integration-fenway", --region: "us-central1", NAME: "artillery-loadgen-mig-prod"]
+2026-05-15 12:13:45,731 DEBUG    root            On GCE from memory cache: False
+2026-05-15 12:13:45,733 DEBUG    root            On GCE from memory cache: False
+2026-05-15 12:13:45,833 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-15 12:13:46,086 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig-prod/listManagedInstances?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 12:13:46,087 DEBUG    root            Chosen display Format:        table(name:label=NAME,
+              instance.scope().segment(0):label=ZONE,
+              instanceStatus:label=STATUS,
+              instanceHealth[0].detailedHealthState:label=HEALTH_STATE,
+              currentAction:label=ACTION,
+              version.instanceTemplate.basename():label=INSTANCE_TEMPLATE,
+              version.name:label=VERSION_NAME,
+              lastAttempt.errors.errors.map().format(
+                "Error {0}: {1}", code, message).list(separator=", ")
+                :label=LAST_ERROR
+        ) table(NAME,STATUS,INSTANCE_STATUS,CURRENT_ACTION)
+2026-05-15 12:13:46,088 INFO     root            Display format: "        table(name:label=NAME,
+              instance.scope().segment(0):label=ZONE,
+              instanceStatus:label=STATUS,
+              instanceHealth[0].detailedHealthState:label=HEALTH_STATE,
+              currentAction:label=ACTION,
+              version.instanceTemplate.basename():label=INSTANCE_TEMPLATE,
+              version.name:label=VERSION_NAME,
+              lastAttempt.errors.errors.map().format(
+                "Error {0}: {1}", code, message).list(separator=", ")
+                :label=LAST_ERROR
+        ) table(NAME,STATUS,INSTANCE_STATUS,CURRENT_ACTION)"
+2026-05-15 12:13:46,100 DEBUG    root            Metrics reporting process started...

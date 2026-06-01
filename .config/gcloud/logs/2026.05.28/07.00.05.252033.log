@@ -1,0 +1,34 @@
+2026-05-28 07:00:05,339 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 07:00:05,352 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-28 07:00:05,354 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-28 07:00:05,357 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list']
+2026-05-28 07:00:05,359 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list] with arguments: [--filter: "name~loadgen OR name~artillery", --project: "fenway-observability"]
+2026-05-28 07:00:05,364 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:00:05,365 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:00:05,517 INFO     root            client_filter='name~loadgen OR name~artillery' server_filter=None
+2026-05-28 07:00:05,541 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 07:00:05,925 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/fenway-observability/aggregated/instanceGroupManagers?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-28 07:00:05,927 DEBUG    root            Chosen display Format:    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+
+2026-05-28 07:00:05,927 INFO     root            Display format: "    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+"
+2026-05-28 07:00:05,928 WARNING  root            The following filter keys were not present in any resource : name
+2026-05-28 07:00:05,939 DEBUG    root            Metrics reporting process started...

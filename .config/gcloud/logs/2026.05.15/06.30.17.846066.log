@@ -1,0 +1,47 @@
+2026-05-15 06:30:17,910 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-15 06:30:17,913 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-15 06:30:17,917 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-15 06:30:17,918 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-", --format: "table(name,zone.basename(),status,creationTimestamp)", --project: "env-integration-fenway"]
+2026-05-15 06:30:17,920 DEBUG    root            On GCE from memory cache: False
+2026-05-15 06:30:17,952 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-15 06:30:17,952 DEBUG    root            On GCE from server: False
+2026-05-15 06:30:18,044 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-15 06:30:18,044 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,zone.basename(),status,creationTimestamp)
+2026-05-15 06:30:18,045 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) table(name,zone.basename(),status,creationTimestamp)"
+2026-05-15 06:30:18,050 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-15 06:30:18,703 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___ NAME
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___           
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___ ZONE
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___            
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___ STATUS
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___    
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___ CREATION_TIMESTAMP
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___ 
+
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___ loadgen-5mbj
+2026-05-15 06:30:19,198 INFO     ___FILE_ONLY___   
+2026-05-15 06:30:19,199 INFO     ___FILE_ONLY___ us-central1-c
+2026-05-15 06:30:19,199 INFO     ___FILE_ONLY___   
+2026-05-15 06:30:19,199 INFO     ___FILE_ONLY___ RUNNING
+2026-05-15 06:30:19,199 INFO     ___FILE_ONLY___   
+2026-05-15 06:30:19,199 INFO     ___FILE_ONLY___ 2026-05-15T06:29:45.216-07:00
+2026-05-15 06:30:19,199 INFO     ___FILE_ONLY___ 
+
+2026-05-15 06:30:19,211 DEBUG    root            Metrics reporting process started...

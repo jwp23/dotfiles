@@ -1,0 +1,5 @@
+[core]
+account = jpresley@synthesis.health
+project = env-integration-fenway
+disable_usage_reporting = False
+

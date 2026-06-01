@@ -1,0 +1,33 @@
+2026-05-15 14:57:08,448 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-15 14:57:08,451 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-15 14:57:08,453 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-15 14:57:08,454 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "json(properties.networkInterfaces,properties.networkPerformanceConfig)", --project: "env-integration-fenway", NAME: "artillery-loadgen-tpl-prod"]
+2026-05-15 14:57:08,456 DEBUG    root            On GCE from memory cache: False
+2026-05-15 14:57:08,458 DEBUG    root            On GCE from memory cache: False
+2026-05-15 14:57:08,560 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-15 14:57:08,849 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod?alt=json HTTP/1.1" 200 None
+2026-05-15 14:57:08,851 DEBUG    root            Chosen display Format:default json(properties.networkInterfaces,properties.networkPerformanceConfig)
+2026-05-15 14:57:08,852 INFO     root            Display format: "default json(properties.networkInterfaces,properties.networkPerformanceConfig)"
+2026-05-15 14:57:08,867 INFO     ___FILE_ONLY___ {
+  "properties": {
+    "networkInterfaces": [
+      {
+        "accessConfigs": [
+          {
+            "kind": "compute#accessConfig",
+            "name": "external-nat",
+            "networkTier": "PREMIUM",
+            "type": "ONE_TO_ONE_NAT"
+          }
+        ],
+        "kind": "compute#networkInterface",
+        "name": "nic0",
+        "network": "https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/networks/default",
+        "subnetwork": "https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/subnetworks/default"
+      }
+    ]
+  }
+}
+2026-05-15 14:57:08,868 INFO     ___FILE_ONLY___ 
+
+2026-05-15 14:57:08,881 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,32 @@
+2026-05-14 20:49:45,024 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 20:49:45,026 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances']
+2026-05-14 20:49:45,027 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instances', 'list']
+2026-05-14 20:49:45,029 DEBUG    root            Running [gcloud.compute.instances.list] with arguments: [--filter: "name~^loadgen-", --format: "value(name,status)", --project: "env-integration-fenway"]
+2026-05-14 20:49:45,030 DEBUG    root            On GCE from memory cache: False
+2026-05-14 20:49:45,031 DEBUG    root            On GCE from memory cache: False
+2026-05-14 20:49:45,122 INFO     root            client_filter=None server_filter='name eq ".*(^loadgen-).*"'
+2026-05-14 20:49:45,122 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,status)
+2026-05-14 20:49:45,123 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      machineType.machine_type().basename(),
+      scheduling.preemptible.yesno(yes=true, no=''),
+      networkInterfaces.internal_ip():label=INTERNAL_IP,
+      external_ip():label=EXTERNAL_IP,
+      status
+    ) value(name,status)"
+2026-05-14 20:49:45,128 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 20:49:45,723 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instances?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-14 20:49:45,987 INFO     ___FILE_ONLY___ loadgen-5896	STOPPING
+
+2026-05-14 20:49:45,988 INFO     ___FILE_ONLY___ loadgen-6lgs	STOPPING
+
+2026-05-14 20:49:46,000 DEBUG    root            Metrics reporting process started...

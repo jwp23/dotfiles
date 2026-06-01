@@ -1,0 +1,27 @@
+2026-05-28 10:05:22,746 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 10:05:22,749 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-28 10:05:22,756 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'list']
+2026-05-28 10:05:22,759 DEBUG    root            Running [gcloud.compute.images.list] with arguments: [--filter: "family:artillery-loadgen-gpu", --format: "value(name)", --limit: "1", --project: "env-integration-fenway", --sort-by: "['~creationTimestamp']"]
+2026-05-28 10:05:22,762 DEBUG    root            On GCE from memory cache: False
+2026-05-28 10:05:22,764 DEBUG    root            On GCE from memory cache: False
+2026-05-28 10:05:23,247 INFO     root            client_filter=None server_filter='family eq ".*\\bartillery\\-loadgen\\-gpu\\b.*"'
+2026-05-28 10:05:23,248 INFO     root            client_filter=None server_filter='family eq ".*\\bartillery\\-loadgen\\-gpu\\b.*"'
+2026-05-28 10:05:23,261 DEBUG    root            Chosen display Format:    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(name):(creationTimestamp:sort=1:reverse)
+2026-05-28 10:05:23,338 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 10:05:25,518 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 10:05:25,522 INFO     root            Display format: "    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(name):(creationTimestamp:sort=1:reverse)"
+2026-05-28 10:05:25,546 INFO     ___FILE_ONLY___ artillery-loadgen-gpu-1779977648
+
+2026-05-28 10:05:25,564 DEBUG    root            Metrics reporting process started...

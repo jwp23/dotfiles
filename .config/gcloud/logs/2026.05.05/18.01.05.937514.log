@@ -1,0 +1,13 @@
+2026-05-05 18:01:05,938 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2026-05-05 18:01:05,939 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions']
+2026-05-05 18:01:05,955 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions', 'add']
+2026-05-05 18:01:05,963 DEBUG    root            Running [gcloud.secrets.versions.add] with arguments: [--data-file: "-", --project: "env-integration-fenway", SECRET: "google-vertex-api-key"]
+2026-05-05 18:01:05,964 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:01:05,966 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:01:05,981 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2026-05-05 18:01:06,959 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "POST /v1/projects/env-integration-fenway/secrets/google-vertex-api-key:addVersion?alt=json HTTP/1.1" 200 None
+2026-05-05 18:01:06,961 INFO     ___FILE_ONLY___ Created version [1] of the secret [google-vertex-api-key].
+
+2026-05-05 18:01:06,961 DEBUG    root            Chosen display Format:none
+2026-05-05 18:01:06,961 INFO     root            Display format: "none"
+2026-05-05 18:01:07,006 DEBUG    root            Metrics reporting process started...

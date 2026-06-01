@@ -1,0 +1,13 @@
+2026-05-05 18:00:39,217 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2026-05-05 18:00:39,218 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2026-05-05 18:00:39,227 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service-accounts', 'create']
+2026-05-05 18:00:39,228 DEBUG    root            Running [gcloud.iam.service-accounts.create] with arguments: [--description: "Runs Artillery scenarios on the load-generator MIG (Epic 12.4).", --display-name: "Load-generator MIG", --project: "env-integration-fenway", NAME: "loadgen-mig"]
+2026-05-05 18:00:39,229 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:39,230 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:00:39,242 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2026-05-05 18:00:39,884 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/env-integration-fenway/serviceAccounts?alt=json HTTP/1.1" 200 None
+2026-05-05 18:00:39,885 INFO     ___FILE_ONLY___ Created service account [loadgen-mig].
+
+2026-05-05 18:00:39,885 DEBUG    root            Chosen display Format:none
+2026-05-05 18:00:39,885 INFO     root            Display format: "none"
+2026-05-05 18:00:39,951 DEBUG    root            Metrics reporting process started...

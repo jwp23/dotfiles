@@ -1,0 +1,122 @@
+2026-05-14 16:02:59,344 DEBUG    root            Loaded Command Group: ['gcloud', 'logging']
+2026-05-14 16:02:59,353 DEBUG    root            Loaded Command Group: ['gcloud', 'logging', 'read']
+2026-05-14 16:02:59,355 DEBUG    root            Running [gcloud.logging.read] with arguments: [--format: "value(timestamp,protoPayload.methodName,protoPayload.resourceName)", --freshness: "5184000", --limit: "100", --project: "env-integration-fenway", LOG_FILTER: "protoPayload.resourceName=~"instances/loadgen" AND (protoPayload.methodName="v1.compute.instances.insert" OR protoPayload.methodName="v1.compute.instances.delete")"]
+2026-05-14 16:02:59,356 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:02:59,357 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:02:59,376 DEBUG    root            Chosen display Format:default value(timestamp,protoPayload.methodName,protoPayload.resourceName)
+2026-05-14 16:02:59,376 INFO     root            Display format: "default value(timestamp,protoPayload.methodName,protoPayload.resourceName)"
+2026-05-14 16:02:59,381 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): logging.googleapis.com:443
+2026-05-14 16:03:06,539 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:03:06,669 INFO     ___FILE_ONLY___ 2026-05-09T00:54:58.834767Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-d4bc
+
+2026-05-14 16:03:06,671 INFO     ___FILE_ONLY___ 2026-05-09T00:54:04.366722Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-d4bc
+
+2026-05-14 16:03:06,672 INFO     ___FILE_ONLY___ 2026-05-09T00:47:03.904320Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-d4bc
+
+2026-05-14 16:03:06,677 INFO     ___FILE_ONLY___ 2026-05-09T00:46:37.437888Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-d4bc
+
+2026-05-14 16:03:06,681 INFO     ___FILE_ONLY___ 2026-05-08T00:59:07.663514Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-r3gt
+
+2026-05-14 16:03:06,682 INFO     ___FILE_ONLY___ 2026-05-08T00:58:48.862069Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-b/instances/loadgen-2kfq
+
+2026-05-14 16:03:06,683 INFO     ___FILE_ONLY___ 2026-05-08T00:58:43.071118Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-0n15
+
+2026-05-14 16:03:06,684 INFO     ___FILE_ONLY___ 2026-05-08T00:58:42.827285Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-qrcj
+
+2026-05-14 16:03:06,686 INFO     ___FILE_ONLY___ 2026-05-08T00:57:39.200111Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-b/instances/loadgen-2kfq
+
+2026-05-14 16:03:06,688 INFO     ___FILE_ONLY___ 2026-05-08T00:57:38.563526Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-0n15
+
+2026-05-14 16:03:06,690 INFO     ___FILE_ONLY___ 2026-05-08T00:57:38.489569Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-qrcj
+
+2026-05-14 16:03:06,692 INFO     ___FILE_ONLY___ 2026-05-08T00:57:37.766469Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-r3gt
+
+2026-05-14 16:03:06,696 INFO     ___FILE_ONLY___ 2026-05-08T00:30:23.566681Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-b/instances/loadgen-2kfq
+
+2026-05-14 16:03:06,698 INFO     ___FILE_ONLY___ 2026-05-08T00:30:16.351824Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-0n15
+
+2026-05-14 16:03:06,706 INFO     ___FILE_ONLY___ 2026-05-08T00:29:51.270946Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-b/instances/loadgen-2kfq
+
+2026-05-14 16:03:06,712 INFO     ___FILE_ONLY___ 2026-05-08T00:29:50.990164Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-0n15
+
+2026-05-14 16:03:06,714 INFO     ___FILE_ONLY___ 2026-05-08T00:28:51.395911Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-qrcj
+
+2026-05-14 16:03:06,715 INFO     ___FILE_ONLY___ 2026-05-08T00:28:47.071426Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-r3gt
+
+2026-05-14 16:03:06,719 INFO     ___FILE_ONLY___ 2026-05-08T00:28:20.859020Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-qrcj
+
+2026-05-14 16:03:06,724 INFO     ___FILE_ONLY___ 2026-05-08T00:28:20.673064Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-r3gt
+
+2026-05-14 16:03:06,725 INFO     ___FILE_ONLY___ 2026-05-07T23:57:38.519766Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-b/instances/loadgen-tm3c
+
+2026-05-14 16:03:06,726 INFO     ___FILE_ONLY___ 2026-05-07T23:57:24.401926Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-k6px
+
+2026-05-14 16:03:06,727 INFO     ___FILE_ONLY___ 2026-05-07T23:57:12.628422Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-g398
+
+2026-05-14 16:03:06,727 INFO     ___FILE_ONLY___ 2026-05-07T23:57:08.461080Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-z88w
+
+2026-05-14 16:03:06,729 INFO     ___FILE_ONLY___ 2026-05-07T23:56:19.573843Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-b/instances/loadgen-tm3c
+
+2026-05-14 16:03:06,731 INFO     ___FILE_ONLY___ 2026-05-07T23:56:18.939880Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-z88w
+
+2026-05-14 16:03:06,733 INFO     ___FILE_ONLY___ 2026-05-07T23:56:17.602457Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-k6px
+
+2026-05-14 16:03:06,736 INFO     ___FILE_ONLY___ 2026-05-07T23:56:17.552438Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-g398
+
+2026-05-14 16:03:06,736 INFO     ___FILE_ONLY___ 2026-05-07T23:52:12.728983Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-g398
+
+2026-05-14 16:03:06,737 INFO     ___FILE_ONLY___ 2026-05-07T23:52:11.638298Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-z88w
+
+2026-05-14 16:03:06,738 INFO     ___FILE_ONLY___ 2026-05-07T23:51:50.053683Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-b/instances/loadgen-tm3c
+
+2026-05-14 16:03:06,744 INFO     ___FILE_ONLY___ 2026-05-07T23:51:37.278180Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-g398
+
+2026-05-14 16:03:06,750 INFO     ___FILE_ONLY___ 2026-05-07T23:51:36.837861Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-z88w
+
+2026-05-14 16:03:06,751 INFO     ___FILE_ONLY___ 2026-05-07T23:51:18.287086Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-k6px
+
+2026-05-14 16:03:06,756 INFO     ___FILE_ONLY___ 2026-05-07T23:50:51.007435Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-b/instances/loadgen-tm3c
+
+2026-05-14 16:03:06,762 INFO     ___FILE_ONLY___ 2026-05-07T23:50:50.707005Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-k6px
+
+2026-05-14 16:03:06,763 INFO     ___FILE_ONLY___ 2026-05-07T23:41:13.583687Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,765 INFO     ___FILE_ONLY___ 2026-05-07T23:39:58.047704Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,766 INFO     ___FILE_ONLY___ 2026-05-07T23:31:44.366435Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,772 INFO     ___FILE_ONLY___ 2026-05-07T23:31:20.857293Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,773 INFO     ___FILE_ONLY___ 2026-05-07T23:31:20.144600Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,775 INFO     ___FILE_ONLY___ 2026-05-07T23:31:20.144202Z	v1.compute.instances.delete	projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,777 INFO     ___FILE_ONLY___ 2026-05-07T23:30:36.404427Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,779 INFO     ___FILE_ONLY___ 2026-05-07T23:30:27.770043Z	v1.compute.instances.delete	projects/env-integration-fenway/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,780 INFO     ___FILE_ONLY___ 2026-05-07T23:16:47.202527Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,785 INFO     ___FILE_ONLY___ 2026-05-07T23:16:10.321844Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-c/instances/loadgen-sgw6
+
+2026-05-14 16:03:06,786 INFO     ___FILE_ONLY___ 2026-05-07T22:51:12.118220Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-bsbg
+
+2026-05-14 16:03:06,789 INFO     ___FILE_ONLY___ 2026-05-07T22:50:21.568053Z	v1.compute.instances.delete	projects/386659319067/zones/us-central1-f/instances/loadgen-bsbg
+
+2026-05-14 16:03:06,789 INFO     ___FILE_ONLY___ 2026-05-07T22:27:45.294475Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-bsbg
+
+2026-05-14 16:03:06,795 INFO     ___FILE_ONLY___ 2026-05-07T22:27:15.078237Z	v1.compute.instances.insert	projects/386659319067/zones/us-central1-f/instances/loadgen-bsbg
+
+2026-05-14 16:03:12,491 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:03:19,585 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:03:24,663 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:03:31,753 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:03:38,842 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:03:44,104 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:03:51,195 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:03:56,344 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:04:03,528 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:04:10,623 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:04:17,381 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:04:19,193 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:04:19,212 DEBUG    root            Metrics reporting process started...

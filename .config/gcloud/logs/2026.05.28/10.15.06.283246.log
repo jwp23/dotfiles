@@ -1,0 +1,28 @@
+2026-05-28 10:15:06,400 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 10:15:06,403 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-28 10:15:06,410 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'list']
+2026-05-28 10:15:06,412 DEBUG    root            Running [gcloud.compute.images.list] with arguments: [--filter: "family:artillery-loadgen-gpu", --format: "value(name)", --limit: "1", --project: "env-integration-fenway", --sort-by: "['~creationTimestamp']"]
+2026-05-28 10:15:06,416 DEBUG    root            On GCE from memory cache: False
+2026-05-28 10:15:06,490 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-28 10:15:06,490 DEBUG    root            On GCE from server: False
+2026-05-28 10:15:06,616 INFO     root            client_filter=None server_filter='family eq ".*\\bartillery\\-loadgen\\-gpu\\b.*"'
+2026-05-28 10:15:06,617 INFO     root            client_filter=None server_filter='family eq ".*\\bartillery\\-loadgen\\-gpu\\b.*"'
+2026-05-28 10:15:06,618 DEBUG    root            Chosen display Format:    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(name):(creationTimestamp:sort=1:reverse)
+2026-05-28 10:15:06,630 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 10:15:08,548 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-28 10:15:08,892 INFO     root            Display format: "    table(
+      name,
+      selfLink.map().scope(projects).segment(0):label=PROJECT,
+      family,
+      deprecated.state:label=DEPRECATED,
+      status
+    ) value(name):(creationTimestamp:sort=1:reverse)"
+2026-05-28 10:15:08,912 INFO     ___FILE_ONLY___ artillery-loadgen-gpu-1779987926
+
+2026-05-28 10:15:08,929 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,48 @@
+2026-05-07 14:55:06,741 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2026-05-07 14:55:06,751 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'add_iam_policy_binding']
+2026-05-07 14:55:06,758 DEBUG    root            Running [gcloud.secrets.add-iam-policy-binding] with arguments: [--condition: "OrderedDict({'None': None})", --member: "serviceAccount:loadgen-mig@env-integration-fenway.iam.gserviceaccount.com", --project: "env-integration-fenway", --quiet: "True", --role: "roles/secretmanager.secretAccessor", SECRET: "grafana-otlp-endpoint"]
+2026-05-07 14:55:06,758 DEBUG    root            On GCE from memory cache: False
+2026-05-07 14:55:06,759 DEBUG    root            On GCE from memory cache: False
+2026-05-07 14:55:06,771 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2026-05-07 14:55:07,111 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "GET /v1/projects/env-integration-fenway/secrets/grafana-otlp-endpoint:getIamPolicy?alt=json&options.requestedPolicyVersion=3 HTTP/1.1" 200 None
+2026-05-07 14:55:07,485 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "POST /v1/projects/env-integration-fenway/secrets/grafana-otlp-endpoint:setIamPolicy?alt=json HTTP/1.1" 200 None
+2026-05-07 14:55:07,487 INFO     ___FILE_ONLY___ Updated IAM policy for secret [grafana-otlp-endpoint].
+
+2026-05-07 14:55:07,488 DEBUG    root            Chosen display Format:default
+2026-05-07 14:55:07,489 INFO     root            Display format: "default"
+2026-05-07 14:55:07,510 INFO     ___FILE_ONLY___ bindings
+2026-05-07 14:55:07,510 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:07,510 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:07,510 INFO     ___FILE_ONLY___ -
+2026-05-07 14:55:07,510 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:07,510 INFO     ___FILE_ONLY___ members
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___   
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ -
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ serviceAccount:loadgen-mig@env-integration-fenway.iam.gserviceaccount.com
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___   
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ role
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ roles/secretmanager.secretAccessor
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ etag
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ BwZRQVVg4XY=
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ version
+2026-05-07 14:55:07,511 INFO     ___FILE_ONLY___ :
+2026-05-07 14:55:07,512 INFO     ___FILE_ONLY___  
+2026-05-07 14:55:07,512 INFO     ___FILE_ONLY___ 1
+2026-05-07 14:55:07,512 INFO     ___FILE_ONLY___ 
+
+2026-05-07 14:55:07,521 DEBUG    root            Metrics reporting process started...

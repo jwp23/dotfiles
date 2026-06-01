@@ -1,0 +1,37 @@
+2026-05-27 17:35:51,877 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 17:35:51,881 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-27 17:35:51,883 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-27 17:35:51,888 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'delete']
+2026-05-27 17:35:51,889 DEBUG    root            Running [gcloud.compute.instance-groups.managed.delete] with arguments: [--project: "env-integration-fenway", --quiet: "True", --region: "us-central1", NAMES:1: "['artillery-loadgen-mig']"]
+2026-05-27 17:35:51,893 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:35:51,894 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:35:52,056 DEBUG    root            Chosen display Format:list[title="The following region instance group managers will be deleted:",always-display-title]
+2026-05-27 17:35:52,108 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 17:35:52,512 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-27 17:35:52,529 INFO     ___FILE_ONLY___ Deleting Managed Instance Group...
+2026-05-27 17:35:52,734 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "DELETE /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig?alt=json HTTP/1.1" 404 None
+2026-05-27 17:35:52,736 DEBUG    root            Chosen display Format:list[title="Some requests did not succeed:",always-display-title]
+2026-05-27 17:35:52,736 DEBUG    root            (gcloud.compute.instance-groups.managed.delete) Some requests did not succeed:
+ - The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_groups/managed/delete.py", line 178, in Run
+    utils.RaiseToolException(errors)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 136, in RaiseToolException
+    RaiseException(problems, calliope_exceptions.ToolException, error_message)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 145, in RaiseException
+    raise exception(
+        ConstructList(error_message or 'Some requests did not succeed:',
+                      ParseErrors(errors)))
+googlecloudsdk.calliope.exceptions.ToolException: Some requests did not succeed:
+ - The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found
+
+2026-05-27 17:35:52,739 ERROR    root            (gcloud.compute.instance-groups.managed.delete) Some requests did not succeed:
+ - The resource 'projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig' was not found
+
+2026-05-27 17:35:52,748 DEBUG    root            Metrics reporting process started...

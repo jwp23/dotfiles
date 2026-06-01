@@ -1,0 +1,78 @@
+2026-05-27 21:31:11,693 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 21:31:11,696 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-27 21:31:11,700 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'list']
+2026-05-27 21:31:11,702 DEBUG    root            Running [gcloud.compute.instance-templates.list] with arguments: [--format: "value(name)", --project: "env-integration-fenway"]
+2026-05-27 21:31:11,704 DEBUG    root            On GCE from memory cache: False
+2026-05-27 21:31:11,708 DEBUG    root            On GCE from memory cache: False
+2026-05-27 21:31:11,858 DEBUG    root            Chosen display Format:    table(
+      name,
+      properties.machineType.machine_type(),
+      properties.scheduling.preemptible.yesno(yes=true, no=''),
+      creationTimestamp
+    ) value(name)
+2026-05-27 21:31:11,858 INFO     root            Display format: "    table(
+      name,
+      properties.machineType.machine_type(),
+      properties.scheduling.preemptible.yesno(yes=true, no=''),
+      creationTimestamp
+    ) value(name)"
+2026-05-27 21:31:11,865 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 21:31:12,355 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instanceTemplates?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-27 21:31:12,624 INFO     ___FILE_ONLY___ artillery-loadgen-tpl-prod
+
+2026-05-27 21:31:12,625 INFO     ___FILE_ONLY___ gke-env-integration--general-workload-3f8d6bfa
+
+2026-05-27 21:31:12,625 INFO     ___FILE_ONLY___ gke-env-integration--general-workload-94e6df7a
+
+2026-05-27 21:31:12,625 INFO     ___FILE_ONLY___ gke-env-integration--general-workload-b13b76df
+
+2026-05-27 21:31:12,625 INFO     ___FILE_ONLY___ gke-env-integration--nginx-ingress-po-2ca46992
+
+2026-05-27 21:31:12,625 INFO     ___FILE_ONLY___ gke-env-integration--nginx-ingress-po-69e66381
+
+2026-05-27 21:31:12,625 INFO     ___FILE_ONLY___ gke-env-integration--nginx-ingress-po-b2823ea5
+
+2026-05-27 21:31:12,625 INFO     ___FILE_ONLY___ gke-env-integration-f-fovia-viewer-v2-1a7ea8d1
+
+2026-05-27 21:31:12,626 INFO     ___FILE_ONLY___ gke-env-integration-fe-core-ingestion-4bac8d73
+
+2026-05-27 21:31:12,626 INFO     ___FILE_ONLY___ gke-env-integration-fe-core-ingestion-96d2894d
+
+2026-05-27 21:31:12,626 INFO     ___FILE_ONLY___ gke-env-integration-fe-core-ingestion-b1247a65
+
+2026-05-27 21:31:12,626 INFO     ___FILE_ONLY___ gke-env-integration-fen-foviacache-v3-f8bce624
+
+2026-05-27 21:31:12,626 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-3d648298
+
+2026-05-27 21:31:12,626 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-595c915f
+
+2026-05-27 21:31:12,627 INFO     ___FILE_ONLY___ gke-env-integration-fenway--fenway-ai-b695679d
+
+2026-05-27 21:31:12,627 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-0f81e18e
+
+2026-05-27 21:31:12,627 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-backend-1eee5cbd
+
+2026-05-27 21:31:12,627 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-78002455
+
+2026-05-27 21:31:12,627 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-b75b0648
+
+2026-05-27 21:31:12,627 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-mongodb-e25f3783
+
+2026-05-27 21:31:12,627 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-5732b72a
+
+2026-05-27 21:31:12,627 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-c69489fe
+
+2026-05-27 21:31:12,628 INFO     ___FILE_ONLY___ gke-env-integration-fenway-cl-trigram-f7affc54
+
+2026-05-27 21:31:12,628 INFO     ___FILE_ONLY___ gke-env-integration-fenway-monitoring-8d6d4830
+
+2026-05-27 21:31:12,628 INFO     ___FILE_ONLY___ gke-env-integration-fenway-monitoring-b373bfc6
+
+2026-05-27 21:31:12,628 INFO     ___FILE_ONLY___ gke-env-integration-fenway-prometheus-0d366dd1
+
+2026-05-27 21:31:12,628 INFO     ___FILE_ONLY___ gke-env-integration-fenway-prometheus-8474eb23
+
+2026-05-27 21:31:12,628 INFO     ___FILE_ONLY___ gke-env-integration-fenway-prometheus-d95170e3
+
+2026-05-27 21:31:12,631 INFO     root            cache collection=compute.instanceTemplates api_version=v1 params=['project', 'instanceTemplate']
+2026-05-27 21:31:12,665 DEBUG    root            Metrics reporting process started...

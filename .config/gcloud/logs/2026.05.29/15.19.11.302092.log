@@ -1,0 +1,88 @@
+2026-05-29 15:19:11,379 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-29 15:19:11,381 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'accelerator_types']
+2026-05-29 15:19:11,383 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'accelerator-types', 'list']
+2026-05-29 15:19:11,385 DEBUG    root            Running [gcloud.compute.accelerator-types.list] with arguments: [--filter: "zone~us-south1", --project: "env-integration-fenway"]
+2026-05-29 15:19:11,388 DEBUG    root            On GCE from memory cache: False
+2026-05-29 15:19:11,390 DEBUG    root            On GCE from memory cache: False
+2026-05-29 15:19:11,504 INFO     root            client_filter=None server_filter='zone eq ".*(us-south1).*"'
+2026-05-29 15:19:11,505 DEBUG    root            Chosen display Format:
+        table(
+          name,
+          zone.basename(),
+          description
+        )
+    
+2026-05-29 15:19:11,505 INFO     root            Display format: "
+        table(
+          name,
+          zone.basename(),
+          description
+        )
+    "
+2026-05-29 15:19:11,512 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-29 15:19:11,997 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/acceleratorTypes?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:12,594 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/acceleratorTypes?alt=json&includeAllScopes=True&maxResults=500&pageToken=CgsIAxH4CQAAAAAAABIVChNudmlkaWEtcnR4LXByby02MDAw&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-29 15:19:12,597 INFO     ___FILE_ONLY___ NAME
+2026-05-29 15:19:12,597 INFO     ___FILE_ONLY___                      
+2026-05-29 15:19:12,597 INFO     ___FILE_ONLY___ ZONE
+2026-05-29 15:19:12,597 INFO     ___FILE_ONLY___          
+2026-05-29 15:19:12,597 INFO     ___FILE_ONLY___ DESCRIPTION
+2026-05-29 15:19:12,597 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,597 INFO     ___FILE_ONLY___ ct5lp
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___                     
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ ct5lp
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ ct5p
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___                      
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ ct5p
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___       
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ NVIDIA RTX PRO 6000
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000-vws
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ us-south1-a
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ NVIDIA_RTX_PRO_6000
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ nvidia-b200
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___               
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,598 INFO     ___FILE_ONLY___ NVIDIA B200 180GB
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ nvidia-h200-141gb
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___         
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ NVIDIA H200 141GB
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___       
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ NVIDIA RTX PRO 6000
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ nvidia-rtx-pro-6000-vws
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ us-south1-b
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___   
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ NVIDIA_RTX_PRO_6000
+2026-05-29 15:19:12,599 INFO     ___FILE_ONLY___ 
+
+2026-05-29 15:19:12,613 DEBUG    root            Metrics reporting process started...

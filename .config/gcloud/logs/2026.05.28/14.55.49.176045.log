@@ -1,0 +1,40 @@
+2026-05-28 14:55:49,178 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2026-05-28 14:55:49,180 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'list']
+2026-05-28 14:55:49,181 DEBUG    root            Running [gcloud.auth.list] with arguments: []
+2026-05-28 14:55:49,272 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-28 14:55:49,272 DEBUG    root            On GCE from server: False
+2026-05-28 14:55:49,274 DEBUG    root            Chosen display Format:    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    )
+2026-05-28 14:55:49,275 INFO     root            Display format: "    table[title='Credentialed Accounts'](
+        status.yesno(yes='*', no=''):label=ACTIVE,
+        account
+    )"
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___                           Credentialed Accounts
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___ 
+
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___ ACTIVE
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___   
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___ ACCOUNT
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___ 
+
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___ *
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___        
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___ jpresley@synthesis.health
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___ 
+
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___         
+2026-05-28 14:55:49,338 INFO     ___FILE_ONLY___ vision-dashboards-terraform-ac@idg-devops.iam.gserviceaccount.com
+2026-05-28 14:55:49,339 INFO     ___FILE_ONLY___ 
+
+2026-05-28 14:55:49,339 INFO     ___FILE_ONLY___         
+2026-05-28 14:55:49,339 INFO     ___FILE_ONLY___ vision-synthetic-terraform-acc@idg-devops.iam.gserviceaccount.com
+2026-05-28 14:55:49,339 INFO     ___FILE_ONLY___ 
+
+2026-05-28 14:55:49,339 INFO     ___FILE_ONLY___ 
+To set the active account, run:
+    $ gcloud config set account `ACCOUNT`
+
+
+2026-05-28 14:55:49,362 DEBUG    root            Metrics reporting process started...

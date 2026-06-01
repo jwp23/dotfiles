@@ -1,0 +1,26 @@
+2026-05-26 18:44:04,147 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-26 18:44:04,150 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-26 18:44:04,151 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-26 18:44:04,157 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'describe']
+2026-05-26 18:44:04,159 DEBUG    root            Running [gcloud.compute.instance-groups.managed.describe] with arguments: [--format: "value(name,targetSize,instanceTemplate)", --project: "env-integration-fenway", --region: "us-central1", NAME: "artillery-loadgen-mig"]
+2026-05-26 18:44:04,163 DEBUG    root            On GCE from memory cache: False
+2026-05-26 18:44:04,221 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-26 18:44:04,221 DEBUG    root            On GCE from server: False
+2026-05-26 18:44:04,229 DEBUG    root            On GCE from memory cache: False
+2026-05-26 18:44:04,230 DEBUG    root            On GCE from memory cache: False
+2026-05-26 18:44:04,230 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-26 18:44:04,240 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-26 18:44:04,404 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-26 18:44:04,500 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-26 18:44:04,943 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig?alt=json HTTP/1.1" 200 None
+2026-05-26 18:44:05,336 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-26 18:44:05,338 DEBUG    root            Chosen display Format:default value(name,targetSize,instanceTemplate)
+2026-05-26 18:44:05,338 INFO     root            Display format: "default value(name,targetSize,instanceTemplate)"
+2026-05-26 18:44:05,357 INFO     ___FILE_ONLY___ artillery-loadgen-mig	0	https://www.googleapis.com/compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl
+
+2026-05-26 18:44:05,365 DEBUG    root            Checking for updates...
+2026-05-26 18:44:05,366 DEBUG    root            On GCE from memory cache: False
+2026-05-26 18:44:05,367 DEBUG    root            On GCE from memory cache: False
+2026-05-26 18:44:05,368 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-05-26 18:44:05,498 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 25013
+2026-05-26 18:44:05,542 DEBUG    root            Metrics reporting process started...

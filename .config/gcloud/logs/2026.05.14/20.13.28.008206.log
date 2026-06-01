@@ -1,0 +1,60 @@
+2026-05-14 20:13:28,112 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-14 20:13:28,119 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-14 20:13:28,121 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-14 20:13:28,130 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list']
+2026-05-14 20:13:28,132 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list] with arguments: [--filter: "name~loadgen", --format: "table(name,zone.basename(),size,baseInstanceName)"]
+2026-05-14 20:13:28,136 DEBUG    root            On GCE from memory cache: False
+2026-05-14 20:13:28,186 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-14 20:13:28,186 DEBUG    root            On GCE from server: False
+2026-05-14 20:13:28,324 INFO     root            client_filter=None server_filter='name eq ".*(loadgen).*"'
+2026-05-14 20:13:28,335 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-14 20:13:28,731 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instanceGroupManagers?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-14 20:13:28,993 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-14 20:13:29,207 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroups?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-14 20:13:29,448 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-14 20:13:29,454 DEBUG    root            Chosen display Format:    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+ table(name,zone.basename(),size,baseInstanceName)
+2026-05-14 20:13:29,454 INFO     root            Display format: "    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+ table(name,zone.basename(),size,baseInstanceName)"
+2026-05-14 20:13:29,480 INFO     ___FILE_ONLY___ NAME
+2026-05-14 20:13:29,480 INFO     ___FILE_ONLY___                         
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ ZONE
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___   
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ SIZE
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___   
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ BASE_INSTANCE_NAME
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ 
+
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ artillery-loadgen-mig
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___              
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ 0
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___      
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ loadgen
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ 
+
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ artillery-loadgen-mig-prod
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___         
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ 0
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___      
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ loadgen
+2026-05-14 20:13:29,481 INFO     ___FILE_ONLY___ 
+
+2026-05-14 20:13:29,504 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,42 @@
+2026-05-12 15:38:39,997 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-05-12 15:38:40,015 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2026-05-12 15:38:40,016 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2026-05-12 15:38:40,083 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-12 15:38:40,083 DEBUG    root            On GCE from server: False
+2026-05-12 15:38:40,093 DEBUG    root            On GCE from memory cache: False
+2026-05-12 15:38:40,093 DEBUG    root            On GCE from memory cache: False
+2026-05-12 15:38:40,093 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-12 15:38:40,099 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-12 15:38:40,290 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-12 15:38:40,294 DEBUG    root            Chosen display Format:default json
+2026-05-12 15:38:40,295 INFO     root            Display format: "default json"
+2026-05-12 15:38:40,328 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "jpresley@synthesis.health",
+        "disable_usage_reporting": "False",
+        "project": "env-integration-fenway"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AQvPyIO-Ouq6fjS1wheXBP4Q_HfkwT75kncmQwUz34Cix9Aatd_iQc4ElGEO7FdxOmFBwOZGHq4YoWLHMv7u6wX43U6swLDXjwV1_PDme6nkUOqxvVtE-9NR8TPDG4UB4vXL8NXtaqDeyRYU29Ui7l8LPm_uhVGgmIXJcQj6R_uFT1mbBamJSwGE8tMvji_JbhFuiSvT055r5jEaCgYKAZYSARYSFQHGX2MidEYPlL2t1B41FIuvuqq0Vg0214",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY4ZTY2MjBkMzk3MTFhYTIxY2U4YTJiZjJmM2VlMDFiOTI0Y2IyZDAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTEzNTc3MzIxOTIwMzcyMjQwNTcyIiwiaGQiOiJzeW50aGVzaXMuaGVhbHRoIiwiZW1haWwiOiJqcHJlc2xleUBzeW50aGVzaXMuaGVhbHRoIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJlMkpsU2dKMGx6c19pQ2VSaXJodEdnIiwiaWF0IjoxNzc4NjI1NTIwLCJleHAiOjE3Nzg2MjkxMjB9.Fgwgvz_B3uJSovaIpa8lUCzgbOVJ7tamAdkTUNUW_1F8fVUoCNVNr8pmik5UbBpnhc64xk2ihBY8CsStFZFKxSZVAOe5Dh_RHcwVJ_BPa00MrkMMkPHVIAsA_VwSLZtY7qxF0rgondTkKrqvvSphzUEUMZ6hxBAP6jMFYiPkt5lTa7MbvFGZ1rUU2toP6fMoNEzJCjohb-QbaBSKR7ZzlxS7UCZX-WQBZmtfmEy4IScwaTRyhUegauUV_LxxHBuQ47WZvZ8XAugORA1_IiQB2WxCH9PGahHy9e7_Kk_WzDUz28ygEPoSoPwGDX8zH3ud4G65XjeysTRt_WiqN2Ukww",
+    "token_expiry": "2026-05-12T23:38:39Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/Users/jpresley/.config/gcloud/config_sentinel"
+  }
+}
+2026-05-12 15:38:40,328 INFO     ___FILE_ONLY___ 
+
+2026-05-12 15:38:40,336 DEBUG    root            Checking for updates...
+2026-05-12 15:38:40,337 DEBUG    root            On GCE from memory cache: False
+2026-05-12 15:38:40,337 DEBUG    root            On GCE from memory cache: False
+2026-05-12 15:38:40,338 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-05-12 15:38:40,479 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 25078
+2026-05-12 15:38:40,510 DEBUG    root            Updating notification cache...
+2026-05-12 15:38:40,510 DEBUG    root            Activating notification: [default]
+2026-05-12 15:38:40,518 DEBUG    root            Metrics reporting process started...

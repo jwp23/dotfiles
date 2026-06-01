@@ -1,0 +1,101 @@
+2026-05-28 16:32:52,494 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-28 16:32:52,496 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'machine_types']
+2026-05-28 16:32:52,497 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'machine-types', 'list']
+2026-05-28 16:32:52,499 DEBUG    root            Running [gcloud.compute.machine-types.list] with arguments: [--filter: "name~^g4-", --project: "env-integration-fenway", --zones: "['us-central1-b']"]
+2026-05-28 16:32:52,501 DEBUG    root            On GCE from memory cache: False
+2026-05-28 16:32:52,503 DEBUG    root            On GCE from memory cache: False
+2026-05-28 16:32:52,599 INFO     root            client_filter=None server_filter='name eq ".*(^g4-).*"'
+2026-05-28 16:32:52,599 INFO     root            client_filter='((name~^g4-)) AND (zone :(us-central1-b))' server_filter='name eq ".*(^g4-).*"'
+2026-05-28 16:32:52,599 DEBUG    root            Chosen display Format:    table(
+      name,
+      zone.basename(),
+      guestCpus:label=CPUS,
+      memoryMb.size(units_in=MiB, units_out=GiB, precision=2):label=MEMORY_GB,
+      deprecated.state:label=DEPRECATED
+    )
+
+2026-05-28 16:32:52,600 INFO     root            Display format: "    table(
+      name,
+      zone.basename(),
+      guestCpus:label=CPUS,
+      memoryMb.size(units_in=MiB, units_out=GiB, precision=2):label=MEMORY_GB,
+      deprecated.state:label=DEPRECATED
+    )
+"
+2026-05-28 16:32:52,606 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-28 16:32:52,973 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/zones/us-central1-b/machineTypes?alt=json&filter=name+eq+%22.%2A%28%5Eg4-%29.%2A%22&maxResults=500 HTTP/1.1" 200 None
+2026-05-28 16:32:52,989 INFO     ___FILE_ONLY___ NAME
+2026-05-28 16:32:52,989 INFO     ___FILE_ONLY___              
+2026-05-28 16:32:52,989 INFO     ___FILE_ONLY___ ZONE
+2026-05-28 16:32:52,989 INFO     ___FILE_ONLY___            
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ CPUS
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ MEMORY_GB
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ DEPRECATED
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ g4-standard-12
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___    
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 12
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 45.00
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ g4-standard-192
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 192
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___    
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 720.00
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ g4-standard-24
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___    
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 24
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 90.00
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ g4-standard-384
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 384
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___    
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 1440.00
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ g4-standard-48
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___    
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,990 INFO     ___FILE_ONLY___ 48
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ 180.00
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ g4-standard-6
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ 6
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___      
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ 22.00
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ g4-standard-96
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___    
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ us-central1-b
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___   
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ 96
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___     
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ 360.00
+2026-05-28 16:32:52,991 INFO     ___FILE_ONLY___ 
+
+2026-05-28 16:32:53,003 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,44 @@
+2026-05-27 21:28:57,535 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 21:28:57,567 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-27 21:28:57,571 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-27 21:28:57,587 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list']
+2026-05-27 21:28:57,589 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list] with arguments: [--filter: "name:artillery-loadgen*", --format: "value(name,region,size)", --project: "env-integration-fenway"]
+2026-05-27 21:28:57,601 DEBUG    root            On GCE from memory cache: False
+2026-05-27 21:28:57,788 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-27 21:28:57,788 DEBUG    root            On GCE from server: False
+2026-05-27 21:28:57,808 DEBUG    root            On GCE from memory cache: False
+2026-05-27 21:28:57,810 DEBUG    root            On GCE from memory cache: False
+2026-05-27 21:28:57,811 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-27 21:28:57,825 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-27 21:28:58,000 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-27 21:28:58,339 INFO     root            client_filter=None server_filter='name eq ".*\\bartillery\\-loadgen.*"'
+2026-05-27 21:28:58,355 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 21:28:58,888 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/aggregated/instanceGroupManagers?alt=json&includeAllScopes=True&maxResults=500&returnPartialSuccess=True HTTP/1.1" 200 None
+2026-05-27 21:28:59,254 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-27 21:28:59,630 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroups?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-27 21:28:59,858 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-27 21:28:59,869 DEBUG    root            Chosen display Format:    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+ value(name,region,size)
+2026-05-27 21:28:59,870 INFO     root            Display format: "    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+ value(name,region,size)"
+2026-05-27 21:28:59,897 INFO     ___FILE_ONLY___ artillery-loadgen-mig-prod	https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1	0
+
+2026-05-27 21:28:59,918 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,13 @@
+2026-05-05 18:01:02,618 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets']
+2026-05-05 18:01:02,619 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions']
+2026-05-05 18:01:02,634 DEBUG    root            Loaded Command Group: ['gcloud', 'secrets', 'versions', 'add']
+2026-05-05 18:01:02,643 DEBUG    root            Running [gcloud.secrets.versions.add] with arguments: [--data-file: "-", --project: "env-integration-fenway", SECRET: "grafana-otlp-auth"]
+2026-05-05 18:01:02,643 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:01:02,646 DEBUG    root            On GCE from memory cache: False
+2026-05-05 18:01:02,660 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): secretmanager.googleapis.com:443
+2026-05-05 18:01:03,277 DEBUG    urllib3.connectionpool https://secretmanager.googleapis.com:443 "POST /v1/projects/env-integration-fenway/secrets/grafana-otlp-auth:addVersion?alt=json HTTP/1.1" 200 None
+2026-05-05 18:01:03,278 INFO     ___FILE_ONLY___ Created version [1] of the secret [grafana-otlp-auth].
+
+2026-05-05 18:01:03,278 DEBUG    root            Chosen display Format:none
+2026-05-05 18:01:03,279 INFO     root            Display format: "none"
+2026-05-05 18:01:03,320 DEBUG    root            Metrics reporting process started...

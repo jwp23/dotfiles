@@ -1,0 +1,50 @@
+2026-05-14 16:00:04,825 DEBUG    root            Loaded Command Group: ['gcloud', 'logging']
+2026-05-14 16:00:04,837 DEBUG    root            Loaded Command Group: ['gcloud', 'logging', 'read']
+2026-05-14 16:00:04,839 DEBUG    root            Running [gcloud.logging.read] with arguments: [--format: "value(timestamp,labels."compute.googleapis.com/resource_name")", --freshness: "1209600", --limit: "20", --project: "env-integration-fenway", LOG_FILTER: "resource.type="gce_instance" AND logName=~"serial_port""]
+2026-05-14 16:00:04,841 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:00:04,843 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:00:04,866 DEBUG    root            Chosen display Format:default value(timestamp,labels."compute.googleapis.com/resource_name")
+2026-05-14 16:00:04,866 INFO     root            Display format: "default value(timestamp,labels."compute.googleapis.com/resource_name")"
+2026-05-14 16:00:04,872 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): logging.googleapis.com:443
+2026-05-14 16:00:06,234 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:00:06,263 INFO     ___FILE_ONLY___ 2026-05-14T22:57:43.417511131Z	gke-env-integration--general-workload-badf2308-b2fv
+
+2026-05-14 16:00:06,264 INFO     ___FILE_ONLY___ 2026-05-14T22:57:42.073962501Z	gke-env-integration--general-workload-badf2308-b2fv
+
+2026-05-14 16:00:06,264 INFO     ___FILE_ONLY___ 2026-05-14T22:57:42.073943123Z	gke-env-integration--general-workload-badf2308-b2fv
+
+2026-05-14 16:00:06,264 INFO     ___FILE_ONLY___ 2026-05-14T22:56:28.062726109Z	gke-env-integration--general-workload-dc0a3bf5-6bmo
+
+2026-05-14 16:00:06,264 INFO     ___FILE_ONLY___ 2026-05-14T22:56:26.807933138Z	gke-env-integration--general-workload-dc0a3bf5-6bmo
+
+2026-05-14 16:00:06,264 INFO     ___FILE_ONLY___ 2026-05-14T22:56:26.807913380Z	gke-env-integration--general-workload-dc0a3bf5-6bmo
+
+2026-05-14 16:00:06,265 INFO     ___FILE_ONLY___ 2026-05-14T22:56:22.646894882Z	gke-env-integration--general-workload-75b3348b-ppih
+
+2026-05-14 16:00:06,265 INFO     ___FILE_ONLY___ 2026-05-14T22:56:21.997454215Z	gke-env-integration--general-workload-75b3348b-8vhl
+
+2026-05-14 16:00:06,265 INFO     ___FILE_ONLY___ 2026-05-14T22:56:20.914235523Z	gke-env-integration--general-workload-75b3348b-8vhl
+
+2026-05-14 16:00:06,265 INFO     ___FILE_ONLY___ 2026-05-14T22:56:20.914210048Z	gke-env-integration--general-workload-75b3348b-8vhl
+
+2026-05-14 16:00:06,266 INFO     ___FILE_ONLY___ 2026-05-14T22:56:20.866050887Z	gke-env-integration--general-workload-75b3348b-ppih
+
+2026-05-14 16:00:06,266 INFO     ___FILE_ONLY___ 2026-05-14T22:56:20.866025827Z	gke-env-integration--general-workload-75b3348b-ppih
+
+2026-05-14 16:00:06,266 INFO     ___FILE_ONLY___ 2026-05-14T22:55:55.784837588Z	gke-env-integration--general-workload-badf2308-0z5n
+
+2026-05-14 16:00:06,266 INFO     ___FILE_ONLY___ 2026-05-14T22:55:54.387366828Z	gke-env-integration--general-workload-badf2308-0z5n
+
+2026-05-14 16:00:06,266 INFO     ___FILE_ONLY___ 2026-05-14T22:55:54.387339575Z	gke-env-integration--general-workload-badf2308-0z5n
+
+2026-05-14 16:00:06,267 INFO     ___FILE_ONLY___ 2026-05-14T22:55:42.372482138Z	gke-env-integration--general-workload-dc0a3bf5-uqzb
+
+2026-05-14 16:00:06,267 INFO     ___FILE_ONLY___ 2026-05-14T22:55:42.316590310Z	gke-env-integration--general-workload-75b3348b-8vhl
+
+2026-05-14 16:00:06,267 INFO     ___FILE_ONLY___ 2026-05-14T22:55:41.221637620Z	gke-env-integration--general-workload-dc0a3bf5-uqzb
+
+2026-05-14 16:00:06,267 INFO     ___FILE_ONLY___ 2026-05-14T22:55:41.221604789Z	gke-env-integration--general-workload-dc0a3bf5-uqzb
+
+2026-05-14 16:00:06,267 INFO     ___FILE_ONLY___ 2026-05-14T22:55:41.183035802Z	gke-env-integration--general-workload-75b3348b-8vhl
+
+2026-05-14 16:00:06,279 DEBUG    root            Metrics reporting process started...

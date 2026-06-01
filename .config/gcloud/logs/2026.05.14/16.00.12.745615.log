@@ -1,0 +1,29 @@
+2026-05-14 16:00:12,746 DEBUG    root            Loaded Command Group: ['gcloud', 'logging']
+2026-05-14 16:00:12,757 DEBUG    root            Loaded Command Group: ['gcloud', 'logging', 'read']
+2026-05-14 16:00:12,758 DEBUG    root            Running [gcloud.logging.read] with arguments: [--format: "value(timestamp,labels."compute.googleapis.com/resource_name",resource.labels.instance_id)", --freshness: "2592000", --limit: "10", --project: "env-integration-fenway", LOG_FILTER: "resource.type="gce_instance" AND (textPayload:"loadgen" OR labels."compute.googleapis.com/resource_name":"loadgen")"]
+2026-05-14 16:00:12,759 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:00:12,761 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:00:12,779 DEBUG    root            Chosen display Format:default value(timestamp,labels."compute.googleapis.com/resource_name",resource.labels.instance_id)
+2026-05-14 16:00:12,779 INFO     root            Display format: "default value(timestamp,labels."compute.googleapis.com/resource_name",resource.labels.instance_id)"
+2026-05-14 16:00:12,785 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): logging.googleapis.com:443
+2026-05-14 16:00:19,955 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:00:27,056 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:00:34,149 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:00:40,675 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:00:47,793 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:00:52,872 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:00:58,720 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:05,810 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:12,968 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:20,068 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:26,270 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:33,377 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:38,869 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:45,959 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:52,185 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:01:58,192 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:02:05,251 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:02:11,738 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:02:18,823 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:02:24,493 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-14 16:02:24,540 DEBUG    root            Metrics reporting process started...

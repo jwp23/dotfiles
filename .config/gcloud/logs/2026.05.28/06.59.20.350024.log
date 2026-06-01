@@ -1,0 +1,81 @@
+2026-05-28 06:59:20,367 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2026-05-28 06:59:20,376 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2026-05-28 06:59:20,378 DEBUG    root            Running [gcloud.projects.list] with arguments: [--filter: "name~fenway OR projectId~fenway", --format: "value(projectId,name)"]
+2026-05-28 06:59:20,378 INFO     root            client_filter="name~fenway OR projectId~fenway" server_filter="None"
+2026-05-28 06:59:20,381 DEBUG    root            On GCE from memory cache: False
+2026-05-28 06:59:20,383 DEBUG    root            On GCE from memory cache: False
+2026-05-28 06:59:20,402 DEBUG    root            Chosen display Format:
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber,
+      tags.environment:label='ENVIRONMENT'
+    )
+ value(projectId,name)
+2026-05-28 06:59:20,406 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber,
+      tags.environment:label='ENVIRONMENT'
+    )
+ value(projectId,name)"
+2026-05-28 06:59:20,427 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-05-28 06:59:20,896 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=500 HTTP/1.1" 200 None
+2026-05-28 06:59:20,970 INFO     ___FILE_ONLY___ fenway-observability	Fenway Observability
+
+2026-05-28 06:59:20,971 INFO     ___FILE_ONLY___ integration-fenway-devops-2975	integration-fenway-devops-2975
+
+2026-05-28 06:59:20,975 INFO     ___FILE_ONLY___ prod-fenway-tester-145	prod-fenway-tester-145
+
+2026-05-28 06:59:20,976 INFO     ___FILE_ONLY___ prod-fenway-test-112	prod-fenway-test-112
+
+2026-05-28 06:59:20,976 INFO     ___FILE_ONLY___ prod-fenway-test123-114	prod-fenway-test123-114
+
+2026-05-28 06:59:20,980 INFO     ___FILE_ONLY___ gateway-service-fenway	gateway-service-fenway
+
+2026-05-28 06:59:20,981 INFO     ___FILE_ONLY___ preprod-fenway-matrix-151	preprod-fenway-matrix-151
+
+2026-05-28 06:59:20,982 INFO     ___FILE_ONLY___ integration-fenway-qa-val-2942	integration-fenway-qa-val-2942
+
+2026-05-28 06:59:20,982 INFO     ___FILE_ONLY___ integration-fenway-devops-2940	integration-fenway-devops-2940
+
+2026-05-28 06:59:20,983 INFO     ___FILE_ONLY___ preprod-fenway-tenet-118	preprod-fenway-tenet-118
+
+2026-05-28 06:59:20,983 INFO     ___FILE_ONLY___ preprod-fenway-integration-116	preprod-fenway-integration-116
+
+2026-05-28 06:59:20,984 INFO     ___FILE_ONLY___ prod-fenway-devops-monitori-79	prod-fenway-devops-monitori-79
+
+2026-05-28 06:59:20,985 INFO     ___FILE_ONLY___ preprod-fenway-devops-monit-83	preprod-fenway-devops-monit-83
+
+2026-05-28 06:59:20,985 INFO     ___FILE_ONLY___ integration-fenway-qa-val-2907	integration-fenway-qa-val-2907
+
+2026-05-28 06:59:20,986 INFO     ___FILE_ONLY___ env-integration-fenway	env-integration-fenway
+
+2026-05-28 06:59:20,987 INFO     ___FILE_ONLY___ fenway-devops	fenway-devops
+
+2026-05-28 06:59:20,987 INFO     ___FILE_ONLY___ prod-fenway-fg-demo-13	prod-fenway-fg-demo-13
+
+2026-05-28 06:59:20,987 INFO     ___FILE_ONLY___ prod-fenway-optum-health-ent-9	prod-fenway-optum-health-ent-9
+
+2026-05-28 06:59:20,988 INFO     ___FILE_ONLY___ prod-fenway-qa-test-7	prod-fenway-qa-test-7
+
+2026-05-28 06:59:20,988 INFO     ___FILE_ONLY___ prod-fenway-qa-validation-ss-5	prod-fenway-qa-validation-ss-5
+
+2026-05-28 06:59:20,988 INFO     ___FILE_ONLY___ prod-fenway-qa-validation-1	prod-fenway-qa-validation-1
+
+2026-05-28 06:59:20,988 INFO     ___FILE_ONLY___ prod-fenway-qa-validation-3	prod-fenway-qa-validation-3
+
+2026-05-28 06:59:20,988 INFO     ___FILE_ONLY___ preprod-fenway-idg-optum-he-15	preprod-fenway-idg-optum-he-15
+
+2026-05-28 06:59:20,989 INFO     ___FILE_ONLY___ preprod-fenway-idg-fg-demo-13	preprod-fenway-idg-fg-demo-13
+
+2026-05-28 06:59:20,989 INFO     ___FILE_ONLY___ env-prod-fenway	env-prod-fenway
+
+2026-05-28 06:59:20,989 INFO     ___FILE_ONLY___ preprod-fenway-idg-qa-valid-11	preprod-fenway-idg-qa-valid-11
+
+2026-05-28 06:59:20,989 INFO     ___FILE_ONLY___ preprod-fenway-idg-qa-valida-9	preprod-fenway-idg-qa-valida-9
+
+2026-05-28 06:59:20,990 INFO     ___FILE_ONLY___ env-preprod-fenway	env-preprod-fenway
+
+2026-05-28 06:59:21,015 DEBUG    root            Metrics reporting process started...

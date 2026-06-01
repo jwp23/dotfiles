@@ -1,0 +1,101 @@
+2026-05-27 17:36:17,876 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 17:36:17,880 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-27 17:36:17,882 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-27 17:36:17,896 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'create']
+2026-05-27 17:36:17,902 DEBUG    root            Running [gcloud.compute.instance-groups.managed.create] with arguments: [--base-instance-name: "loadgen", --project: "env-integration-fenway", --region: "us-central1", --size: "0", --template: "artillery-loadgen-tpl", NAME: "artillery-loadgen-mig"]
+2026-05-27 17:36:17,905 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:36:17,907 DEBUG    root            On GCE from memory cache: False
+2026-05-27 17:36:18,110 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 17:36:19,018 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers?alt=json HTTP/1.1" 200 None
+2026-05-27 17:36:19,019 DEBUG    root            Operations to inspect: [(<Operation
+ id: 3570948955249979629
+ insertTime: '2026-05-27T17:36:18.916-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1779928578410-652d5eaa448ac-d17aaf5e-2e4f8a84'
+ operationType: 'compute.instanceGroupManagers.insert'
+ progress: 0
+ region: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1779928578410-652d5eaa448ac-d17aaf5e-2e4f8a84'
+ startTime: '2026-05-27T17:36:18.926-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 9133668997915095277
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]
+2026-05-27 17:36:29,044 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1779928578410-652d5eaa448ac-d17aaf5e-2e4f8a84/wait?alt=json HTTP/1.1" 200 None
+2026-05-27 17:36:29,045 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2026-05-27T17:36:28.876-07:00'
+ id: 3570948955249979629
+ insertTime: '2026-05-27T17:36:18.916-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1779928578410-652d5eaa448ac-d17aaf5e-2e4f8a84'
+ operationType: 'compute.instanceGroupManagers.insert'
+ progress: 100
+ region: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1779928578410-652d5eaa448ac-d17aaf5e-2e4f8a84'
+ startTime: '2026-05-27T17:36:18.926-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 9133668997915095277
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]
+2026-05-27 17:36:29,045 INFO     ___FILE_ONLY___ Created [https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig].
+
+2026-05-27 17:36:29,653 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig?alt=json HTTP/1.1" 200 None
+2026-05-27 17:36:29,655 DEBUG    root            Chosen display Format:    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+
+2026-05-27 17:36:29,655 INFO     root            Display format: "    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+"
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___ NAME
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___                    
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___ LOCATION
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___      
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___ SCOPE
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___    
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___ BASE_INSTANCE_NAME
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___   
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___ SIZE
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___   
+2026-05-27 17:36:29,669 INFO     ___FILE_ONLY___ TARGET_SIZE
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___   
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ INSTANCE_TEMPLATE
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___       
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ AUTOSCALED
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ artillery-loadgen-mig
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___   
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ us-central1
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___   
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ region
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___   
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ loadgen
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___              
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___      
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ 0
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___             
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ artillery-loadgen-tpl
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___   
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ no
+2026-05-27 17:36:29,670 INFO     ___FILE_ONLY___ 
+
+2026-05-27 17:36:29,685 DEBUG    root            Metrics reporting process started...

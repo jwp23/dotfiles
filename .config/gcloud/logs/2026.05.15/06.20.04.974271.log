@@ -1,0 +1,93 @@
+2026-05-15 06:20:05,046 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-15 06:20:05,049 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-15 06:20:05,050 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-15 06:20:05,056 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'list']
+2026-05-15 06:20:05,057 DEBUG    root            Running [gcloud.compute.instance-groups.managed.list] with arguments: [--filter: "name~^artillery-loadgen-mig", --project: "env-integration-fenway", --regions: "['us-central1']"]
+2026-05-15 06:20:05,059 DEBUG    root            On GCE from memory cache: False
+2026-05-15 06:20:05,093 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-15 06:20:05,093 DEBUG    root            On GCE from server: False
+2026-05-15 06:20:05,102 DEBUG    root            On GCE from memory cache: False
+2026-05-15 06:20:05,102 DEBUG    root            On GCE from memory cache: False
+2026-05-15 06:20:05,103 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2026-05-15 06:20:05,108 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2026-05-15 06:20:05,278 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2026-05-15 06:20:05,367 INFO     root            client_filter=None server_filter='name eq ".*(^artillery-loadgen-mig).*"'
+2026-05-15 06:20:05,368 INFO     root            client_filter='((name~^artillery-loadgen-mig)) AND (region :(us-central1))' server_filter='name eq ".*(^artillery-loadgen-mig).*"'
+2026-05-15 06:20:05,369 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-15 06:20:05,807 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers?alt=json&filter=name+eq+%22.%2A%28%5Eartillery-loadgen-mig%29.%2A%22&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 06:20:06,273 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroups?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 06:20:06,611 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-15 06:20:06,613 DEBUG    root            Chosen display Format:    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+
+2026-05-15 06:20:06,615 INFO     root            Display format: "    table(
+      name,
+      location():label=LOCATION,
+      location_scope():label=SCOPE,
+      baseInstanceName,
+      size,
+      targetSize,
+      instanceTemplate.basename(),
+      autoscaled
+    )
+"
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ NAME
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___                         
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ LOCATION
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___      
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ SCOPE
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___    
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ BASE_INSTANCE_NAME
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ SIZE
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ TARGET_SIZE
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ INSTANCE_TEMPLATE
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___            
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ AUTOSCALED
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ 
+
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ artillery-loadgen-mig
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___        
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ us-central1
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ region
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___ loadgen
+2026-05-15 06:20:06,632 INFO     ___FILE_ONLY___              
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ 0
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___      
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ 0
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___             
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ artillery-loadgen-tpl
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___        
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ no
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ 
+
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ artillery-loadgen-mig-prod
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ us-central1
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ region
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ loadgen
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___              
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ 0
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___      
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ 0
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___             
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ artillery-loadgen-tpl-prod
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___   
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ no
+2026-05-15 06:20:06,633 INFO     ___FILE_ONLY___ 
+
+2026-05-15 06:20:06,644 DEBUG    root            Metrics reporting process started...

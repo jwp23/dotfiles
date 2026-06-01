@@ -1,0 +1,10 @@
+2026-06-01 10:49:50,924 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-06-01 10:49:50,928 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'get_value']
+2026-06-01 10:49:50,929 DEBUG    root            Running [gcloud.config.get-value] with arguments: [SECTION/PROPERTY: "project"]
+2026-06-01 10:49:50,929 DEBUG    root            Chosen display Format:value(.)
+2026-06-01 10:49:50,930 INFO     root            Display format: "value(.)"
+2026-06-01 10:49:50,930 INFO     ___FILE_ONLY___ env-integration-fenway
+
+2026-06-01 10:49:57,065 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 64] Host is down>
+2026-06-01 10:49:57,066 DEBUG    root            On GCE from server: False
+2026-06-01 10:49:57,073 DEBUG    root            Metrics reporting process started...

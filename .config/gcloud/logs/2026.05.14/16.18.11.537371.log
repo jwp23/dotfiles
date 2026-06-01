@@ -1,0 +1,17 @@
+2026-05-14 16:18:11,544 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-05-14 16:18:11,576 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:18:11,749 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'cat']
+2026-05-14 16:18:11,750 DEBUG    root            Running [gcloud.storage.cat] with arguments: [URL:1: "['gs://artillery-loadgen-scenarios-env-integration-fenway/v0001-placeholder/BUNDLE_MANIFEST.txt']"]
+2026-05-14 16:18:11,751 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:18:11,760 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-05-14 16:18:11,928 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o/v0001-placeholder%2FBUNDLE_MANIFEST.txt?alt=json&projection=noAcl HTTP/1.1" 200 1107
+2026-05-14 16:18:11,930 INFO     root            Using high CPU count, single-file workload config.
+2026-05-14 16:18:11,930 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:18:11,933 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-05-14 16:18:12,088 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/storageLayout?alt=json HTTP/1.1" 200 161
+2026-05-14 16:18:12,092 DEBUG    root            On GCE from memory cache: False
+2026-05-14 16:18:12,095 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-05-14 16:18:12,327 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "GET /download/storage/v1/b/artillery-loadgen-scenarios-env-integration-fenway/o/v0001-placeholder%2FBUNDLE_MANIFEST.txt?generation=1778287594952275&alt=media HTTP/1.1" 206 248
+2026-05-14 16:18:12,328 DEBUG    root            Chosen display Format:default
+2026-05-14 16:18:12,329 INFO     root            Display format: "default"
+2026-05-14 16:18:12,342 DEBUG    root            Metrics reporting process started...

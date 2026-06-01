@@ -1,0 +1,50 @@
+2026-05-07 16:08:22,273 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-07 16:08:22,283 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_groups']
+2026-05-07 16:08:22,284 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed']
+2026-05-07 16:08:22,289 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-groups', 'managed', 'delete']
+2026-05-07 16:08:22,291 DEBUG    root            Running [gcloud.compute.instance-groups.managed.delete] with arguments: [--project: "env-integration-fenway", --quiet: "True", --region: "us-central1", NAMES:1: "['artillery-loadgen-mig']"]
+2026-05-07 16:08:22,295 DEBUG    root            On GCE from memory cache: False
+2026-05-07 16:08:22,334 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 8] nodename nor servname provided, or not known>
+2026-05-07 16:08:22,334 DEBUG    root            On GCE from server: False
+2026-05-07 16:08:22,426 DEBUG    root            Chosen display Format:list[title="The following region instance group managers will be deleted:",always-display-title]
+2026-05-07 16:08:22,432 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-07 16:08:22,664 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions/us-central1/autoscalers?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-07 16:08:22,666 INFO     ___FILE_ONLY___ Deleting Managed Instance Group...
+2026-05-07 16:08:22,876 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "DELETE /compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig?alt=json HTTP/1.1" 200 None
+2026-05-07 16:08:22,878 DEBUG    root            Operations to inspect: [(<Operation
+ id: 469171342748460425
+ insertTime: '2026-05-07T16:08:22.847-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1778195302744-651425b5c8197-1731a9d4-88b6d5e3'
+ operationType: 'compute.instanceGroupManagers.delete'
+ progress: 0
+ region: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1778195302744-651425b5c8197-1731a9d4-88b6d5e3'
+ startTime: '2026-05-07T16:08:22.850-07:00'
+ status: StatusValueValuesEnum(RUNNING, 2)
+ targetId: 4361998733405103721
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]
+2026-05-07 16:08:35,104 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1778195302744-651425b5c8197-1731a9d4-88b6d5e3/wait?alt=json HTTP/1.1" 200 None
+2026-05-07 16:08:35,106 DEBUG    root            Operations to inspect: [(<Operation
+ endTime: '2026-05-07T16:08:35.070-07:00'
+ id: 469171342748460425
+ insertTime: '2026-05-07T16:08:22.847-07:00'
+ kind: 'compute#operation'
+ name: 'operation-1778195302744-651425b5c8197-1731a9d4-88b6d5e3'
+ operationType: 'compute.instanceGroupManagers.delete'
+ progress: 100
+ region: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1'
+ selfLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/operations/operation-1778195302744-651425b5c8197-1731a9d4-88b6d5e3'
+ startTime: '2026-05-07T16:08:22.850-07:00'
+ status: StatusValueValuesEnum(DONE, 0)
+ targetId: 4361998733405103721
+ targetLink: 'https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig'
+ user: 'jpresley@synthesis.health'
+ warnings: []>, 3)]
+2026-05-07 16:08:35,106 INFO     ___FILE_ONLY___ Deleted [https://www.googleapis.com/compute/v1/projects/env-integration-fenway/regions/us-central1/instanceGroupManagers/artillery-loadgen-mig].
+
+2026-05-07 16:08:35,107 DEBUG    root            Chosen display Format:none
+2026-05-07 16:08:35,107 INFO     root            Display format: "none"
+2026-05-07 16:08:35,128 DEBUG    root            Metrics reporting process started...

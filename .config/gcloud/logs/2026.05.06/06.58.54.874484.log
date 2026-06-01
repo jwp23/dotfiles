@@ -1,0 +1,15 @@
+2026-05-06 06:58:54,953 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-06 06:58:54,957 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images']
+2026-05-06 06:58:54,961 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'images', 'list']
+2026-05-06 06:58:54,963 DEBUG    root            Running [gcloud.compute.images.list] with arguments: [--filter: "family=artillery-loadgen-gpu", --project: "env-integration-fenway", --uri: "True"]
+2026-05-06 06:58:54,967 DEBUG    root            On GCE from memory cache: False
+2026-05-06 06:58:54,969 DEBUG    root            On GCE from memory cache: False
+2026-05-06 06:58:55,071 INFO     root            client_filter=None server_filter='family eq ".*\\bartillery\\-loadgen\\-gpu\\b.*"'
+2026-05-06 06:58:55,072 INFO     root            client_filter=None server_filter='family eq ".*\\bartillery\\-loadgen\\-gpu\\b.*"'
+2026-05-06 06:58:55,073 DEBUG    root            Chosen display Format:value(.)
+2026-05-06 06:58:55,073 INFO     root            Display format: "value(.)"
+2026-05-06 06:58:55,084 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-06 06:58:56,920 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "POST /batch/compute/v1 HTTP/1.1" 200 None
+2026-05-06 06:58:56,924 INFO     ___FILE_ONLY___ Listed 0 items.
+
+2026-05-06 06:58:56,940 DEBUG    root            Metrics reporting process started...

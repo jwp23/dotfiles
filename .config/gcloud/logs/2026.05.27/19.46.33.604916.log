@@ -1,0 +1,13 @@
+2026-05-27 19:46:33,908 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-27 19:46:33,914 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-27 19:46:33,919 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'describe']
+2026-05-27 19:46:33,921 DEBUG    root            Running [gcloud.compute.instance-templates.describe] with arguments: [--format: "value(properties.metadata.items[?key=='startup-script'].value)", --project: "env-integration-fenway", NAME: "artillery-loadgen-tpl-prod"]
+2026-05-27 19:46:33,929 DEBUG    root            On GCE from memory cache: False
+2026-05-27 19:46:33,933 DEBUG    root            On GCE from memory cache: False
+2026-05-27 19:46:34,899 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-27 19:46:35,269 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/instanceTemplates/artillery-loadgen-tpl-prod?alt=json HTTP/1.1" 200 None
+2026-05-27 19:46:35,274 DEBUG    root            Chosen display Format:default value(properties.metadata.items[?key=='startup-script'].value)
+2026-05-27 19:46:35,274 INFO     root            Display format: "default value(properties.metadata.items[?key=='startup-script'].value)"
+2026-05-27 19:46:35,305 INFO     ___FILE_ONLY___ 
+
+2026-05-27 19:46:35,325 DEBUG    root            Metrics reporting process started...

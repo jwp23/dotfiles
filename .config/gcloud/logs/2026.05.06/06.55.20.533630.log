@@ -1,0 +1,58 @@
+2026-05-06 06:55:20,608 DEBUG    root            Loaded Command Group: ['gcloud', 'compute']
+2026-05-06 06:55:20,611 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance_templates']
+2026-05-06 06:55:21,108 DEBUG    root            Loaded Command Group: ['gcloud', 'compute', 'instance-templates', 'create']
+2026-05-06 06:55:21,222 DEBUG    root            Running [gcloud.compute.instance-templates.create] with arguments: [--accelerator: "OrderedDict({'count': 1, 'type': 'nvidia-tesla-t4'})", --boot-disk-auto-delete: "True", --boot-disk-size: "2147483648000", --boot-disk-type: "pd-ssd", --image-family: "artillery-loadgen-gpu", --image-project: "env-integration-fenway", --machine-type: "n1-custom-24-65536", --maintenance-policy: "TERMINATE", --metadata: "OrderedDict({'scenario-bucket': 'artillery-loadgen-scenarios-env-integration-fenway', 'scenario-version': 'v0001-93fda0a', 'results-bucket': 'artillery-loadgen-results-env-integration-fenway', 'target-url': 'https://integration.pacs.stratus.optum.com/', 'run-id': 'smoke1', 'env': 'integration'})", --network: "default", --no-preemptible: "False", --no-restart-on-failure: "False", --project: "env-integration-fenway", --scopes: "['cloud-platform']", --service-account: "loadgen-mig@env-integration-fenway.iam.gserviceaccount.com", --subnet: "default", NAME: "artillery-loadgen-tpl"]
+2026-05-06 06:55:21,226 DEBUG    root            On GCE from memory cache: False
+2026-05-06 06:55:21,229 DEBUG    root            On GCE from memory cache: False
+2026-05-06 06:55:21,253 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): compute.googleapis.com:443
+2026-05-06 06:55:21,795 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/regions?alt=json&maxResults=500 HTTP/1.1" 200 None
+2026-05-06 06:55:29,081 DEBUG    urllib3.connectionpool https://compute.googleapis.com:443 "GET /compute/v1/projects/env-integration-fenway/global/images/family/artillery-loadgen-gpu?alt=json HTTP/1.1" 404 None
+2026-05-06 06:55:29,082 DEBUG    root            Chosen display Format:list[title="Could not fetch image resource:",always-display-title]
+2026-05-06 06:55:29,083 DEBUG    root            (gcloud.compute.instance-templates.create) Could not fetch image resource:
+ - The resource 'projects/env-integration-fenway/global/images/family/artillery-loadgen-gpu' was not found
+Traceback (most recent call last):
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 957, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_templates/create.py", line 1281, in Run
+    return _RunCreate(
+        base_classes.ComputeApiHolder(base.ReleaseTrack.GA),
+    ...<29 lines>...
+        support_alias_ipv6_ranges=self._support_alias_ipv6_ranges,
+    )
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_templates/create.py", line 914, in _RunCreate
+    raise e
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/surface/compute/instance_templates/create.py", line 905, in _RunCreate
+    image_uri, _ = image_expander.ExpandImageFlag(
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        user_project=instance_template_ref.project,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        return_image_resource=True,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/image_utils.py", line 237, in ExpandImageFlag
+    self.GetImage(image_ref) if return_image_resource else None)
+    ~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/image_utils.py", line 119, in GetImage
+    utils.RaiseException(
+    ~~~~~~~~~~~~~~~~~~~~^
+        errors,
+        ^^^^^^^
+        utils.ImageNotFoundError,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+        error_message='Could not fetch image resource:')
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Caskroom/gcloud-cli/542.0.0/google-cloud-sdk/lib/googlecloudsdk/api_lib/compute/utils.py", line 145, in RaiseException
+    raise exception(
+        ConstructList(error_message or 'Some requests did not succeed:',
+                      ParseErrors(errors)))
+googlecloudsdk.api_lib.compute.utils.ImageNotFoundError: Could not fetch image resource:
+ - The resource 'projects/env-integration-fenway/global/images/family/artillery-loadgen-gpu' was not found
+
+2026-05-06 06:55:29,089 ERROR    root            (gcloud.compute.instance-templates.create) Could not fetch image resource:
+ - The resource 'projects/env-integration-fenway/global/images/family/artillery-loadgen-gpu' was not found
+
+2026-05-06 06:55:29,104 DEBUG    root            Metrics reporting process started...

@@ -1,0 +1,10 @@
+2026-05-28 07:02:25,584 DEBUG    root            Loaded Command Group: ['gcloud', 'logging']
+2026-05-28 07:02:25,605 DEBUG    root            Loaded Command Group: ['gcloud', 'logging', 'read']
+2026-05-28 07:02:25,608 DEBUG    root            Running [gcloud.logging.read] with arguments: [--format: "value(timestamp,textPayload,jsonPayload.message)", --limit: "20", --project: "env-integration-fenway", LOG_FILTER: "logName=~"startupscript" AND timestamp>"2026-05-20T00:00:00Z""]
+2026-05-28 07:02:25,609 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:02:25,613 DEBUG    root            On GCE from memory cache: False
+2026-05-28 07:02:25,681 DEBUG    root            Chosen display Format:default value(timestamp,textPayload,jsonPayload.message)
+2026-05-28 07:02:25,681 INFO     root            Display format: "default value(timestamp,textPayload,jsonPayload.message)"
+2026-05-28 07:02:25,706 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): logging.googleapis.com:443
+2026-05-28 07:02:29,293 DEBUG    urllib3.connectionpool https://logging.googleapis.com:443 "POST /v2/entries:list?alt=json HTTP/1.1" 200 None
+2026-05-28 07:02:29,329 DEBUG    root            Metrics reporting process started...
