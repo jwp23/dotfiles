@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = /Users/jpresley/workspace/mordant-software/claude-instructions
+	ignorecase = true
+	precomposeunicode = true
+	autocrlf = false

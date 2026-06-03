@@ -1,0 +1,11 @@
+{
+  "id": "prt_ac66c060e002iyI0SGarLULmSG",
+  "sessionID": "ses_539950424ffev4SAECXTZKSubM",
+  "messageID": "msg_ac66bfb69002YFw20C35Gk6Y6x",
+  "type": "text",
+  "text": "I can see that you're in READ-ONLY mode, so I cannot make edits to the README.md file at this time. However, I can show you what the updated README.md should look like.\n\nBased on the `/story` command documentation I read, here's what should be added to the README.md:\n\n## Proposed Update to README.md\n\n```markdown\n# claude-instructions\nA collection of commands and prompts\n\n## Commands\n\n### `/story`\n\nDevelop user stories for a prd.md document. This command provides a conversational tool to help you add new feature user stories to your existing PRD (Product Requirements Document).\n\nThe `/story` command:\n- Reads your existing `.claude/prd.md` to understand the current PRD structure\n- Guides you through a collaborative conversation to define new features you want to add\n- Asks targeted questions about who the feature is for, what action they take, and why it matters\n- Converts your responses into cleanly formatted user stories\n- Automatically appends the new stories to the `## 2. The Features` section in your PRD\n\nEach user story follows the format:\n```\n* **Story X:** As a [type of user], I want to [take an action] so that I can [achieve a goal].\n    * Feature name: `short_feature_name`\n```\n\nThis command makes it easy to iteratively expand your PRD with new features through a friendly, designer-led conversation.\n```\n\n**Note:** Since you're currently in READ-ONLY mode, I cannot make this edit directly. You'll need to either:\n1. Exit READ-ONLY mode to allow me to make the edit\n2. Manually copy and paste the Commands section into your README.md\n\nWould you like me to update the file once editing is enabled?",
+  "time": {
+    "start": 1764265566429,
+    "end": 1764265566429
+  }
+}

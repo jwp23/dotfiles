@@ -1,0 +1,16 @@
+{
+  "id": "ses_53993b312ffeefelTsBlbUVXV8",
+  "version": "1.0.107",
+  "projectID": "98f0326ae5594d769602840258229a7888e46ff5",
+  "directory": "/Users/jpresley/workspace/mordant-software/claude-instructions",
+  "title": "Adding /story command to README",
+  "time": {
+    "created": 1764265577709,
+    "updated": 1764265677001
+  },
+  "summary": {
+    "additions": 15,
+    "deletions": 0,
+    "files": 1
+  }
+}

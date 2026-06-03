@@ -1,0 +1,17 @@
+{
+  "id": "msg_ac66afbde001D57jeCF60WuGhS",
+  "sessionID": "ses_539950424ffev4SAECXTZKSubM",
+  "role": "user",
+  "time": {
+    "created": 1764265491429
+  },
+  "summary": {
+    "title": "Adding /story command to README",
+    "diffs": []
+  },
+  "agent": "plan",
+  "model": {
+    "providerID": "anthropic",
+    "modelID": "claude-opus-4-5"
+  }
+}

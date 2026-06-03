@@ -1,0 +1,33 @@
+{
+  "id": "prt_ac66cd268001Omd9aUJY5hCNrG",
+  "sessionID": "ses_53993b312ffeefelTsBlbUVXV8",
+  "messageID": "msg_ac66cc747002NIrz9VJhyVvXnk",
+  "type": "tool",
+  "callID": "toolu_011jMe54MHJ5Pfi8u44UsW1C",
+  "tool": "edit",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/Users/jpresley/workspace/mordant-software/claude-instructions/README.md",
+      "oldString": "# claude-instructions\nA collection of commands and prompts",
+      "newString": "# claude-instructions\nA collection of commands and prompts\n\n## Commands\n\n### `/story`\n\nDevelop user stories for a prd.md document. This command provides a conversational interface to help you expand an existing PRD (Product Requirements Document) by adding new feature user stories.\n\nThe `/story` command:\n- Reads your existing `.claude/prd.md` file\n- Guides you through a collaborative conversation to define new features\n- Asks targeted questions about the feature's purpose, users, and goals\n- Automatically generates properly formatted user stories\n- Appends the new stories directly to your PRD's \"Features\" section\n\nPerfect for iteratively building out your product requirements in a structured, user-centered way."
+    },
+    "output": "",
+    "title": "README.md",
+    "metadata": {
+      "diagnostics": {},
+      "diff": "Index: /Users/jpresley/workspace/mordant-software/claude-instructions/README.md\n===================================================================\n--- /Users/jpresley/workspace/mordant-software/claude-instructions/README.md\n+++ /Users/jpresley/workspace/mordant-software/claude-instructions/README.md\n@@ -1,2 +1,17 @@\n # claude-instructions\n A collection of commands and prompts\n+\n+## Commands\n+\n+### `/story`\n+\n+Develop user stories for a prd.md document. This command provides a conversational interface to help you expand an existing PRD (Product Requirements Document) by adding new feature user stories.\n+\n+The `/story` command:\n+- Reads your existing `.claude/prd.md` file\n+- Guides you through a collaborative conversation to define new features\n+- Asks targeted questions about the feature's purpose, users, and goals\n+- Automatically generates properly formatted user stories\n+- Appends the new stories directly to your PRD's \"Features\" section\n+\n+Perfect for iteratively building out your product requirements in a structured, user-centered way.\n",
+      "filediff": {
+        "file": "/Users/jpresley/workspace/mordant-software/claude-instructions/README.md",
+        "before": "# claude-instructions\nA collection of commands and prompts\n",
+        "after": "# claude-instructions\nA collection of commands and prompts\n\n## Commands\n\n### `/story`\n\nDevelop user stories for a prd.md document. This command provides a conversational interface to help you expand an existing PRD (Product Requirements Document) by adding new feature user stories.\n\nThe `/story` command:\n- Reads your existing `.claude/prd.md` file\n- Guides you through a collaborative conversation to define new features\n- Asks targeted questions about the feature's purpose, users, and goals\n- Automatically generates properly formatted user stories\n- Appends the new stories directly to your PRD's \"Features\" section\n\nPerfect for iteratively building out your product requirements in a structured, user-centered way.\n",
+        "additions": 15,
+        "deletions": 0
+      }
+    },
+    "time": {
+      "start": 1764265614115,
+      "end": 1764265614122
+    }
+  }
+}

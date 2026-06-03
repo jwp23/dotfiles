@@ -1,0 +1,51 @@
+{
+  "id": "msg_ac66b03430028OFYG0yxpQfETN",
+  "sessionID": "ses_539950424ffev4SAECXTZKSubM",
+  "role": "assistant",
+  "time": {
+    "created": 1764265493315,
+    "completed": 1764265494224
+  },
+  "error": {
+    "name": "APIError",
+    "data": {
+      "message": "Extra usage must be enabled to use Opus. Visit https://claude.ai/settings/usage to enable it.",
+      "statusCode": 400,
+      "isRetryable": false,
+      "responseHeaders": {
+        "anthropic-organization-id": "c400bb45-560e-4e74-b070-f463cff2f44c",
+        "cf-cache-status": "DYNAMIC",
+        "cf-ray": "9a536fa86deb111a-ORD",
+        "connection": "keep-alive",
+        "content-length": "207",
+        "content-type": "application/json",
+        "date": "Thu, 27 Nov 2025 17:44:54 GMT",
+        "request-id": "req_011CVYowzbcp1szBjCt9VD39",
+        "server": "cloudflare",
+        "strict-transport-security": "max-age=31536000; includeSubDomains; preload",
+        "x-envoy-upstream-service-time": "324",
+        "x-robots-tag": "none",
+        "x-should-retry": "false"
+      },
+      "responseBody": "{\"type\":\"error\",\"error\":{\"type\":\"invalid_request_error\",\"message\":\"Extra usage must be enabled to use Opus. Visit https://claude.ai/settings/usage to enable it.\"},\"request_id\":\"req_011CVYowzbcp1szBjCt9VD39\"}"
+    }
+  },
+  "parentID": "msg_ac66afbde001D57jeCF60WuGhS",
+  "modelID": "claude-opus-4-5",
+  "providerID": "anthropic",
+  "mode": "plan",
+  "path": {
+    "cwd": "/Users/jpresley/workspace/mordant-software/claude-instructions",
+    "root": "/Users/jpresley/workspace/mordant-software/claude-instructions"
+  },
+  "cost": 0,
+  "tokens": {
+    "input": 0,
+    "output": 0,
+    "reasoning": 0,
+    "cache": {
+      "read": 0,
+      "write": 0
+    }
+  }
+}

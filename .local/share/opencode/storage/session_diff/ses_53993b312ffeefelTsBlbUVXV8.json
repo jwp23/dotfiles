@@ -1,0 +1,9 @@
+[
+  {
+    "file": "README.md",
+    "before": "# claude-instructions\nA collection of commands and prompts\n",
+    "after": "# claude-instructions\nA collection of commands and prompts\n\n## Commands\n\n### `/story`\n\nDevelop user stories for a prd.md document. This command provides a conversational interface to help you expand an existing PRD (Product Requirements Document) by adding new feature user stories.\n\nThe `/story` command:\n- Reads your existing `.claude/prd.md` file\n- Guides you through a collaborative conversation to define new features\n- Asks targeted questions about the feature's purpose, users, and goals\n- Automatically generates properly formatted user stories\n- Appends the new stories directly to your PRD's \"Features\" section\n\nPerfect for iteratively building out your product requirements in a structured, user-centered way.\n",
+    "additions": 15,
+    "deletions": 0
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "id": "prt_ac66bf759001Ce3smBkiFwPvP7",
+  "sessionID": "ses_539950424ffev4SAECXTZKSubM",
+  "messageID": "msg_ac66bef38002LGOquyKYvkv5ci",
+  "type": "tool",
+  "callID": "toolu_01JymSRMKNyRHZoXcuAzKz8J",
+  "tool": "read",
+  "state": {
+    "status": "completed",
+    "input": {
+      "filePath": "/Users/jpresley/workspace/mordant-software/claude-instructions/README.md"
+    },
+    "output": "<file>\n00001| # claude-instructions\n00002| A collection of commands and prompts\n00003| \n\n(End of file - total 3 lines)\n</file>",
+    "title": "README.md",
+    "metadata": {
+      "preview": "# claude-instructions\nA collection of commands and prompts\n"
+    },
+    "time": {
+      "start": 1764265556528,
+      "end": 1764265556533
+    }
+  }
+}
