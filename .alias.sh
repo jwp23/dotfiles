@@ -42,7 +42,6 @@ alias gb='git branch -a'
 alias gbd='git branch -D'
 alias gbl='git branch'
 alias gbc='gm && gu && gp && gpl' # git branch clean
-alias gc='git commit -m'
 alias gce='git commit' # commit and open the editor
 alias gcl='git clean -d -'
 alias gca='git add -A && git commit -m'
@@ -58,9 +57,7 @@ alias gl='git log'
 alias gm='git checkout master'
 alias gnb='git checkout -b'
 alias gp='git remote prune origin'
-alias gpl='git branch --merged master | xargs git branch -d'
-alias gpld='git branch --merged develop | grep -vE "develop|master" | xargs git branch -D'
-alias gplm='git branch --merge master | grep -vE "develop|main|main" | xargs git branch -D'
+alias gpl='git branch --merge master | grep -vE "develop|main|master" | xargs git branch -D'
 alias gpo='git push origin $(git symbolic-ref -q --short HEAD)'
 alias gpof='git push -f origin $(git symbolic-ref -q --short HEAD)'
 alias gpou='git push -u origin $(git symbolic-ref -q --short HEAD)'
@@ -81,6 +78,8 @@ alias gub='gm && gu && g- && grm' # git update branch from master
 alias gubd='gcd && gu && g- && grd' # git update branch from develop
 alias gup='gm && gu && g- && grm && gpof' # git update branch && gpof
 
+alias ha='hx ~/.alias.sh'
+
 alias id='cd ~/workspace/idgital'
 
 alias k='kubectl'
@@ -88,6 +87,7 @@ alias ktx='kubectx'
 
 alias ll='eza -alh --color=always --git'
 
+alias pom='throwntom'
 
 alias scratch='hx ~/workspace/scratch/'
 alias src='cd ~/src'
@@ -95,6 +95,8 @@ alias src='cd ~/src'
 alias ta='terraform apply'
 alias tf='terraform'
 alias tfmt='terraform fmt'
+alias tfv='terraform fmt && terraform validate'
+alias timeout='gtimeout'
 alias tinit='terraform init'
 alias tmp='cd ~/workspace/tmp'
 alias tp='terraform plan'

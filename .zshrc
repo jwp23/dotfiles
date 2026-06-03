@@ -16,23 +16,33 @@ fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
+# Add timetracker to prompt
+# timetracker_prompt() {
+  # local tt_status=$(tt status 2>/dev/null)
+  # if [[ -n "$tt_status" ]]; then
+    # echo "%F{yellow}$tt_status%f "
+  # fi
+# }
+# setopt PROMPT_SUBST
+# PROMPT="'$(timetracker_prompt)%F{blue}%~%f' $PROMPT"
+
 # Add time and date to pure prompt
-eval "original_$(declare -f prompt_pure_preprompt_render)"
-prompt_pure_preprompt_render() {
-  local prompt_pure_date_color='239'
-  local prompt_pure_date_format="[%y/%m/%d %H:%M:%S]"
-  zstyle -t :prompt:pure:date color
-  if [ $? -eq 1 ]; then
-    zstyle -s :prompt:pure:date color prompt_pure_date_color
-  fi
-  zstyle -t :prompt:pure:date format
-  if [ $? -eq 1 ]; then
-    zstyle -s :prompt:pure:date format prompt_pure_date_format
-  fi
-  local prompt_pure_date=$(date "+$prompt_pure_date_format")
-  original_prompt_pure_preprompt_render
-  PROMPT="%F{$prompt_pure_date_color}${prompt_pure_date}%f $PROMPT"
-}
+# eval "original_$(declare -f prompt_pure_preprompt_render)"
+# prompt_pure_preprompt_render() {
+  # local prompt_pure_date_color='239'
+  # local prompt_pure_date_format="[%y/%m/%d %H:%M:%S]"
+  # zstyle -t :prompt:pure:date color
+  # if [ $? -eq 1 ]; then
+    # zstyle -s :prompt:pure:date color prompt_pure_date_color
+  # fi
+  # zstyle -t :prompt:pure:date format
+  # if [ $? -eq 1 ]; then
+    # zstyle -s :prompt:pure:date format prompt_pure_date_format
+  # fi
+  # local prompt_pure_date=$(date "+$prompt_pure_date_format")
+  # original_prompt_pure_preprompt_render
+  # PROMPT="%F{$prompt_pure_date_color}${prompt_pure_date}%f $PROMPT"
+# }
 
 # zsh autosuggestions
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
@@ -44,17 +54,19 @@ export NVM_DIR="$HOME/.nvm"
 # source shell agnostic profile
 source ~/.profile
 
-if [[ -z "$ZELLIJ" ]]; then
-    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
-        zellij attach -c
-    else
-        zellij --layout compact
-    fi
-
-    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
-        exit
-    fi
-fi
+# Zellij
+ZELLIJ_AUTO_EXIT=true
+# if [[ -z "$ZELLIJ" ]]; then
+#     if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+#         zellij attach -c
+#     else
+#         zellij --layout compact
+#     fi
+# 
+#     if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+#         exit
+#     fi
+# fi
 
 # shellcheck shell=bash
 
@@ -204,5 +216,9 @@ fi
 #
 # To initialize zoxide, add this to your shell configuration file (usually ~/.zshrc):
 #
-eval "$(zoxide init zsh)"
+# eval "$(zoxide init zsh)"
+
+# Expose SSH agent socket to launchd-spawned jobs (e.g. gas-city-dolt-remote-sync).
+# Without this, `launchctl start` jobs cannot use ssh-agent keys for git push.
+[ -n "$SSH_AUTH_SOCK" ] && launchctl setenv SSH_AUTH_SOCK "$SSH_AUTH_SOCK"
 

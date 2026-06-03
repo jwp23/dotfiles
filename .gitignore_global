@@ -14,4 +14,8 @@ secrets
 **/.terragrunt-cache
 **/ignore*.json
 venv
-Scratch
+Scratch/
+scratch/
+
+# claude local settings
+.claude/settings.local.json
